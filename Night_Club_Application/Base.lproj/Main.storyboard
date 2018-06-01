@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YwD-4e-R1j">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-Yg-z1W">
+                                <rect key="frame" x="0.0" y="114" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.86730242157813497" green="0.85903609034862549" blue="0.91711611675126903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lNB-0f-W9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="O Nas"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5">
+                                <rect key="frame" x="0.0" y="165" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BFb-BS-tDR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Mapa"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-9W-4j0">
+                                <rect key="frame" x="0.0" y="216" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MJf-3X-Fuf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Rezerwacja"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-NF-F1I">
+                                <rect key="frame" x="0.0" y="267" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l4M-Bm-p1n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Zdjęcia"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf">
+                                <rect key="frame" x="0.0" y="318" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WNu-LR-XYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Apartament"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-Mh-mJV">
+                                <rect key="frame" x="0.0" y="369" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4kR-Ba-k7q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Karty klubowe"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-t0-vmx">
+                                <rect key="frame" x="0.0" y="420" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="w6k-Sa-2jl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Wydarzenia"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn">
+                                <rect key="frame" x="0.0" y="471" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qsR-8u-EM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Kontakt"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fkj-bS-bRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="00w-fx-1fh"/>
+                            <constraint firstItem="pzX-Yg-z1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0fd-q9-Um4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fkj-bS-bRn" secondAttribute="trailing" id="0r0-xg-gNw"/>
+                            <constraint firstItem="3Sw-eu-UP5" firstAttribute="top" secondItem="pzX-Yg-z1W" secondAttribute="bottom" constant="1" id="4dp-EE-c8y"/>
+                            <constraint firstItem="XSi-t0-vmx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Bj-Rl-SV7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sw-eu-UP5" secondAttribute="trailing" id="9Zz-Mc-bqJ"/>
+                            <constraint firstItem="wOd-IT-CWf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DHN-Sd-MhZ"/>
+                            <constraint firstItem="wOd-IT-CWf" firstAttribute="top" secondItem="IC0-NF-F1I" secondAttribute="bottom" constant="1" id="DuL-pe-0GE"/>
+                            <constraint firstItem="XSi-t0-vmx" firstAttribute="top" secondItem="MwD-Mh-mJV" secondAttribute="bottom" constant="1" id="EJu-zB-qLk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IC0-NF-F1I" secondAttribute="trailing" id="NT7-vg-p1T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOd-IT-CWf" secondAttribute="trailing" id="QZZ-EY-ucn"/>
+                            <constraint firstItem="IC0-NF-F1I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SG7-Ug-Tt1"/>
+                            <constraint firstItem="qGA-9W-4j0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TtF-MP-bco"/>
+                            <constraint firstItem="MwD-Mh-mJV" firstAttribute="top" secondItem="wOd-IT-CWf" secondAttribute="bottom" constant="1" id="XsU-ix-qjH"/>
+                            <constraint firstItem="fkj-bS-bRn" firstAttribute="top" secondItem="XSi-t0-vmx" secondAttribute="bottom" constant="1" id="c5k-xI-DVY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MwD-Mh-mJV" secondAttribute="trailing" id="cMf-my-Fuf"/>
+                            <constraint firstItem="MwD-Mh-mJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cXd-Kq-eAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qGA-9W-4j0" secondAttribute="trailing" id="dzC-YL-eab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pzX-Yg-z1W" secondAttribute="trailing" id="lw1-E3-TM3"/>
+                            <constraint firstItem="pzX-Yg-z1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="p4h-aM-NNF"/>
+                            <constraint firstItem="qGA-9W-4j0" firstAttribute="top" secondItem="3Sw-eu-UP5" secondAttribute="bottom" constant="1" id="qca-ZJ-6Zu"/>
+                            <constraint firstItem="IC0-NF-F1I" firstAttribute="top" secondItem="qGA-9W-4j0" secondAttribute="bottom" constant="1" id="rlv-PX-8PQ"/>
+                            <constraint firstItem="3Sw-eu-UP5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vYK-IC-gTk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XSi-t0-vmx" secondAttribute="trailing" id="x7q-rM-hcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WOn-xm-Jkz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Te-l9-Z6V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YwD-4e-R1j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n71-Lm-j93">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ukm-O8-2vL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfZ-Bz-ZmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="118"/>
+        </scene>
+    </scenes>
+</document>
