@@ -11,19 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
-    @IBAction func getDirection(_ sender: Any) {
-        let directionsURL = "http://maps.apple.com/maps?saddr=Current%20Location&daddr=52.22818780,21.02605250"
-         let directionsURL2 = "https://www.google.com/maps?saddr=My+Location&daddr=52.22818780,21.02605250"
-        guard let url = URL(string: directionsURL2) else {
-            return
-        }
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
+   
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -48,7 +36,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             mapView.showsUserLocation = true
         }
         
-        // Convert address to coordinate and annotate it on map
         let geoCoder = CLGeocoder()
         geoCoder.geocodeAddressString(location, completionHandler: { placemarks, error in
             if let error = error {
@@ -57,15 +44,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             }
             
             if let placemarks = placemarks {
-                // Get the first placemark
                 let placemark = placemarks[0]
                 print(placemark)
                 self.currentPlacemark = placemark
                 
-                // Add annotation
                 let annotation = MKPointAnnotation()
                 annotation.title = "XOXO party"
-                annotation.subtitle = "Night Club"
+                annotation.subtitle = "Marii Konopnickiej 6"
                 
                 if let location = placemark.location {
                     annotation.coordinate = location.coordinate
@@ -75,7 +60,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                     self.mapView.selectAnnotation(annotation, animated: true)
                 }
             }
-            
         })
         
         mapView.delegate = self
@@ -137,6 +121,19 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    func getDirection(maps: String) {
+        let directionsURL = maps == "Apple" ? "http://maps.apple.com/maps?saddr=Current%20Location&daddr=52.22818780,21.02605250" : "https://www.google.com/maps?saddr=My+Location&daddr=52.22818780,21.02605250"
+        guard let url = URL(string: directionsURL) else {
+            return
+        }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
+    }
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
         renderer.strokeColor = (currentTransportType == .automobile) ? UIColor.blue : UIColor.orange
@@ -168,8 +165,22 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
         leftIconView.image = #imageLiteral(resourceName: "xoxo_party_map")
         annotationView?.leftCalloutAccessoryView = leftIconView
+        annotationView?.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
         
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let alert = UIAlertController(title: "Przeglądaj za pomocą:", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Maps", style: .default, handler: { action in
+            self.getDirection(maps: "Apple")
+        }))
+        alert.addAction(UIAlertAction(title: "Google Maps", style: .default, handler: { action in
+            self.getDirection(maps: "Google")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Anuluj", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
     
 }
