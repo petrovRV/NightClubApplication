@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMa-1S-U1r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="aOM-5w-3Oz">
+            <objects>
+                <viewController id="rMa-1S-U1r" customClass="MapViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btc-Nz-Rw8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZGf-Vc-7Vg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyx-Th-Mdy">
+                                <rect key="frame" x="316" y="35" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5Kq-PI-pKE"/>
+                                    <constraint firstAttribute="width" constant="43" id="sBf-Kq-Tbp"/>
+                                </constraints>
+                                <state key="normal" image="icons8-waypoint-map-100"/>
+                                <connections>
+                                    <action selector="showDirectionWithSender:" destination="rMa-1S-U1r" eventType="touchUpInside" id="HOv-BT-XR8"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="smi-kv-2Y8">
+                                <rect key="frame" x="234" y="628" width="125" height="29"/>
+                                <segments>
+                                    <segment title="Car"/>
+                                    <segment title="Walking"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oen-s8-fzf">
+                                <rect key="frame" x="251" y="203" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="getDirection:" destination="rMa-1S-U1r" eventType="touchUpInside" id="5rE-Ht-nhY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nPW-4a-PNv" firstAttribute="bottom" secondItem="smi-kv-2Y8" secondAttribute="bottom" constant="11" id="4jI-7w-oY3"/>
+                            <constraint firstItem="ZGf-Vc-7Vg" firstAttribute="top" secondItem="nPW-4a-PNv" secondAttribute="top" id="5vY-gR-1es"/>
+                            <constraint firstItem="ZGf-Vc-7Vg" firstAttribute="leading" secondItem="nPW-4a-PNv" secondAttribute="leading" id="V9O-j3-o6O"/>
+                            <constraint firstItem="oyx-Th-Mdy" firstAttribute="top" secondItem="nPW-4a-PNv" secondAttribute="top" constant="15" id="WG2-q6-mzm"/>
+                            <constraint firstItem="nPW-4a-PNv" firstAttribute="trailing" secondItem="ZGf-Vc-7Vg" secondAttribute="trailing" id="bWY-3U-bGw"/>
+                            <constraint firstItem="nPW-4a-PNv" firstAttribute="trailing" secondItem="smi-kv-2Y8" secondAttribute="trailing" constant="16" id="d8x-kv-U7K"/>
+                            <constraint firstItem="nPW-4a-PNv" firstAttribute="trailing" secondItem="oyx-Th-Mdy" secondAttribute="trailing" constant="16" id="gAM-aN-aoe"/>
+                            <constraint firstItem="nPW-4a-PNv" firstAttribute="bottom" secondItem="ZGf-Vc-7Vg" secondAttribute="bottom" id="mYD-Gg-j8l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nPW-4a-PNv"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ZGf-Vc-7Vg" id="jfO-h5-BXD"/>
+                        <outlet property="segmentedControl" destination="smi-kv-2Y8" id="Z3R-3y-sl8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BpD-ry-cAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-waypoint-map-100" width="100" height="100"/>
+    </resources>
+</document>

@@ -12,25 +12,21 @@ class ReservationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    
     func makeAPhoneCall()  {
         let url: NSURL = URL(string: "TEL://1234567890")! as NSURL
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
-//    @IBAction func callButton(_ sender: Any) {
-//         let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//        optionMenu.addAction(cancelAction)
-//
-//        present(optionMenu, animated: true, completion: nil)
-//
-//
-//    }
-    
     @IBAction func cellButton(_ sender: Any) {
-        print("click")
         self.makeAPhoneCall()
         
 //    let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)

@@ -13,6 +13,8 @@
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
+		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
+		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8D446A0620C182150004FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		8D446A0E20C1885D0004FA10 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
 			);
@@ -79,6 +84,7 @@
 			children = (
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
+				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 			files = (
 				8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */,
 				8D446A0220C182150004FA10 /* Assets.xcassets in Resources */,
+				8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */,
 				8D446A0020C182150004FA10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +165,7 @@
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
+				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
