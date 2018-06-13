@@ -13,6 +13,7 @@
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
+		8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		8D446A0620C182150004FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
+				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
+				8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
