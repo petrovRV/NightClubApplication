@@ -14,6 +14,8 @@
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
 		8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */; };
+		8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */; };
+		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
+		8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotoCell.swift; sourceTree = "<group>"; };
+		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosCVFlowLauout.swift; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4469FA20C182150004FA10 /* AppDelegate.swift */,
+				8D44AE4920D1613D008F3ACE /* Views */,
 				8D446A0F20C189100004FA10 /* Controllers */,
 				8D446A0E20C1885D0004FA10 /* Storyboards */,
 				8D446A0120C182150004FA10 /* Assets.xcassets */,
@@ -85,11 +90,20 @@
 			isa = PBXGroup;
 			children = (
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
-				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
+				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
+				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D44AE4920D1613D008F3ACE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift in Sources */,
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
+				8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */,
 			);

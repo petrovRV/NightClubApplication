@@ -242,68 +242,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoK-jU-XSs">
-                                <rect key="frame" x="187.5" y="79" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APARTMENT BY XOXO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-Ho-lwV">
                                 <rect key="frame" x="45" y="79" width="286.5" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idealne miejsce dla nawet 70 osób na całkowicie prywatną imprezę, urodziny czy wyjątkową noc." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-9W-fYc">
-                                <rect key="frame" x="10" y="121.5" width="355" height="64.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sr5-x4-2de">
-                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
-                                <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="66x-64-Fzr">
-                                    <size key="itemSize" width="50" height="50"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-cc-a6S">
+                                <rect key="frame" x="0.0" y="121.5" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Dyo-lb-iSm"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WR4-S1-aeA" customClass="ApartmentPhotosCVFlowLauout" customModule="Night_Club_Application" customModuleProvider="target">
+                                    <size key="itemSize" width="240" height="147"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xLp-fZ-Xao">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ClE-fG-5A9" customClass="ApartmentPhotoCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76.5" width="240" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-UT-0AR">
+                                                    <rect key="frame" x="0.0" y="-28" width="287" height="186"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="top" secondItem="ClE-fG-5A9" secondAttribute="top" id="Py1-Ve-DyH"/>
+                                            <constraint firstAttribute="trailing" secondItem="x4P-UT-0AR" secondAttribute="trailing" id="rsg-fc-ScG"/>
+                                            <constraint firstAttribute="bottom" secondItem="x4P-UT-0AR" secondAttribute="bottom" id="tJv-Di-qIj"/>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="leading" secondItem="ClE-fG-5A9" secondAttribute="leading" id="tjF-k2-Pmq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="apartmentImage" destination="x4P-UT-0AR" id="Pqa-ff-XfT"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="mKZ-v3-f3X" id="X9x-6P-cg9"/>
+                                    <outlet property="delegate" destination="mKZ-v3-f3X" id="WkZ-n9-cuT"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Sr5-x4-2de" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" id="0j2-ny-90y"/>
-                            <constraint firstItem="xaf-9W-fYc" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="10" id="41O-Vb-3cV"/>
+                            <constraint firstItem="IGx-cc-a6S" firstAttribute="top" secondItem="eu5-Ho-lwV" secondAttribute="bottom" constant="10" id="BMR-11-H5J"/>
                             <constraint firstItem="eu5-Ho-lwV" firstAttribute="centerX" secondItem="YW2-zf-DhC" secondAttribute="centerX" id="ECP-Mf-yX8"/>
-                            <constraint firstItem="ZoK-jU-XSs" firstAttribute="centerX" secondItem="YW2-zf-DhC" secondAttribute="centerX" id="Heb-jK-TIx"/>
-                            <constraint firstItem="ZoK-jU-XSs" firstAttribute="top" secondItem="gVF-65-PZQ" secondAttribute="top" constant="15" id="Igp-gW-5uB"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="bottom" secondItem="Sr5-x4-2de" secondAttribute="bottom" id="N99-O7-eVs"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="xaf-9W-fYc" secondAttribute="trailing" constant="10" id="SWY-VZ-koB"/>
                             <constraint firstItem="eu5-Ho-lwV" firstAttribute="top" secondItem="gVF-65-PZQ" secondAttribute="top" constant="15" id="TBe-Vg-HzF"/>
-                            <constraint firstItem="Sr5-x4-2de" firstAttribute="top" secondItem="xaf-9W-fYc" secondAttribute="bottom" constant="10" id="nxv-8T-pTc"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="Sr5-x4-2de" secondAttribute="trailing" id="p4k-2s-A1m"/>
-                            <constraint firstItem="xaf-9W-fYc" firstAttribute="top" secondItem="eu5-Ho-lwV" secondAttribute="bottom" constant="10" id="vKg-Wx-Gjd"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="IGx-cc-a6S" secondAttribute="trailing" id="csC-QF-TOf"/>
+                            <constraint firstItem="IGx-cc-a6S" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" id="ire-gc-ty1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gVF-65-PZQ"/>
                     </view>
-                    <connections>
-                        <outlet property="apartmentCollectionView" destination="Sr5-x4-2de" id="MX6-Gh-T2c"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hU7-Fe-uLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="408"/>
+            <point key="canvasLocation" x="1871.2" y="407.0464767616192"/>
         </scene>
         <!--MapStoryboard-->
         <scene sceneID="hUa-Nx-9q5">
