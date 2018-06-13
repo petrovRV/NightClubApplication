@@ -248,36 +248,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-cc-a6S">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-cc-a6S">
                                 <rect key="frame" x="0.0" y="121.5" width="375" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Dyo-lb-iSm"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WR4-S1-aeA" customClass="ApartmentPhotosCVFlowLauout" customModule="Night_Club_Application" customModuleProvider="target">
-                                    <size key="itemSize" width="240" height="147"/>
+                                    <size key="itemSize" width="323" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ClE-fG-5A9" customClass="ApartmentPhotoCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76.5" width="240" height="147"/>
+                                        <rect key="frame" x="0.0" y="55" width="323" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-UT-0AR">
-                                                    <rect key="frame" x="0.0" y="-28" width="287" height="186"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-UT-0AR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="323" height="190"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="top" secondItem="ClE-fG-5A9" secondAttribute="top" id="Py1-Ve-DyH"/>
-                                            <constraint firstAttribute="trailing" secondItem="x4P-UT-0AR" secondAttribute="trailing" id="rsg-fc-ScG"/>
-                                            <constraint firstAttribute="bottom" secondItem="x4P-UT-0AR" secondAttribute="bottom" id="tJv-Di-qIj"/>
-                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="leading" secondItem="ClE-fG-5A9" secondAttribute="leading" id="tjF-k2-Pmq"/>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="top" secondItem="ClE-fG-5A9" secondAttribute="top" id="TaN-mb-3as"/>
+                                            <constraint firstAttribute="bottom" secondItem="x4P-UT-0AR" secondAttribute="bottom" id="jfv-4K-Jkq"/>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="leading" secondItem="ClE-fG-5A9" secondAttribute="leading" id="mqk-tI-nTC"/>
+                                            <constraint firstAttribute="trailing" secondItem="x4P-UT-0AR" secondAttribute="trailing" id="o8P-sP-5BO"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="apartmentImage" destination="x4P-UT-0AR" id="Pqa-ff-XfT"/>
