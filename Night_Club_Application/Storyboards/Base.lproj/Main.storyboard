@@ -80,6 +80,9 @@
                                 <state key="normal" title="Apartament">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mKZ-v3-f3X" kind="show" id="CWv-iQ-flK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-Mh-mJV">
                                 <rect key="frame" x="0.0" y="369" width="375" height="50"/>
@@ -230,6 +233,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfZ-Bz-ZmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5S2-aO-HCV">
+            <objects>
+                <viewController id="mKZ-v3-f3X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YW2-zf-DhC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gVF-65-PZQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hU7-Fe-uLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="408"/>
         </scene>
         <!--MapStoryboard-->
         <scene sceneID="hUa-Nx-9q5">

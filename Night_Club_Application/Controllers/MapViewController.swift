@@ -55,7 +55,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 if let location = placemark.location {
                     annotation.coordinate = location.coordinate
                     
-                    // Display the annotation
                     self.mapView.showAnnotations([annotation], animated: true)
                     self.mapView.selectAnnotation(annotation, animated: true)
                 }
@@ -93,13 +92,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         let directionRequest = MKDirectionsRequest()
         
-        // Set the source and destination of the route
         directionRequest.source = MKMapItem.forCurrentLocation()
         let destinationPlacemark = MKPlacemark(placemark: currentPlacemark)
         directionRequest.destination = MKMapItem(placemark: destinationPlacemark)
         directionRequest.transportType = currentTransportType
         
-        // Calculate the direction
         let directions = MKDirections(request: directionRequest)
         
         directions.calculate { (routeResponse, routeError) -> Void in
@@ -149,7 +146,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             return nil
         }
         
-        // Reuse the annotation if possible
         var annotationView: MKAnnotationView?
         
             var pinAnnotationView: MKPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
