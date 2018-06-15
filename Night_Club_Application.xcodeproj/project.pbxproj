@@ -73,6 +73,7 @@
 				8D446A0F20C189100004FA10 /* Controllers */,
 				8D446A0E20C1885D0004FA10 /* Storyboards */,
 				8D446A0120C182150004FA10 /* Assets.xcassets */,
+				8D5E1F3220D3E9A800766996 /* Layouts */,
 				8D446A0620C182150004FA10 /* Info.plist */,
 			);
 			path = Night_Club_Application;
@@ -96,7 +97,6 @@
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
-				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +107,14 @@
 				8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8D5E1F3220D3E9A800766996 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
