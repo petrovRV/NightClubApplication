@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mKZ-v3-f3X">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apartment View Controller-->
+        <scene sceneID="5S2-aO-HCV">
+            <objects>
+                <viewController id="mKZ-v3-f3X" customClass="ApartmentViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YW2-zf-DhC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APARTMENT BY XOXO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-Ho-lwV">
+                                <rect key="frame" x="40" y="30" width="1042.6666666666667" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-cc-a6S">
+                                <rect key="frame" x="0.0" y="78" width="1122.6666666666667" height="250"/>
+                                <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="VnB-1h-OlI"/>
+                                    <constraint firstAttribute="width" constant="375" id="vIe-Ep-f2u"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WR4-S1-aeA" customClass="ApartmentPhotosCVFlowLauout" customModule="Night_Club_Application" customModuleProvider="target">
+                                    <size key="itemSize" width="375" height="250"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ClE-fG-5A9" customClass="ApartmentPhotoCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-UT-0AR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="leading" secondItem="ClE-fG-5A9" secondAttribute="leading" id="7tG-5Q-pHl"/>
+                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="top" secondItem="ClE-fG-5A9" secondAttribute="top" id="FzI-jA-vHn"/>
+                                            <constraint firstAttribute="bottom" secondItem="x4P-UT-0AR" secondAttribute="bottom" id="dAw-f0-Gys"/>
+                                            <constraint firstAttribute="trailing" secondItem="x4P-UT-0AR" secondAttribute="trailing" id="uos-gX-Vda"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="250"/>
+                                        <connections>
+                                            <outlet property="apartmentImage" destination="x4P-UT-0AR" id="Pqa-ff-XfT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="mKZ-v3-f3X" id="X9x-6P-cg9"/>
+                                    <outlet property="delegate" destination="mKZ-v3-f3X" id="WkZ-n9-cuT"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="haj-JX-DAK">
+                                <rect key="frame" x="15" y="343" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UHG-lA-cdB"/>
+                                    <constraint firstAttribute="width" constant="60" id="gB1-eb-7ue"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ozv-TJ-Fd3">
+                                <rect key="frame" x="15" y="366.66666666666669" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qc4-rH-8K0"/>
+                                    <constraint firstAttribute="height" constant="60" id="sx9-uH-Q1D"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-3" translatesAutoresizingMaskIntoConstraints="NO" id="zNZ-hq-2pI">
+                                <rect key="frame" x="15" y="397.33333333333331" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WyX-ai-A2C"/>
+                                    <constraint firstAttribute="height" constant="60" id="mef-NT-f89"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-4" translatesAutoresizingMaskIntoConstraints="NO" id="jnn-xd-VFa">
+                                <rect key="frame" x="15" y="421" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6qo-Tb-awu"/>
+                                    <constraint firstAttribute="width" constant="60" id="GpD-rw-a7S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5f-tV-grh">
+                                <rect key="frame" x="83" y="343" width="1024.6666666666667" height="15.666666666666686"/>
+                                <string key="text">Niezależne nagłośnienie firmy VOID, oświetlenie, klimatyzacja, profesjonalna obsługa i trunki z najwyższej półki to tylko niektóre zalety Apartment by XOXO Party…</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kot-Ql-vdx">
+                                <rect key="frame" x="83" y="366.66666666666669" width="1024.6666666666667" height="15.666666666666686"/>
+                                <string key="text">Intymna powierzchnia Prive Roomu nie odcina Cię od imprezy, która trwa na parkiecie w klubie XOXO. Dzięki live streaming – śledzisz ją na bieżąco!</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikz-yk-tCf">
+                                <rect key="frame" x="83" y="397.33333333333331" width="1024.6666666666667" height="15.666666666666686"/>
+                                <string key="text">Podczas, kiedy w klubie odbywa się tłoczna i głośna impreza – Prive Room może pozostać spokojnym miejscem spotkań biznesowych, kolacji lub innych uroczystości.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-Jl-GMy">
+                                <rect key="frame" x="83" y="421" width="1024.6666666666667" height="15.666666666666686"/>
+                                <string key="text">I na odwrót! Kiedy XOXO już „zasypia”… Apartment budzi się do życia… bo to właśnie w nim odbywają się najlepsze, ekskluzywne afterparty Warszawy…</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="haj-JX-DAK" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="8i9-Dw-g1f"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="z5f-tV-grh" secondAttribute="trailing" constant="15" id="8sl-bV-ls0"/>
+                            <constraint firstItem="IGx-cc-a6S" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" id="ApD-Q3-r3A"/>
+                            <constraint firstItem="Ikz-yk-tCf" firstAttribute="leading" secondItem="zNZ-hq-2pI" secondAttribute="trailing" constant="8" id="CG5-kq-3lZ"/>
+                            <constraint firstItem="zNZ-hq-2pI" firstAttribute="top" secondItem="Ikz-yk-tCf" secondAttribute="top" id="DZ7-EQ-WSz"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="eu5-Ho-lwV" secondAttribute="trailing" constant="40" id="GO7-sn-8ah"/>
+                            <constraint firstItem="Ozv-TJ-Fd3" firstAttribute="top" secondItem="Kot-Ql-vdx" secondAttribute="top" id="Hkk-Hj-zV3"/>
+                            <constraint firstItem="jnn-xd-VFa" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="JEE-rj-ewg"/>
+                            <constraint firstItem="z5f-tV-grh" firstAttribute="top" secondItem="IGx-cc-a6S" secondAttribute="bottom" constant="15" id="Qej-kd-cbb"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="YWF-Jl-GMy" secondAttribute="trailing" constant="15" id="RJ9-0L-lvL"/>
+                            <constraint firstItem="Ikz-yk-tCf" firstAttribute="top" secondItem="Kot-Ql-vdx" secondAttribute="bottom" constant="15" id="TwN-5S-mYQ"/>
+                            <constraint firstItem="haj-JX-DAK" firstAttribute="top" secondItem="z5f-tV-grh" secondAttribute="top" id="YGM-9C-5gS"/>
+                            <constraint firstItem="IGx-cc-a6S" firstAttribute="trailing" secondItem="gVF-65-PZQ" secondAttribute="trailing" id="aLT-Ze-Rok"/>
+                            <constraint firstItem="eu5-Ho-lwV" firstAttribute="top" secondItem="gVF-65-PZQ" secondAttribute="top" constant="10" id="aWr-p9-I5t"/>
+                            <constraint firstItem="Ozv-TJ-Fd3" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="aod-AC-Hvx"/>
+                            <constraint firstItem="Kot-Ql-vdx" firstAttribute="leading" secondItem="Ozv-TJ-Fd3" secondAttribute="trailing" constant="8" id="bIa-YJ-aOZ"/>
+                            <constraint firstItem="IGx-cc-a6S" firstAttribute="top" secondItem="eu5-Ho-lwV" secondAttribute="bottom" constant="15" id="dcF-fP-0r6"/>
+                            <constraint firstItem="YWF-Jl-GMy" firstAttribute="leading" secondItem="jnn-xd-VFa" secondAttribute="trailing" constant="8" id="gnM-hF-czQ"/>
+                            <constraint firstItem="YWF-Jl-GMy" firstAttribute="top" secondItem="Ikz-yk-tCf" secondAttribute="bottom" constant="8" id="hdb-9T-ahn"/>
+                            <constraint firstItem="jnn-xd-VFa" firstAttribute="top" secondItem="YWF-Jl-GMy" secondAttribute="top" id="j5I-kt-zlS"/>
+                            <constraint firstItem="z5f-tV-grh" firstAttribute="leading" secondItem="haj-JX-DAK" secondAttribute="trailing" constant="8" id="mKx-26-nf4"/>
+                            <constraint firstItem="zNZ-hq-2pI" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="quQ-Jh-RTX"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="Kot-Ql-vdx" secondAttribute="trailing" constant="15" id="reE-Ht-5ch"/>
+                            <constraint firstItem="Kot-Ql-vdx" firstAttribute="top" secondItem="z5f-tV-grh" secondAttribute="bottom" constant="8" id="sSf-54-IhU"/>
+                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="Ikz-yk-tCf" secondAttribute="trailing" constant="15" id="tDv-aS-mUa"/>
+                            <constraint firstItem="eu5-Ho-lwV" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="40" id="wdq-01-Pxc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gVF-65-PZQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hU7-Fe-uLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871.2" y="407.0464767616192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apartment-icon-1" width="100" height="100"/>
+        <image name="apartment-icon-2" width="100" height="100"/>
+        <image name="apartment-icon-3" width="100" height="100"/>
+        <image name="apartment-icon-4" width="100" height="100"/>
+    </resources>
+</document>

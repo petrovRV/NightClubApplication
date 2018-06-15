@@ -13,6 +13,10 @@
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
+		8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */; };
+		8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */; };
+		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */; };
+		8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,6 +30,10 @@
 		8D446A0620C182150004FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
+		8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotoCell.swift; sourceTree = "<group>"; };
+		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosCVFlowLauout.swift; sourceTree = "<group>"; };
+		8D5E1F3020D1D90100766996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard.storyboard; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,9 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				8D4469FA20C182150004FA10 /* AppDelegate.swift */,
+				8D44AE4920D1613D008F3ACE /* Views */,
 				8D446A0F20C189100004FA10 /* Controllers */,
 				8D446A0E20C1885D0004FA10 /* Storyboards */,
 				8D446A0120C182150004FA10 /* Assets.xcassets */,
+				8D5E1F3220D3E9A800766996 /* Layouts */,
 				8D446A0620C182150004FA10 /* Info.plist */,
 			);
 			path = Night_Club_Application;
@@ -75,6 +85,7 @@
 				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
+				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -83,10 +94,27 @@
 			isa = PBXGroup;
 			children = (
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
-				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
+				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
+				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D44AE4920D1613D008F3ACE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D44AE4720D16130008F3ACE /* ApartmentPhotoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D5E1F3220D3E9A800766996 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Lubomir Olshansky";
 				TargetAttributes = {
 					8D4469F620C182150004FA10 = {
@@ -148,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */,
 				8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */,
 				8D446A0220C182150004FA10 /* Assets.xcassets in Resources */,
 				8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */,
@@ -162,10 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift in Sources */,
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
+				8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
+				8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +220,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5E1F3020D1D90100766996 /* Base */,
+			);
+			name = ApartmentStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -205,6 +245,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -212,6 +253,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -262,6 +304,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -269,6 +312,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
