@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YwD-4e-R1j">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,21 +10,26 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Bold Regular.ttf">
+            <string>GothamBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-Yg-z1W">
-                                <rect key="frame" x="0.0" y="147" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="158.33333333333334" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="guL-Rg-Fta"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="O Nas">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,17 +38,14 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5">
-                                <rect key="frame" x="0.0" y="207" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="218.33333333333334" width="414" height="60.000000000000028"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="5uc-h8-Zym"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Mapa">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,11 +54,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-9W-4j0">
-                                <rect key="frame" x="0.0" y="267" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="278.33333333333331" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="4Gn-xh-MeB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Rezerwacja">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -65,21 +67,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-NF-F1I">
-                                <rect key="frame" x="0.0" y="327" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="338.33333333333331" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hfw-kq-oPn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Zdjęcia">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf">
-                                <rect key="frame" x="0.0" y="387" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="398.33333333333331" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2V6-xh-svz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Apartament">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -88,43 +90,49 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn">
-                                <rect key="frame" x="0.0" y="507" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="518.33333333333337" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="VYU-cJ-0OF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Kontakt">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-zt-TX4">
-                                <rect key="frame" x="132.5" y="610" width="50" height="50"/>
+                                <rect key="frame" x="152" y="677" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="POC-7i-jdd"/>
                                     <constraint firstAttribute="height" constant="50" id="dmu-pq-ydr"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="icons-facebook-100"/>
+                                <connections>
+                                    <action selector="openFacebookPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o3-NP-i2i"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xoxo" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-Y7-vCb">
-                                <rect key="frame" x="0.0" y="30" width="375" height="107"/>
+                                <rect key="frame" x="0.0" y="29.999999999999993" width="414" height="118.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="X6v-Y7-vCb" secondAttribute="height" multiplier="7:2" id="83n-c4-Evs"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-Nj-mQX">
-                                <rect key="frame" x="192.5" y="610" width="50" height="50"/>
+                                <rect key="frame" x="212" y="677" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="cpC-ZG-VK2"/>
                                     <constraint firstAttribute="height" constant="50" id="ryi-Mm-ca2"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="icons-instagram-100"/>
+                                <connections>
+                                    <action selector="openInstagramPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJS-j4-zlI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-Mh-mJV">
-                                <rect key="frame" x="0.0" y="447" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="458.33333333333331" width="414" height="59.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="CDi-AM-Ky4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="24"/>
                                 <state key="normal" title="Karty klubowe">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -137,13 +145,13 @@
                             <constraint firstItem="X6v-Y7-vCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Mh-7l-bis"/>
                             <constraint firstItem="IC0-NF-F1I" firstAttribute="top" secondItem="qGA-9W-4j0" secondAttribute="bottom" id="8LK-BU-pnU"/>
                             <constraint firstItem="IC0-NF-F1I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ike-MB-c1i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rXF-Nj-mQX" secondAttribute="bottom" constant="7" id="Lnb-rP-P3e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rXF-Nj-mQX" secondAttribute="bottom" constant="9" id="Lnb-rP-P3e"/>
                             <constraint firstItem="3Sw-eu-UP5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M9H-C0-Ndr"/>
                             <constraint firstItem="X6v-Y7-vCb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MhH-wQ-nlP"/>
                             <constraint firstItem="IC0-NF-F1I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PhV-xG-YNQ"/>
                             <constraint firstItem="MwD-Mh-mJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SMo-f1-LhH"/>
                             <constraint firstItem="qGA-9W-4j0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TPG-NO-ZQS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cuN-zt-TX4" secondAttribute="bottom" constant="7" id="Wjl-x8-jEJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cuN-zt-TX4" secondAttribute="bottom" constant="9" id="Wjl-x8-jEJ"/>
                             <constraint firstItem="pzX-Yg-z1W" firstAttribute="top" secondItem="X6v-Y7-vCb" secondAttribute="bottom" constant="10" id="Z6f-sd-rtp"/>
                             <constraint firstItem="fkj-bS-bRn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aAM-h4-3qa"/>
                             <constraint firstItem="qGA-9W-4j0" firstAttribute="top" secondItem="3Sw-eu-UP5" secondAttribute="bottom" id="blF-pV-JVU"/>
@@ -174,23 +182,23 @@
             <objects>
                 <viewController id="flu-2G-NWH" customClass="ReservationViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXk-sx-Qcp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-eB-Ir0">
-                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="276"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xfT-eB-Ir0" secondAttribute="height" multiplier="3:2" id="0Qo-6Y-EYC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aby dokonac rezerwacji skontaktuj się z nami telefonicznie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR6-9C-R6z">
-                                <rect key="frame" x="15" y="324" width="345" height="75.5"/>
+                                <rect key="frame" x="15" y="350" width="384" height="50.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-DR-l8H">
-                                <rect key="frame" x="130" y="409.5" width="230" height="100"/>
+                                <rect key="frame" x="130" y="410.33333333333331" width="269" height="100"/>
                                 <string key="text">Numer telefonu:
 +48 888 888 888
 </string>
@@ -238,7 +246,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YwD-4e-R1j" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n71-Lm-j93">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
