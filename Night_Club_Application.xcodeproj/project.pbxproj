@@ -29,6 +29,7 @@
 		8D86B23120DDA7F2006A447F /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B22620DDA7F0006A447F /* Rubik-Medium.ttf */; };
 		8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B22720DDA7F1006A447F /* Rubik-BoldItalic.ttf */; };
 		8D86B23320DDA7F2006A447F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B22820DDA7F2006A447F /* Rubik-Bold.ttf */; };
+		8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		8D86B22620DDA7F0006A447F /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		8D86B22720DDA7F1006A447F /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8D86B22820DDA7F2006A447F /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		8D86B23520DDB8FC006A447F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ReservationStoryboard.storyboard; sourceTree = "<group>"; };
 		8DBF9DF820DD97B500A1DEB9 /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
+				8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */,
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 			);
 			path = Storyboards;
@@ -239,6 +242,7 @@
 				8D86B22C20DDA7F2006A447F /* Rubik-Light.ttf in Resources */,
 				8D446A0220C182150004FA10 /* Assets.xcassets in Resources */,
 				8D86B22A20DDA7F2006A447F /* Rubik-BlackItalic.ttf in Resources */,
+				8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */,
 				8D86B22F20DDA7F2006A447F /* Rubik-Italic.ttf in Resources */,
 				8D86B22D20DDA7F2006A447F /* Rubik-MediumItalic.ttf in Resources */,
 				8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */,
@@ -292,6 +296,14 @@
 				8D5E1F3020D1D90100766996 /* Base */,
 			);
 			name = ApartmentStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D86B23520DDB8FC006A447F /* Base */,
+			);
+			name = ReservationStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LO.Night-Club-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LO.Night-Club-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

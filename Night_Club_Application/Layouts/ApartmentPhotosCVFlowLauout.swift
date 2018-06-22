@@ -79,7 +79,6 @@ class ApartmentPhotosCVFlowLauout: UICollectionViewFlowLayout {
         let xInset = (collectionSize.width - self.itemSize.width) / 2
         
         self.sectionInset = UIEdgeInsetsMake(yInset, xInset, yInset, xInset)
-        
     }
     
     

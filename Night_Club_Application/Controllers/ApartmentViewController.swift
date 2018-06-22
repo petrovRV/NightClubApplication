@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ApartmentViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class ApartmentViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
   
     var apartmentPhotos = [#imageLiteral(resourceName: "apartament1"), #imageLiteral(resourceName: "apartament2"), #imageLiteral(resourceName: "apartament3"), #imageLiteral(resourceName: "apartament4"), #imageLiteral(resourceName: "apartament5")]
 
@@ -38,5 +38,10 @@ class ApartmentViewController: UIViewController, UICollectionViewDataSource, UIC
 
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = collectionView.frame.height
+        let width = height * 1.5
+        return CGSize(width: width, height: height)
     }
 }
