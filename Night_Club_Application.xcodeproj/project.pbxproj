@@ -32,6 +32,7 @@
 		8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */; };
 		8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23720DDBEF4006A447F /* GalleryViewController.swift */; };
 		8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */; };
+		8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		8D86B23520DDB8FC006A447F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ReservationStoryboard.storyboard; sourceTree = "<group>"; };
 		8D86B23720DDBEF4006A447F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
+		8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePhotoViewController.swift; sourceTree = "<group>"; };
 		8DBF9DF820DD97B500A1DEB9 /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
 				8D86B23720DDBEF4006A447F /* GalleryViewController.swift */,
+				8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */,
 				8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */,
 				8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */,
+				8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */,
 			);

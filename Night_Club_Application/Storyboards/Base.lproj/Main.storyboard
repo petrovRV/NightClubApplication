@@ -232,10 +232,37 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XSY-Ma-zSz"/>
                     </view>
+                    <connections>
+                        <segue destination="L6R-6x-HTT" kind="show" identifier="showImage" id="jDO-uI-t2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVI-8J-NYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846.875" y="209.1549295774648"/>
+        </scene>
+        <!--Large Photo View Controller-->
+        <scene sceneID="oRF-YH-TyG">
+            <objects>
+                <viewController id="L6R-6x-HTT" customClass="LargePhotoViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAu-Rj-Pnz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y8e-lp-QqW"/>
+                    </view>
+                    <connections>
+                        <outlet property="largePhoto" destination="wFx-Bg-DF0" id="GXB-35-Vg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-fD-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="211"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
