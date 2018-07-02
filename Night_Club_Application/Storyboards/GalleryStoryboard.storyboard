@@ -7,9 +7,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Gallery View Controller-->
         <scene sceneID="w0N-T2-RI9">
@@ -83,56 +89,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
-                                <rect key="frame" x="0.0" y="208.5" width="375" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="height" multiplier="3:2" id="4Fd-PY-ZC8"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-g5-zuS">
-                                <rect key="frame" x="166" y="425" width="154" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-TL-Bb2" userLabel="Back Button">
+                                <rect key="frame" x="91" y="586" width="86" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="nextButton"/>
-                                <connections>
-                                    <action selector="nextButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="xZc-sW-M3e"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
-                                <rect key="frame" x="143" y="396" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-TL-Bb2">
-                                <rect key="frame" x="64" y="466" width="86" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="backButton"/>
+                                <state key="normal" title="Button" image="navigation-previousPage"/>
                                 <connections>
                                     <action selector="backButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="H3m-E7-UCd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
+                                <rect key="frame" x="168" y="417" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2gi-sb-E8k"/>
+                                    <constraint firstAttribute="height" constant="20" id="Jge-hK-X11"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-g5-zuS">
+                                <rect key="frame" x="193" y="557" width="91" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="navigation-nextPage"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="xZc-sW-M3e"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-Ke-muE" userLabel="back">
+                                <rect key="frame" x="0.0" y="159" width="188" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-ra-d5e" userLabel="next">
+                                <rect key="frame" x="186" y="159" width="189" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
+                                <rect key="frame" x="0.0" y="159" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="height" multiplier="3:2" id="4Fd-PY-ZC8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wFx-Bg-DF0" firstAttribute="leading" secondItem="Y8e-lp-QqW" secondAttribute="leading" id="AZ5-gB-Shx"/>
+                            <constraint firstItem="dSP-Ke-muE" firstAttribute="height" secondItem="wFx-Bg-DF0" secondAttribute="height" id="B2g-4E-hSv"/>
+                            <constraint firstItem="dSP-Ke-muE" firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="width" multiplier="0.5" id="KMg-Kd-2Ga"/>
                             <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" secondItem="wFx-Bg-DF0" secondAttribute="trailing" id="QgD-x7-KRR"/>
-                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" id="wxG-eW-569"/>
+                            <constraint firstItem="dSP-Ke-muE" firstAttribute="top" secondItem="wFx-Bg-DF0" secondAttribute="top" id="amQ-rd-4yT"/>
+                            <constraint firstItem="dSP-Ke-muE" firstAttribute="leading" secondItem="wFx-Bg-DF0" secondAttribute="leading" id="d1V-UV-jNc"/>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="top" secondItem="wFx-Bg-DF0" secondAttribute="bottom" constant="8" id="qiB-EY-V0p"/>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="centerX" secondItem="wFx-Bg-DF0" secondAttribute="centerX" id="sXr-Wk-uTU"/>
+                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" constant="-50" id="wxG-eW-569"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y8e-lp-QqW"/>
                     </view>
                     <connections>
+                        <outlet property="backOutlet" destination="qyQ-TL-Bb2" id="QZi-dY-MFz"/>
                         <outlet property="largePhoto" destination="wFx-Bg-DF0" id="GXB-35-Vg0"/>
+                        <outlet property="nextOutlet" destination="AKV-g5-zuS" id="nEl-Le-iok"/>
                         <outlet property="photoNumber" destination="1BG-dd-Vym" id="NCc-gx-vci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-fD-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.375" y="210.21126760563379"/>
+            <point key="canvasLocation" x="2632.8000000000002" y="210.04497751124438"/>
         </scene>
     </scenes>
     <resources>
-        <image name="backButton" width="100" height="100"/>
-        <image name="nextButton" width="100" height="100"/>
+        <image name="navigation-nextPage" width="100" height="100"/>
+        <image name="navigation-previousPage" width="100" height="100"/>
     </resources>
 </document>

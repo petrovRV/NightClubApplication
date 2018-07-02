@@ -40,7 +40,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let photo = galleryPhotos[indexPath.row]
         self.imageIndex = indexPath.row
-        print(indexPath.row)
         
         performSegue(withIdentifier: "showImage", sender: photo)
     }
@@ -50,12 +49,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         
             let largePhotoVC = segue.destination as! LargePhotoViewController
             largePhotoVC.images = self.galleryPhotos
-            largePhotoVC.image = sender as? UIImage
             largePhotoVC.currentImage = self.imageIndex
         }
     }
-    
-    
     
 }
 
