@@ -39,9 +39,9 @@ class ApartmentViewController: UIViewController, UICollectionViewDataSource, UIC
         
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = collectionView.frame.height
-        let width = height * 1.5
-        return CGSize(width: width, height: height)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let height = collectionView.frame.height
+//        let width = height * 1.5
+//        return CGSize(width: width, height: height)
+//    }
 }

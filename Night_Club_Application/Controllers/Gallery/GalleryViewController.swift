@@ -11,6 +11,7 @@ import UIKit
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     let galleryPhotos = [#imageLiteral(resourceName: "apartament1"), #imageLiteral(resourceName: "apartament2"), #imageLiteral(resourceName: "apartament3"), #imageLiteral(resourceName: "apartament4"), #imageLiteral(resourceName: "apartament5"), #imageLiteral(resourceName: "apartament6"), #imageLiteral(resourceName: "apartament7"), #imageLiteral(resourceName: "apartament8"), #imageLiteral(resourceName: "apartament9"), #imageLiteral(resourceName: "apartament10")]
+    var imageIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let photo = galleryPhotos[indexPath.row]
+        self.imageIndex = indexPath.row
         print(indexPath.row)
+        
         performSegue(withIdentifier: "showImage", sender: photo)
     }
     
@@ -46,7 +49,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         if segue.identifier == "showImage" {
         
             let largePhotoVC = segue.destination as! LargePhotoViewController
+            largePhotoVC.images = self.galleryPhotos
             largePhotoVC.image = sender as? UIImage
+            largePhotoVC.currentImage = self.imageIndex
         }
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */; };
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
 		8D446A0020C182150004FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4469FE20C182150004FA10 /* Main.storyboard */; };
 		8D446A0220C182150004FA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0120C182150004FA10 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GalleryStoryboard.storyboard; sourceTree = "<group>"; };
 		8D4469F720C182150004FA10 /* Night_Club_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Club_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4469FA20C182150004FA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4469FF20C182150004FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0FCB6F20EA6EB900ABC50B /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				8D86B23720DDBEF4006A447F /* GalleryViewController.swift */,
+				8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		8D4469EE20C182150004FA10 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +132,7 @@
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
 				8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */,
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
+				8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -128,12 +140,11 @@
 		8D446A0F20C189100004FA10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D0FCB6F20EA6EB900ABC50B /* Gallery */,
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D44AE4520D1561F008F3ACE /* ApartmentViewController.swift */,
-				8D86B23720DDBEF4006A447F /* GalleryViewController.swift */,
-				8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +265,7 @@
 				8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */,
 				8D86B22F20DDA7F2006A447F /* Rubik-Italic.ttf in Resources */,
 				8D86B22D20DDA7F2006A447F /* Rubik-MediumItalic.ttf in Resources */,
+				8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */,
 				8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */,
 				8D86B23020DDA7F2006A447F /* Rubik-Regular.ttf in Resources */,
 				8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */,
