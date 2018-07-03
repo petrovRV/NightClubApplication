@@ -18,13 +18,13 @@ class LargePhotoViewController: UIViewController {
     
     var images: [UIImage] = []
     var currentImage = 0
-    enum NavigationHelper: Int { case next = 1, previous }
+    enum NavigationHelper: Int { case next = 1, previous, firstLoad }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        largePhoto.image = images[currentImage]
-        changePhoto()
+//        largePhoto.image = images[currentImage]
+        updatePhoto(with: NavigationHelper.firstLoad)
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.numberOfTapsRequired = 1
         largePhoto.addGestureRecognizer(tap)
@@ -37,29 +37,43 @@ class LargePhotoViewController: UIViewController {
         if recognizer.state == .recognized
         {
             let touchLocation = recognizer.location(in: recognizer.view).x
-            if touchLocation < (self.largePhoto.bounds.size.width / 2) {
-                backButton((Any).self)
+            if touchLocation > (self.largePhoto.bounds.size.width / 2) {
+                updatePhoto(with: NavigationHelper.next)
             } else {
-                print("o kurwa1")
+                updatePhoto(with: NavigationHelper.previous)
             }
         }
     }
-    func changePhoto(with navigate: NavigationHelper) {
+    func updatePhoto(with navigate: NavigationHelper) {
+        switch navigate {
+        case .next:
+            guard currentImage < images.count - 1 else {return}
+            currentImage += 1
+        case .previous:
+            guard currentImage > 0 else {return}
+            currentImage -= 1
+        case .firstLoad:
+            break
+        }
+
+       changeLabelAndPhoto()
+    }
+
+    func changeLabelAndPhoto(){
         photoNumber.text = "\(currentImage + 1)/\(images.count)"
         largePhoto.image = images[currentImage]
     }
     
+    @IBAction func nextButton(_ sender: Any) {
+        
+        updatePhoto(with: NavigationHelper.next)
+    }
     
     @IBAction func backButton(_ sender: Any) {
-        guard currentImage > 0 && currentImage < images.count - 1 else { return }
-        currentImage -= 1
-        changePhoto(with: NavigationHelper.previous)
+        
+        updatePhoto(with: NavigationHelper.previous)
     }
-    @IBAction func nextButton(_ sender: Any) {
-        guard currentImage < images.count - 1 else { return }
-        currentImage += 1
-        changePhoto(with: NavigationHelper.next)
-    }
+  
     
     
 }
