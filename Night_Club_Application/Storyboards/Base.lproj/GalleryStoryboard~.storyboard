@@ -62,7 +62,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="kgU-gU-eOG" kind="show" id="Tzx-au-1ok"/>
+                                            <segue destination="nCE-hn-eSm" kind="show" id="Tzx-au-1ok"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
@@ -166,7 +166,7 @@
                 <viewControllerPlaceholder storyboardName="MapStoryboard" id="dVL-oQ-Qdu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp1-Gw-7af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="98"/>
+            <point key="canvasLocation" x="1069" y="125"/>
         </scene>
         <!--ApartmentStoryboard-->
         <scene sceneID="c91-bI-dAt">
@@ -174,7 +174,126 @@
                 <viewControllerPlaceholder storyboardName="ApartmentStoryboard" id="Fts-la-EBd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-KR-Gdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="148"/>
+            <point key="canvasLocation" x="1069" y="171"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="w0N-T2-RI9">
+            <objects>
+                <viewController id="nCE-hn-eSm" customClass="GalleryViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQf-9B-zZr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-ru-tOR">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sm0-R4-rDk">
+                                    <size key="itemSize" width="98" height="95"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="FGM-9w-qnV" customClass="GalleryPhotoCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-mA-BGQ" userLabel="Gallery Image">
+                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7HY-mA-BGQ" secondAttribute="bottom" id="19E-9x-rvS"/>
+                                            <constraint firstItem="7HY-mA-BGQ" firstAttribute="leading" secondItem="FGM-9w-qnV" secondAttribute="leading" id="YzY-T4-MJ1"/>
+                                            <constraint firstItem="7HY-mA-BGQ" firstAttribute="top" secondItem="FGM-9w-qnV" secondAttribute="top" id="fEh-rQ-Gpw"/>
+                                            <constraint firstAttribute="trailing" secondItem="7HY-mA-BGQ" secondAttribute="trailing" id="oj2-2W-XRc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="galleryImage" destination="7HY-mA-BGQ" id="RTw-Lc-aJP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nCE-hn-eSm" id="S1F-8G-ZtB"/>
+                                    <outlet property="delegate" destination="nCE-hn-eSm" id="1bX-hq-qoN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XSY-Ma-zSz" firstAttribute="bottom" secondItem="rzU-ru-tOR" secondAttribute="bottom" id="Gzf-iB-d7q"/>
+                            <constraint firstItem="XSY-Ma-zSz" firstAttribute="trailing" secondItem="rzU-ru-tOR" secondAttribute="trailing" id="MNL-gN-hYQ"/>
+                            <constraint firstItem="rzU-ru-tOR" firstAttribute="top" secondItem="XSY-Ma-zSz" secondAttribute="top" id="cuQ-as-RAP"/>
+                            <constraint firstItem="rzU-ru-tOR" firstAttribute="leading" secondItem="XSY-Ma-zSz" secondAttribute="leading" id="w28-2A-TWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XSY-Ma-zSz"/>
+                    </view>
+                    <connections>
+                        <segue destination="L6R-6x-HTT" kind="show" identifier="showImage" id="jDO-uI-t2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVI-8J-NYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.875" y="209.1549295774648"/>
+        </scene>
+        <!--Large Photo View Controller-->
+        <scene sceneID="oRF-YH-TyG">
+            <objects>
+                <viewController id="L6R-6x-HTT" customClass="LargePhotoViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAu-Rj-Pnz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
+                                <rect key="frame" x="0.0" y="177.5" width="320" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="height" multiplier="3:2" id="4Fd-PY-ZC8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-TL-Bb2">
+                                <rect key="frame" x="41" y="438" width="86" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backButton"/>
+                                <connections>
+                                    <action selector="backButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="H3m-E7-UCd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-g5-zuS">
+                                <rect key="frame" x="166" y="425" width="154" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nextButton"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="xZc-sW-M3e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
+                                <rect key="frame" x="143" y="396" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="leading" secondItem="Y8e-lp-QqW" secondAttribute="leading" id="AZ5-gB-Shx"/>
+                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" secondItem="wFx-Bg-DF0" secondAttribute="trailing" id="QgD-x7-KRR"/>
+                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" id="wxG-eW-569"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y8e-lp-QqW"/>
+                    </view>
+                    <connections>
+                        <outlet property="largePhoto" destination="wFx-Bg-DF0" id="GXB-35-Vg0"/>
+                        <outlet property="photoNumber" destination="1BG-dd-Vym" id="NCc-gx-vci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-fD-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634.375" y="210.21126760563379"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
@@ -182,20 +301,14 @@
                 <viewControllerPlaceholder storyboardName="ReservationStoryboard" id="EBb-zD-6g3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqE-MD-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="44"/>
-        </scene>
-        <!--GalleryStoryboard-->
-        <scene sceneID="j5f-eN-QSB">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="203"/>
+            <point key="canvasLocation" x="1075" y="75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="100" height="100"/>
         <image name="icons-facebook-100" width="50" height="50"/>
         <image name="icons-instagram-100" width="50" height="50"/>
+        <image name="nextButton" width="100" height="100"/>
         <image name="xoxo" width="600" height="150"/>
     </resources>
 </document>

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "icons8-more-than-100 (1).png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-waypoint-map-100.png",
       "scale" : "2x"
     },
     {

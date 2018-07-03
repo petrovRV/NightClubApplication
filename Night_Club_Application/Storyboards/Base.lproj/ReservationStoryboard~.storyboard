@@ -52,7 +52,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="EBb-zD-6g3" kind="show" id="TPn-tA-Arc"/>
+                                            <segue destination="flu-2G-NWH" kind="show" id="TPn-tA-Arc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-NF-F1I" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
@@ -61,9 +61,6 @@
                                         <state key="normal" title="Zdjęcia">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="kgU-gU-eOG" kind="show" id="Tzx-au-1ok"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="201.5" width="320" height="50.5"/>
@@ -142,6 +139,69 @@
             </objects>
             <point key="canvasLocation" x="461.60000000000002" y="125.4872563718141"/>
         </scene>
+        <!--Reservation View Controller-->
+        <scene sceneID="4vF-2q-TNw">
+            <objects>
+                <viewController id="flu-2G-NWH" customClass="ReservationViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXk-sx-Qcp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-eB-Ir0">
+                                <rect key="frame" x="0.0" y="64" width="320" height="213.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xfT-eB-Ir0" secondAttribute="height" multiplier="3:2" id="0Qo-6Y-EYC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aby dokonac rezerwacji skontaktuj się z nami telefonicznie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR6-9C-R6z">
+                                <rect key="frame" x="15" y="287.5" width="290" height="75.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-DR-l8H">
+                                <rect key="frame" x="130" y="373" width="175" height="100"/>
+                                <string key="text">Numer telefonu:
++48 888 888 888
+</string>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75F-rT-mWC">
+                                <rect key="frame" x="15" y="407" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GPl-ha-Xcc"/>
+                                    <constraint firstAttribute="height" constant="100" id="z7i-ME-Mrh"/>
+                                </constraints>
+                                <state key="normal" image="cell"/>
+                                <connections>
+                                    <action selector="cellButton:" destination="flu-2G-NWH" eventType="touchUpInside" id="25Z-rb-eJy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Trw-yC-Qwx" firstAttribute="trailing" secondItem="e7a-DR-l8H" secondAttribute="trailing" constant="15" id="0Lr-EL-HCM"/>
+                            <constraint firstItem="e7a-DR-l8H" firstAttribute="leading" secondItem="75F-rT-mWC" secondAttribute="trailing" constant="15" id="3In-NX-QXC"/>
+                            <constraint firstItem="e7a-DR-l8H" firstAttribute="top" secondItem="uR6-9C-R6z" secondAttribute="bottom" constant="10" id="J4l-PQ-y0z"/>
+                            <constraint firstItem="75F-rT-mWC" firstAttribute="top" secondItem="uR6-9C-R6z" secondAttribute="bottom" constant="10" id="L91-cm-AVC"/>
+                            <constraint firstItem="75F-rT-mWC" firstAttribute="leading" secondItem="Trw-yC-Qwx" secondAttribute="leading" constant="15" id="MWs-fL-dnq"/>
+                            <constraint firstItem="Trw-yC-Qwx" firstAttribute="trailing" secondItem="xfT-eB-Ir0" secondAttribute="trailing" id="MhG-xN-5yt"/>
+                            <constraint firstItem="Trw-yC-Qwx" firstAttribute="trailing" secondItem="uR6-9C-R6z" secondAttribute="trailing" constant="15" id="Rwt-3O-wd6"/>
+                            <constraint firstItem="xfT-eB-Ir0" firstAttribute="top" secondItem="Trw-yC-Qwx" secondAttribute="top" id="UK0-Kq-me0"/>
+                            <constraint firstItem="uR6-9C-R6z" firstAttribute="top" secondItem="xfT-eB-Ir0" secondAttribute="bottom" constant="10" id="Wbd-gU-09c"/>
+                            <constraint firstItem="e7a-DR-l8H" firstAttribute="height" secondItem="75F-rT-mWC" secondAttribute="height" id="WtN-cw-nPN"/>
+                            <constraint firstItem="uR6-9C-R6z" firstAttribute="leading" secondItem="Trw-yC-Qwx" secondAttribute="leading" constant="15" id="ehd-mE-eAD"/>
+                            <constraint firstItem="xfT-eB-Ir0" firstAttribute="leading" secondItem="Trw-yC-Qwx" secondAttribute="leading" id="hKM-kl-RkT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Trw-yC-Qwx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31j-0d-KQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="-255.02248875562222"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Te-l9-Z6V">
             <objects>
@@ -166,7 +226,7 @@
                 <viewControllerPlaceholder storyboardName="MapStoryboard" id="dVL-oQ-Qdu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp1-Gw-7af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="98"/>
+            <point key="canvasLocation" x="1069" y="125"/>
         </scene>
         <!--ApartmentStoryboard-->
         <scene sceneID="c91-bI-dAt">
@@ -174,28 +234,29 @@
                 <viewControllerPlaceholder storyboardName="ApartmentStoryboard" id="Fts-la-EBd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-KR-Gdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="148"/>
+            <point key="canvasLocation" x="1069" y="171"/>
         </scene>
-        <!--ReservationStoryboard-->
-        <scene sceneID="Iq5-f5-lV0">
+        <!--View Controller-->
+        <scene sceneID="w0N-T2-RI9">
             <objects>
-                <viewControllerPlaceholder storyboardName="ReservationStoryboard" id="EBb-zD-6g3" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RqE-MD-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="nCE-hn-eSm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQf-9B-zZr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XSY-Ma-zSz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVI-8J-NYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="44"/>
-        </scene>
-        <!--GalleryStoryboard-->
-        <scene sceneID="j5f-eN-QSB">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="203"/>
+            <point key="canvasLocation" x="1098" y="757"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cell" width="100" height="100"/>
         <image name="icons-facebook-100" width="50" height="50"/>
         <image name="icons-instagram-100" width="50" height="50"/>
+        <image name="test" width="1920" height="1278"/>
         <image name="xoxo" width="600" height="150"/>
     </resources>
 </document>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCE-hn-eSm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Gallery View Controller-->
+        <scene sceneID="w0N-T2-RI9">
+            <objects>
+                <viewController id="nCE-hn-eSm" customClass="GalleryViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQf-9B-zZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-ru-tOR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="1" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sm0-R4-rDk">
+                                    <size key="itemSize" width="98" height="95"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="FGM-9w-qnV" customClass="GalleryPhotoCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-mA-BGQ" userLabel="Gallery Image">
+                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="95"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7HY-mA-BGQ" secondAttribute="bottom" id="19E-9x-rvS"/>
+                                            <constraint firstItem="7HY-mA-BGQ" firstAttribute="leading" secondItem="FGM-9w-qnV" secondAttribute="leading" id="YzY-T4-MJ1"/>
+                                            <constraint firstItem="7HY-mA-BGQ" firstAttribute="top" secondItem="FGM-9w-qnV" secondAttribute="top" id="fEh-rQ-Gpw"/>
+                                            <constraint firstAttribute="trailing" secondItem="7HY-mA-BGQ" secondAttribute="trailing" id="oj2-2W-XRc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="galleryImage" destination="7HY-mA-BGQ" id="RTw-Lc-aJP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nCE-hn-eSm" id="S1F-8G-ZtB"/>
+                                    <outlet property="delegate" destination="nCE-hn-eSm" id="1bX-hq-qoN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XSY-Ma-zSz" firstAttribute="bottom" secondItem="rzU-ru-tOR" secondAttribute="bottom" id="Gzf-iB-d7q"/>
+                            <constraint firstItem="XSY-Ma-zSz" firstAttribute="trailing" secondItem="rzU-ru-tOR" secondAttribute="trailing" id="MNL-gN-hYQ"/>
+                            <constraint firstItem="rzU-ru-tOR" firstAttribute="top" secondItem="XSY-Ma-zSz" secondAttribute="top" id="cuQ-as-RAP"/>
+                            <constraint firstItem="rzU-ru-tOR" firstAttribute="leading" secondItem="XSY-Ma-zSz" secondAttribute="leading" id="w28-2A-TWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XSY-Ma-zSz"/>
+                    </view>
+                    <connections>
+                        <segue destination="L6R-6x-HTT" kind="show" identifier="showImage" id="jDO-uI-t2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVI-8J-NYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.875" y="209.1549295774648"/>
+        </scene>
+        <!--Large Photo View Controller-->
+        <scene sceneID="oRF-YH-TyG">
+            <objects>
+                <viewController id="L6R-6x-HTT" customClass="LargePhotoViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAu-Rj-Pnz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
+                                <rect key="frame" x="50" y="417" width="275" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
+                                <rect key="frame" x="0.0" y="159" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="height" multiplier="3:2" id="4Fd-PY-ZC8"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="u7Y-GH-8qR">
+                                <rect key="frame" x="96" y="577" width="183" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-TL-Bb2" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="KJG-YP-kpe"/>
+                                            <constraint firstAttribute="height" constant="80" id="hi1-pV-SU5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="navigation-previousPage"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="H3m-E7-UCd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-g5-zuS">
+                                        <rect key="frame" x="103" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Lij-bl-GHa"/>
+                                            <constraint firstAttribute="width" constant="80" id="gzZ-IZ-1v3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="navigation-nextPage"/>
+                                        <connections>
+                                            <action selector="nextButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="xZc-sW-M3e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Y8e-lp-QqW" secondAttribute="leading" constant="50" id="581-OC-NBi"/>
+                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="leading" secondItem="Y8e-lp-QqW" secondAttribute="leading" id="AZ5-gB-Shx"/>
+                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" secondItem="wFx-Bg-DF0" secondAttribute="trailing" id="QgD-x7-KRR"/>
+                            <constraint firstItem="u7Y-GH-8qR" firstAttribute="centerX" secondItem="Y8e-lp-QqW" secondAttribute="centerX" id="YLv-gq-vFk"/>
+                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1BG-dd-Vym" secondAttribute="trailing" constant="50" id="ngd-B4-VK1"/>
+                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="bottom" secondItem="u7Y-GH-8qR" secondAttribute="bottom" constant="10" id="nyr-6q-VxO"/>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="top" secondItem="wFx-Bg-DF0" secondAttribute="bottom" constant="8" id="qiB-EY-V0p"/>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="centerX" secondItem="wFx-Bg-DF0" secondAttribute="centerX" id="sXr-Wk-uTU"/>
+                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" constant="-50" id="wxG-eW-569"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y8e-lp-QqW"/>
+                    </view>
+                    <connections>
+                        <outlet property="backOutlet" destination="qyQ-TL-Bb2" id="QZi-dY-MFz"/>
+                        <outlet property="largePhoto" destination="wFx-Bg-DF0" id="GXB-35-Vg0"/>
+                        <outlet property="nextOutlet" destination="AKV-g5-zuS" id="nEl-Le-iok"/>
+                        <outlet property="photoNumber" destination="1BG-dd-Vym" id="NCc-gx-vci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-fD-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2632.8000000000002" y="210.04497751124438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation-nextPage" width="100" height="100"/>
+        <image name="navigation-previousPage" width="100" height="100"/>
+    </resources>
+</document>
