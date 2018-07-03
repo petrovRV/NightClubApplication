@@ -18,22 +18,19 @@ class LargePhotoViewController: UIViewController {
     
     var images: [UIImage] = []
     var currentImage = 0
-    enum NavigationHelper: Int { case next = 1, previous, firstLoad }
+    enum NavigationHelper { case next; case previous; case firstLoad }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        largePhoto.image = images[currentImage]
         updatePhoto(with: NavigationHelper.firstLoad)
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.numberOfTapsRequired = 1
         largePhoto.addGestureRecognizer(tap)
-        
-        print(currentImage)
+
     }
 
     @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
-        print("tap working")
         if recognizer.state == .recognized
         {
             let touchLocation = recognizer.location(in: recognizer.view).x
@@ -44,7 +41,7 @@ class LargePhotoViewController: UIViewController {
             }
         }
     }
-    func updatePhoto(with navigate: NavigationHelper) {
+    private func updatePhoto(with navigate: NavigationHelper) {
         switch navigate {
         case .next:
             guard currentImage < images.count - 1 else {return}
@@ -56,10 +53,6 @@ class LargePhotoViewController: UIViewController {
             break
         }
 
-       changeLabelAndPhoto()
-    }
-
-    func changeLabelAndPhoto(){
         photoNumber.text = "\(currentImage + 1)/\(images.count)"
         largePhoto.image = images[currentImage]
     }
