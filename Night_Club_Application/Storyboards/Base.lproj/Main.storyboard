@@ -81,6 +81,9 @@
                                         <state key="normal" title="Karty klubowe">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Nrl-Pf-Z5o" kind="show" id="dti-ZS-8g0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="302" width="320" height="50.5"/>
@@ -176,6 +179,21 @@
             </objects>
             <point key="canvasLocation" x="1082" y="148"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="u0G-EQ-wnV">
+            <objects>
+                <viewController id="Nrl-Pf-Z5o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jME-i6-pax">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wXY-ym-gzy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuF-2s-9QV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="142"/>
+        </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
             <objects>
@@ -190,12 +208,12 @@
                 <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="203"/>
+            <point key="canvasLocation" x="1059" y="231"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons-facebook-100" width="50" height="50"/>
         <image name="icons-instagram-100" width="50" height="50"/>
-        <image name="xoxo" width="600" height="150"/>
+        <image name="xoxo" width="300" height="75"/>
     </resources>
 </document>
