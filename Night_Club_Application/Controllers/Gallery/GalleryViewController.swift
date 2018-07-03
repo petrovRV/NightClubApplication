@@ -15,7 +15,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +33,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GalleryPhotoCell
         
         cell.galleryImage.image = galleryPhotos[indexPath.row]
+        
+        cell.layer.borderColor = UIColor.lightText.cgColor
+        cell.layer.borderWidth = 2
         
         return cell
     }
@@ -57,13 +59,13 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 3 - 1
+        let width = collectionView.frame.width / 3 - 2
         return CGSize(width: width, height: width)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1.0
+        return 3.0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1.0
+        return 2.0
     }
 }
