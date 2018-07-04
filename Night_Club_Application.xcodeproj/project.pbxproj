@@ -11,6 +11,7 @@
 		8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */; };
 		8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */; };
 		8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */; };
+		8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7D20ED218500ABC50B /* Videos.swift */; };
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
 		8D446A0020C182150004FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4469FE20C182150004FA10 /* Main.storyboard */; };
 		8D446A0220C182150004FA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0120C182150004FA10 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCardsViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosNetworkService.swift; sourceTree = "<group>"; };
+		8D0FCB7D20ED218500ABC50B /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		8D4469F720C182150004FA10 /* Night_Club_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Club_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4469FA20C182150004FA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4469FF20C182150004FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		8D0FCB7C20ED216000ABC50B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D0FCB7D20ED218500ABC50B /* Videos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8D4469EE20C182150004FA10 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 				8D446A0F20C189100004FA10 /* Controllers */,
 				8D446A0E20C1885D0004FA10 /* Storyboards */,
 				8D446A0120C182150004FA10 /* Assets.xcassets */,
+				8D0FCB7C20ED216000ABC50B /* Models */,
 				8D0FCB7920ED1E8E00ABC50B /* Services */,
 				8DBF9DF620DD972000A1DEB9 /* Resources */,
 				8D5E1F3220D3E9A800766996 /* Layouts */,
@@ -366,6 +377,7 @@
 				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLauout.swift in Sources */,
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
+				8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */,
 				8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
 				8D44AE4820D16130008F3ACE /* ApartmentPhotoCell.swift in Sources */,
