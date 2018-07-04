@@ -10,4 +10,11 @@ import Foundation
 
 struct Videos: Decodable {
     
+    let items: [Items]
+}
+struct Items: Decodable {
+    let id: Id
+}
+struct Id: Decodable {
+    let videoId: String?
 }

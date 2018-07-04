@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import Alamofire
 
-class VideosNetwrokService {
+class VideosNetworkService {
     
     typealias loadVideosDataCompletion = ([Videos]) -> Void
     

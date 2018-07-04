@@ -9,13 +9,20 @@
 import UIKit
 class VideosViewController: UIViewController {
 
-    
-//    var responceVideos = [Video]()
+    let videosService = VideosNetworkService()
+    var responceVideos = [Videos]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        videosService.loadVideosData() { [weak self]
+            responce in
+            print(responce)
+            
+        }
+        
+        
     }
 
 

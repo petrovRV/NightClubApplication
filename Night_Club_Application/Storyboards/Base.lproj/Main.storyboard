@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1059" y="231"/>
         </scene>
-        <!--View Controller-->
+        <!--Videos View Controller-->
         <scene sceneID="uTR-Qw-9K4">
             <objects>
-                <viewController id="ahJ-P9-rNS" sceneMemberID="viewController">
+                <viewController id="ahJ-P9-rNS" customClass="VideosViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ole-ls-YZN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

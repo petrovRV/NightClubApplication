@@ -164,12 +164,12 @@
 				8D44AE4920D1613D008F3ACE /* Views */,
 				8D446A0F20C189100004FA10 /* Controllers */,
 				8D446A0E20C1885D0004FA10 /* Storyboards */,
-				8D446A0120C182150004FA10 /* Assets.xcassets */,
-				8D0FCB7C20ED216000ABC50B /* Models */,
 				8D0FCB7920ED1E8E00ABC50B /* Services */,
 				8DBF9DF620DD972000A1DEB9 /* Resources */,
 				8D5E1F3220D3E9A800766996 /* Layouts */,
 				8D446A0620C182150004FA10 /* Info.plist */,
+				8D0FCB7C20ED216000ABC50B /* Models */,
+				8D446A0120C182150004FA10 /* Assets.xcassets */,
 			);
 			path = Night_Club_Application;
 			sourceTree = "<group>";
