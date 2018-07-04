@@ -31,7 +31,7 @@ class ReservationViewController: UIViewController {
     
     var animators: [UIViewPropertyAnimator] = []
     
-    var viewOffset: CGFloat = 308
+    var viewOffset: CGFloat = 300
     
     override func viewDidLoad() {
         super.viewDidLoad()
