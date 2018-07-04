@@ -60,13 +60,13 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-MT-OCr">
-                                <rect key="frame" x="0.0" y="358" width="414" height="378"/>
+                                <rect key="frame" x="0.0" y="364" width="414" height="372"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzJ-9T-SNF" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KONTAKT Z KLUBEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iA7-3r-7zH">
-                                                <rect key="frame" x="22" y="21.333333333333314" width="216" height="27.666666666666671"/>
+                                                <rect key="frame" x="22" y="22.333333333333314" width="216" height="27.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -76,17 +76,17 @@
                                         <constraints>
                                             <constraint firstItem="iA7-3r-7zH" firstAttribute="leading" secondItem="AzJ-9T-SNF" secondAttribute="leading" constant="22" id="cwv-gA-uUK"/>
                                             <constraint firstItem="iA7-3r-7zH" firstAttribute="centerY" secondItem="AzJ-9T-SNF" secondAttribute="centerY" id="pbb-h1-2B9"/>
-                                            <constraint firstAttribute="height" constant="70" id="ww0-5o-33z"/>
+                                            <constraint firstAttribute="height" constant="72" id="ww0-5o-33z"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-8f-EfH">
-                                        <rect key="frame" x="0.0" y="78" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="80" width="414" height="292"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v44-Ni-Adf">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="292"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYI-SH-ERk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+48 665 225 226 / rezerwacje@xoxoparty.pl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSk-jd-44i">
                                                                 <rect key="frame" x="47.666666666666657" y="44" width="318.66666666666674" height="19.333333333333329"/>
@@ -110,7 +110,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Dj-f4-vhf">
-                                                        <rect key="frame" x="0.0" y="75" width="414" height="75"/>
+                                                        <rect key="frame" x="0.0" y="73" width="414" height="73"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WSPÓŁPRACA Z XOXO / BOOKINGI " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHY-wZ-tPS">
                                                                 <rect key="frame" x="44.333333333333343" y="5" width="327.33333333333326" height="24"/>
@@ -137,7 +137,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-Vk-vzz">
-                                                        <rect key="frame" x="0.0" y="150" width="414" height="75"/>
+                                                        <rect key="frame" x="0.0" y="146" width="414" height="73"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DZIAŁ MARKETINGU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwc-IS-zDv">
                                                                 <rect key="frame" x="112.66666666666667" y="5" width="189.66666666666663" height="24"/>
@@ -161,7 +161,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVu-in-ekh">
-                                                        <rect key="frame" x="0.0" y="225" width="414" height="75"/>
+                                                        <rect key="frame" x="0.0" y="219" width="414" height="73"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DLA MEDIÓW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDj-dA-FfB">
                                                                 <rect key="frame" x="145.33333333333334" y="5" width="125.00000000000003" height="24"/>
@@ -192,7 +192,6 @@
                                             <constraint firstItem="v44-Ni-Adf" firstAttribute="top" secondItem="0Db-8f-EfH" secondAttribute="top" id="Et1-pq-Jzx"/>
                                             <constraint firstItem="v44-Ni-Adf" firstAttribute="leading" secondItem="0Db-8f-EfH" secondAttribute="leading" id="SB3-sb-6YI"/>
                                             <constraint firstAttribute="bottom" secondItem="v44-Ni-Adf" secondAttribute="bottom" id="Sj7-5v-2vb"/>
-                                            <constraint firstAttribute="height" constant="300" id="W2f-pa-F5q"/>
                                             <constraint firstAttribute="trailing" secondItem="v44-Ni-Adf" secondAttribute="trailing" id="qyI-Pq-qeT"/>
                                         </constraints>
                                     </view>
@@ -205,7 +204,7 @@
                                     <constraint firstItem="0Db-8f-EfH" firstAttribute="top" secondItem="AzJ-9T-SNF" secondAttribute="bottom" constant="8" id="LsC-E5-uuI"/>
                                     <constraint firstAttribute="bottom" secondItem="0Db-8f-EfH" secondAttribute="bottom" id="RiQ-2M-kJn"/>
                                     <constraint firstAttribute="trailing" secondItem="AzJ-9T-SNF" secondAttribute="trailing" id="San-yh-rf7"/>
-                                    <constraint firstAttribute="bottom" secondItem="AzJ-9T-SNF" secondAttribute="bottom" constant="308" id="kGK-Bj-Y44"/>
+                                    <constraint firstAttribute="bottom" secondItem="AzJ-9T-SNF" secondAttribute="bottom" constant="300" id="kGK-Bj-Y44"/>
                                     <constraint firstItem="AzJ-9T-SNF" firstAttribute="top" secondItem="MOP-MT-OCr" secondAttribute="top" id="pJY-TL-h61"/>
                                 </constraints>
                             </view>
@@ -249,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31j-0d-KQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="-255.02248875562222"/>
+            <point key="canvasLocation" x="1291.304347826087" y="-255.1630434782609"/>
         </scene>
     </scenes>
     <resources>

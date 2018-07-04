@@ -19,20 +19,53 @@ class ReservationViewController: UIViewController {
             
         }
     }
-    @IBOutlet weak var blurView: UIVisualEffectView!
     
+    @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var contactsView: UIView!
     @IBOutlet weak var topViewIcon: UILabel!
     @IBOutlet weak var topViewButtomConstraint: NSLayoutConstraint!
     @IBOutlet weak var contactsTitleConstraint: NSLayoutConstraint!
 
     var state: State = .closed
+    
+    
     var animators: [UIViewPropertyAnimator] = []
+    
+    var viewOffset: CGFloat = 308
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.topViewButtomConstraint.constant = 0
+        self.topViewIcon.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        self.blurView.effect = nil
+        self.blurView.isHidden = false
+        self.view.layoutIfNeeded()
+        
+        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.drag(_:)))
+        
+    self.contactsView.addGestureRecognizer(panRecognizer)
     }
     
+    
+    @objc func drag (_ gesture: UIPanGestureRecognizer) {
+        
+        switch gesture.state {
+        case .began:
+            animateView(to: state.reverse, duration: 0.4)
+        case .changed:
+            let translation = gesture.translation(in: contactsView)
+            let fraction = abs(translation.y / viewOffset)
+            
+            animators.forEach{ (animator) in
+                animator.fractionComplete = fraction
+            }
+        case .ended:
+            animators.forEach{ $0.continueAnimation(withTimingParameters: nil, durationFactor: 0) }
+        default:
+            break
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -49,14 +82,16 @@ class ReservationViewController: UIViewController {
         self.makeAPhoneCall()
     }
     
-    func animateView(toState: State, duration: TimeInterval) {
+    func animateView(to state: State, duration: TimeInterval) {
+        
+        guard animators.isEmpty else { return }
         
         let basicAnimator = UIViewPropertyAnimator(duration: duration, curve: .easeIn, animations: nil)
         
         basicAnimator.addAnimations {
-            switch self.state {
+            switch state {
             case .open:
-                self.topViewButtomConstraint.constant = 300
+                self.topViewButtomConstraint.constant = self.viewOffset
                 self.contactsView.layer.cornerRadius = 50
             case .closed:
                 self.topViewButtomConstraint.constant = 0
@@ -66,24 +101,33 @@ class ReservationViewController: UIViewController {
         }
         
         basicAnimator.addAnimations {
-            switch self.state {
+            switch state {
             case .open:
                 self.contactsTitleConstraint.constant = 120
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 1, y: 1)
             case .closed:
-                self.contactsTitleConstraint.constant = 52
+                self.contactsTitleConstraint.constant = 22
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
             self.view.layoutIfNeeded()
         }
         
         let blurAnimator = UIViewPropertyAnimator(duration: duration, controlPoint1: CGPoint(x: 0.8, y: 0.2), controlPoint2: CGPoint(x: 0.8, y: 0.2)) {
-            switch self.state {
+            switch state {
             case .open:
                 self.blurView.effect = UIBlurEffect(style: .light)
             case .closed:
                 self.blurView.effect = nil
             }
         }
+        blurAnimator.scrubsLinearly = false
+        
+        blurAnimator.addCompletion { (animator) in
+            self.animators.removeAll()
+            self.state = self.state.reverse
+        }
+        
+        animators.append(basicAnimator)
+        animators.append(blurAnimator)
     }
 }
