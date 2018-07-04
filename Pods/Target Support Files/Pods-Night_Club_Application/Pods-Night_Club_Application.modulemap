@@ -1,0 +1,6 @@
+framework module Pods_Night_Club_Application {
+  umbrella header "Pods-Night_Club_Application-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -88,9 +88,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="302" width="320" height="50.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Kontakt">
+                                        <state key="normal" title="Videos">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ahJ-P9-rNS" kind="show" id="B3u-vz-F9c"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BuF-2s-9QV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681.875" y="141.5492957746479"/>
+            <point key="canvasLocation" x="1774" y="-312"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
@@ -215,6 +218,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1059" y="231"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uTR-Qw-9K4">
+            <objects>
+                <viewController id="ahJ-P9-rNS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ole-ls-YZN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ydw-7y-RBd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAL-ZJ-qJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="371"/>
         </scene>
     </scenes>
     <resources>
