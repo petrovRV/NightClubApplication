@@ -16,7 +16,7 @@ class VideosNetworkService {
     
     let baseUrl = "https://www.googleapis.com"
     let apiKey = "AIzaSyAfsBcF5oRVZ1gaDDMAht_aAk-CQR-9s3Q"
-    let channelId = "UCEJNQ2nuAA-R9vpPZ22Y2Cg"
+    let channelId = "UCwkfbdM_Evl9k0sBZ1uA44w"
     
     func loadVideosData(completion: @escaping loadVideosDataCompletion ){
         

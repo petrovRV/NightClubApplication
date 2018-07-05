@@ -10,11 +10,10 @@ import UIKit
 class VideosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     
-    @IBOutlet weak var VideosTableView: UITableView!
+    @IBOutlet weak var videosTableView: UITableView!
     
     let videosService = VideosNetworkService()
-    var responceVideos = [Items]()
-    var videosIds = [String]()
+    var responceVideos = [(title: String, channelId: String)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +23,11 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
             
             responce.forEach() { video in
                 if let id = video.id.videoId {
-                    self?.videosIds.append(id)
+                    let videoInfo = (video.snippet.title, id)
+                    self?.responceVideos.append(videoInfo)
                 }
-//                self?.VideosTableView.reloadData()
             }
+            self?.videosTableView.reloadData()
         }
     }
     
@@ -38,16 +38,18 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return responceVideos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "VideoCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! VideosCell
         
-        cell.videoNameLabel.text = "VideoName raz dwa trzy"
-        let myURL = URL(string: "https://www.youtube.com/embed/RmHqOSrkZnk")
-        var youtubeRequest = URLRequest(url: myURL!)
+        cell.videoNameLabel.text = self.responceVideos[indexPath.row].title
+        let videoCode = self.responceVideos[indexPath.row].channelId
+
+        let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+        let youtubeRequest = URLRequest(url: myURL!)
         cell.videoWKWebView.load(youtubeRequest)
         
         return cell

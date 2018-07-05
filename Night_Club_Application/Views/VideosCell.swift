@@ -20,4 +20,7 @@ class VideosCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+//    func setVideoAndLabel(with) {
+//        
+//    }
 }
