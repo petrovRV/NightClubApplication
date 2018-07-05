@@ -92,7 +92,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="TL2-8y-I2h" kind="show" id="MRc-ma-j77"/>
+                                            <segue destination="1us-hN-1GM" kind="show" id="vJg-Uy-20M"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -219,13 +219,20 @@
             </objects>
             <point key="canvasLocation" x="1059" y="231"/>
         </scene>
-        <!--VideosStoryboard-->
-        <scene sceneID="9po-Gm-L1Z">
+        <!--Videos View Controller-->
+        <scene sceneID="Nka-9k-QPL">
             <objects>
-                <viewControllerPlaceholder storyboardName="VideosStoryboard" id="TL2-8y-I2h" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-70-WbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="1us-hN-1GM" customClass="VideosViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Adk-gj-PpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Urj-q8-ESI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzX-1Y-Mk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742" y="392"/>
+            <point key="canvasLocation" x="1710" y="369"/>
         </scene>
     </scenes>
     <resources>

@@ -12,7 +12,7 @@ import Alamofire
 
 class VideosNetworkService {
     
-    typealias loadVideosDataCompletion = ([Videos]) -> Void
+    typealias loadVideosDataCompletion = ([Items]) -> Void
     
     let baseUrl = "https://www.googleapis.com"
     let apiKey = "AIzaSyAfsBcF5oRVZ1gaDDMAht_aAk-CQR-9s3Q"
@@ -28,14 +28,16 @@ class VideosNetworkService {
         ]
         let url = baseUrl + path
 
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON
+        Alamofire.request(url, method: .get, parameters: parameters).responseJSON(queue: .global(qos: .userInteractive))
             { respons in
             guard let data = respons.data else {return}
             
             do {
                 let videosDecoded = try JSONDecoder().decode(Videos.self, from: data)
-                completion([videosDecoded])
-            return
+                DispatchQueue.main.async {
+                    completion(videosDecoded.items)
+                    return
+                }
         } catch let jsonErr {
             print("Error serializing json:", jsonErr)
             }

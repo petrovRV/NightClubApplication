@@ -14,7 +14,11 @@ struct Videos: Decodable {
 }
 struct Items: Decodable {
     let id: Id
+    let snippet: Snippet
 }
 struct Id: Decodable {
     let videoId: String?
+}
+struct Snippet: Decodable {
+    let title: String
 }

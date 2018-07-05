@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFg-2V-jbA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Videos View Controller-->
+        <scene sceneID="9M8-wv-6fI">
+            <objects>
+                <viewController id="gFg-2V-jbA" customClass="VideosViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUX-Eo-mjh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-xv-ndH">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="609" id="XK7-Op-be3" customClass="VideosCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="609"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XK7-Op-be3" id="Pot-bH-j0d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="608.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zn-d0-vHx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="4zn-d0-vHx" secondAttribute="height" multiplier="16:9" id="Utw-8Y-fM5"/>
+                                                        <constraint firstAttribute="height" constant="211" id="sNB-cY-GcR"/>
+                                                    </constraints>
+                                                    <wkWebViewConfiguration key="configuration">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="sNB-cY-GcR"/>
+                                                        </mask>
+                                                    </variation>
+                                                </wkWebView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxm-ON-5oT">
+                                                    <rect key="frame" x="0.0" y="216.00000000000003" width="375" height="387.66666666666674"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="cQb-K4-OSB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="cQb-K4-OSB"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jxm-ON-5oT" firstAttribute="top" secondItem="4zn-d0-vHx" secondAttribute="bottom" constant="5" id="Bnu-jb-LZU"/>
+                                                <constraint firstAttribute="bottom" secondItem="jxm-ON-5oT" secondAttribute="bottom" constant="5" id="Ebj-wY-hij"/>
+                                                <constraint firstAttribute="trailing" secondItem="jxm-ON-5oT" secondAttribute="trailing" id="FJ9-ty-BkB"/>
+                                                <constraint firstAttribute="trailing" secondItem="4zn-d0-vHx" secondAttribute="trailing" id="RUN-mT-sKJ"/>
+                                                <constraint firstItem="jxm-ON-5oT" firstAttribute="leading" secondItem="Pot-bH-j0d" secondAttribute="leading" id="eCl-Mz-hRA"/>
+                                                <constraint firstItem="4zn-d0-vHx" firstAttribute="leading" secondItem="Pot-bH-j0d" secondAttribute="leading" id="r2s-CP-et3"/>
+                                                <constraint firstItem="4zn-d0-vHx" firstAttribute="top" secondItem="Pot-bH-j0d" secondAttribute="top" id="vfu-pj-3xm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoNameLabel" destination="jxm-ON-5oT" id="iVu-gM-Cle"/>
+                                            <outlet property="videoWKWebView" destination="4zn-d0-vHx" id="u4H-cQ-xaI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gFg-2V-jbA" id="H8O-Dx-1Gv"/>
+                                    <outlet property="delegate" destination="gFg-2V-jbA" id="Rv4-6T-egH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PVe-xv-ndH" firstAttribute="top" secondItem="jkD-Ai-xL4" secondAttribute="top" id="Dak-L1-NXF"/>
+                            <constraint firstItem="jkD-Ai-xL4" firstAttribute="bottom" secondItem="PVe-xv-ndH" secondAttribute="bottom" id="GYd-RK-BAw"/>
+                            <constraint firstItem="PVe-xv-ndH" firstAttribute="leading" secondItem="jkD-Ai-xL4" secondAttribute="leading" id="Wbg-YL-Snf"/>
+                            <constraint firstItem="jkD-Ai-xL4" firstAttribute="trailing" secondItem="PVe-xv-ndH" secondAttribute="trailing" id="zTC-tu-ZQL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jkD-Ai-xL4"/>
+                    </view>
+                    <connections>
+                        <outlet property="VideosTableView" destination="PVe-xv-ndH" id="CYy-2K-Z5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jt4-FH-E1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="391.62561576354682"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="I0c-UJ-FGS">
+            <objects>
+                <tableViewController id="5Fc-ed-cSe" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d6h-cL-jpe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="331" id="Aq9-Ol-5vc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="331"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aq9-Ol-5vc" id="ZYe-hk-rxm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="330.66666666666669"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8e-TR-0Kh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="X8e-TR-0Kh" secondAttribute="height" multiplier="16:9" id="mse-Yz-6As"/>
+                                            </constraints>
+                                            <wkWebViewConfiguration key="configuration">
+                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                <wkPreferences key="preferences"/>
+                                            </wkWebViewConfiguration>
+                                        </wkWebView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBa-aI-dOZ">
+                                            <rect key="frame" x="7" y="219" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="X8e-TR-0Kh" secondAttribute="trailing" id="VTi-yc-z8j"/>
+                                        <constraint firstItem="X8e-TR-0Kh" firstAttribute="leading" secondItem="ZYe-hk-rxm" secondAttribute="leading" id="nvq-w7-t6T"/>
+                                        <constraint firstItem="X8e-TR-0Kh" firstAttribute="top" secondItem="ZYe-hk-rxm" secondAttribute="top" id="taA-1p-Rqm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Fc-ed-cSe" id="OqR-hA-r0w"/>
+                            <outlet property="delegate" destination="5Fc-ed-cSe" id="lHn-NU-HA5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="maa-Zo-edU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.8000000000002" y="396.25187406296857"/>
+        </scene>
+    </scenes>
+</document>
