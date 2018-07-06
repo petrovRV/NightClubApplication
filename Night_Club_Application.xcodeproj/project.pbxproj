@@ -24,6 +24,7 @@
 		8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */; };
 		8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */; };
 		8D63606E20EE53B500DD9D50 /* VideosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606D20EE53B500DD9D50 /* VideosCell.swift */; };
+		8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606F20EEBFA600DD9D50 /* Environment.swift */; };
 		8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B21C20DDA416006A447F /* MainViewButton.swift */; };
 		8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */; };
 		8D86B22A20DDA7F2006A447F /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */; };
@@ -67,6 +68,7 @@
 		8D5E1F3020D1D90100766996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard.storyboard; sourceTree = "<group>"; };
 		8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideosStoryboard.storyboard; sourceTree = "<group>"; };
 		8D63606D20EE53B500DD9D50 /* VideosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCell.swift; sourceTree = "<group>"; };
+		8D63606F20EEBFA600DD9D50 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		8D86B21C20DDA416006A447F /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
 		8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */,
+				8D63606F20EEBFA600DD9D50 /* Environment.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */,
 				8D44AE4620D1561F008F3ACE /* ApartmentViewController.swift in Sources */,
+				8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

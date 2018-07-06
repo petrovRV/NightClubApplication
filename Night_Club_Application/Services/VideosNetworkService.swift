@@ -14,19 +14,19 @@ class VideosNetworkService {
     
     typealias loadVideosDataCompletion = ([Items]) -> Void
     
-    let baseUrl = "https://www.googleapis.com"
-    let apiKey = "AIzaSyAfsBcF5oRVZ1gaDDMAht_aAk-CQR-9s3Q"
-    let channelId = "UCwkfbdM_Evl9k0sBZ1uA44w"
-    
+    var environment: Environment {
+        return EnvironmentImp.Debug()
+    }
+
     func loadVideosData(completion: @escaping loadVideosDataCompletion ){
         
         let path = "/youtube/v3/search"
         let parameters: Parameters = [
             "part": "snippet",
-            "channelId": channelId,
-            "key": apiKey
+            "channelId": self.environment.channelId,
+            "key": self.environment.apiKey
         ]
-        let url = baseUrl + path
+        let url = self.environment.baseUrl + path
 
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON(queue: .global(qos: .userInteractive))
             { respons in
