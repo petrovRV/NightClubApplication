@@ -19,4 +19,19 @@ class ClubCardsViewController: UIViewController {
         
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    @IBAction func segmentControlValueChanged(_ sender: CustomSegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            break
+        case 1:
+            break
+        default:
+            break
+        }
+    }
+    
+    
+    
+    
 }

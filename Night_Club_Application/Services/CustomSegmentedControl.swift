@@ -10,10 +10,11 @@ import UIKit
 
 
 @IBDesignable
-class CustomSegmentedControl: UIView {
+class CustomSegmentedControl: UIControl {
     
     var buttons = [UIButton]()
     var selector: UIView!
+    var selectedSegmentIndex = 0
     
     @IBInspectable
     var borderWidth: CGFloat = 0 {
@@ -92,17 +93,25 @@ class CustomSegmentedControl: UIView {
     }
 
     @objc func buttonTapped(button: UIButton) {
-        for btn in buttons {
+        for (buttonIndex, btn) in buttons.enumerated() {
             btn.setTitleColor(textColor, for: .normal)
             if btn == button {
+                selectedSegmentIndex = buttonIndex
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.selector.frame.origin.x = button.frame.origin.x
+                })
+                
                 btn.setTitleColor(selectorTextColor, for: .normal)
             }
         }
+        sendActions(for: .valueChanged)
+        
     }
     
     
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = frame.height / 2
+        updateView()
     }
 
 
