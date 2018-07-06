@@ -12,7 +12,7 @@
 		8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */; };
 		8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */; };
 		8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7D20ED218500ABC50B /* Videos.swift */; };
-		8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */; };
+		8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */; };
 		8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */; };
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
 		8D446A0020C182150004FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4469FE20C182150004FA10 /* Main.storyboard */; };
@@ -56,7 +56,7 @@
 		8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosNetworkService.swift; sourceTree = "<group>"; };
 		8D0FCB7D20ED218500ABC50B /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
-		8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClubCardsStoryboard.storyboard; sourceTree = "<group>"; };
+		8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ClubCardsStoryboard .storyboard"; sourceTree = "<group>"; };
 		8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomSegmentedControl.swift; path = Night_Club_Application/Services/CustomSegmentedControl.swift; sourceTree = SOURCE_ROOT; };
 		8D4469F720C182150004FA10 /* Night_Club_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Club_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4469FA20C182150004FA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 				8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */,
 				8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */,
-				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */,
+				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 				8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */,
 				8D86B23020DDA7F2006A447F /* Rubik-Regular.ttf in Resources */,
 				8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */,
-				8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard.storyboard in Resources */,
+				8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard .storyboard in Resources */,
 				8D446A0020C182150004FA10 /* Main.storyboard in Resources */,
 				8D86B23120DDA7F2006A447F /* Rubik-Medium.ttf in Resources */,
 			);

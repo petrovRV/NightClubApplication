@@ -82,7 +82,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Vkz-l1-9Y9" kind="show" id="I8J-fL-pcZ"/>
+                                            <segue destination="lNL-l6-Pse" kind="show" id="eQh-ns-Grm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
@@ -182,6 +182,14 @@
             </objects>
             <point key="canvasLocation" x="1037" y="153"/>
         </scene>
+        <!--ClubCardsStoryboard -->
+        <scene sceneID="dR1-U9-WnT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ClubCardsStoryboard " id="lNL-l6-Pse" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Qe-M2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-51"/>
+        </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
             <objects>
@@ -205,14 +213,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-70-WbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1058" y="204"/>
-        </scene>
-        <!--ClubCardsStoryboard-->
-        <scene sceneID="wvG-UQ-o6U">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ClubCardsStoryboard" id="Vkz-l1-9Y9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gYG-LP-GAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1078" y="-8"/>
         </scene>
     </scenes>
     <resources>
