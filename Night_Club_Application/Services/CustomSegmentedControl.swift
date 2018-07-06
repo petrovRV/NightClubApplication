@@ -97,9 +97,16 @@ class CustomSegmentedControl: UIControl {
             btn.setTitleColor(textColor, for: .normal)
             if btn == button {
                 selectedSegmentIndex = buttonIndex
-                UIView.animate(withDuration: 0.3, animations: {
-                    self.selector.frame.origin.x = button.frame.origin.x
+                
+                
+//                UIView.animate(withDuration: 0.3, animations: {
+//                    self.selector.frame.origin.x = button.frame.origin.x
+//                })
+                
+                let segmentControlAnimator = UIViewPropertyAnimator(duration: 0.3, curve: .linear, animations: {
+                     self.selector.frame.origin.x = button.frame.origin.x
                 })
+                segmentControlAnimator.startAnimation()
                 
                 btn.setTitleColor(selectorTextColor, for: .normal)
             }
