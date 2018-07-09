@@ -25,6 +25,7 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
                 if let id = video.id.videoId {
                     let videoInfo = (video.snippet.title, id)
                     self?.responceVideos.append(videoInfo)
+                    print("get json")
                 }
             }
             self?.videosTableView.reloadData()
@@ -50,7 +51,9 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
 
         let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
         let youtubeRequest = URLRequest(url: myURL!)
+        print("video loaded")
         cell.videoWKWebView.load(youtubeRequest)
+        print("video loaded1")
         
         return cell
     }
