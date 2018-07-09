@@ -82,7 +82,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="lNL-l6-Pse" kind="show" id="eQh-ns-Grm"/>
+                                            <segue destination="l6t-UM-bDp" kind="show" id="PU2-QB-KS9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
@@ -172,7 +172,7 @@
                 <viewControllerPlaceholder storyboardName="MapStoryboard" id="dVL-oQ-Qdu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp1-Gw-7af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="98"/>
+            <point key="canvasLocation" x="1043" y="70"/>
         </scene>
         <!--ApartmentStoryboard-->
         <scene sceneID="c91-bI-dAt">
@@ -180,15 +180,22 @@
                 <viewControllerPlaceholder storyboardName="ApartmentStoryboard" id="Fts-la-EBd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-KR-Gdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="153"/>
+            <point key="canvasLocation" x="1059" y="125"/>
         </scene>
-        <!--ClubCardsStoryboard -->
-        <scene sceneID="dR1-U9-WnT">
+        <!--View Controller-->
+        <scene sceneID="1jK-S4-j3h">
             <objects>
-                <viewControllerPlaceholder storyboardName="ClubCardsStoryboard " id="lNL-l6-Pse" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Qe-M2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="l6t-UM-bDp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c29-gw-qDV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hN8-YH-Afq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZy-HJ-AyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-51"/>
+            <point key="canvasLocation" x="1363" y="-215"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
@@ -196,7 +203,7 @@
                 <viewControllerPlaceholder storyboardName="ReservationStoryboard" id="EBb-zD-6g3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqE-MD-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="45"/>
+            <point key="canvasLocation" x="1087" y="21"/>
         </scene>
         <!--GalleryStoryboard-->
         <scene sceneID="j5f-eN-QSB">
@@ -204,7 +211,7 @@
                 <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="255"/>
+            <point key="canvasLocation" x="1059" y="231"/>
         </scene>
         <!--VideosStoryboard-->
         <scene sceneID="9po-Gm-L1Z">
@@ -212,7 +219,7 @@
                 <viewControllerPlaceholder storyboardName="VideosStoryboard" id="TL2-8y-I2h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-70-WbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="204"/>
+            <point key="canvasLocation" x="1082" y="177"/>
         </scene>
     </scenes>
     <resources>

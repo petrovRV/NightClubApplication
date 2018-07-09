@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jcy-Su-Axd">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Karty Klubowe-->
+        <scene sceneID="pyO-hI-PJC">
+            <objects>
+                <viewController title="Karty Klubowe" id="Jcy-Su-Axd" customClass="ClubCardsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1g-yL-Q4j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78e-8J-xiE" customClass="CustomSegmentedControl" customModule="Night_Club_Application" customModuleProvider="target">
+                                <rect key="frame" x="20" y="74" width="280" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xdp-VU-MLs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Vip, Ladies"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.77141991970000001" green="0.75554631029999997" blue="0.79887872410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentControlValueChanged:" destination="Jcy-Su-Axd" eventType="valueChanged" id="1cz-4y-KTd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tml-XL-J54">
+                                <rect key="frame" x="0.0" y="122" width="320" height="446"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmB-5B-8mn">
+                                        <rect key="frame" x="15" y="15" width="295" height="89"/>
+                                        <string key="text">Rabat 10% na barach                               (promocje nie łączą się)
+Wejście free dla 3 osób na jedną kartę VIP
+Wejście do strefy VIP dla posiadacza karty
+Wejście bez kolejki</string>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vip-card" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-uU-tvN">
+                                        <rect key="frame" x="75" y="109" width="170" height="268"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PRX-uU-tvN" secondAttribute="height" multiplier="176:279" id="cAN-fI-NMw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz otrzymać swoją KARTĘ napisz do nas na adres e-mail: eliza.lazicka@xoxoparty.pl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-cg-wFI">
+                                        <rect key="frame" x="20" y="387" width="280" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mmB-5B-8mn" firstAttribute="top" secondItem="tml-XL-J54" secondAttribute="top" constant="15" id="1Ad-Rc-ZGG"/>
+                                    <constraint firstItem="PRX-uU-tvN" firstAttribute="centerX" secondItem="tml-XL-J54" secondAttribute="centerX" id="6P6-eg-3vb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Khp-cg-wFI" secondAttribute="trailing" constant="20" id="And-uQ-taw"/>
+                                    <constraint firstItem="mmB-5B-8mn" firstAttribute="leading" secondItem="tml-XL-J54" secondAttribute="leading" constant="15" id="CBP-tp-qsR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Khp-cg-wFI" secondAttribute="bottom" constant="10" id="Si2-Uj-3Ar"/>
+                                    <constraint firstItem="Khp-cg-wFI" firstAttribute="top" secondItem="PRX-uU-tvN" secondAttribute="bottom" constant="10" id="gg3-SQ-vnV"/>
+                                    <constraint firstItem="mmB-5B-8mn" firstAttribute="height" secondItem="tml-XL-J54" secondAttribute="height" multiplier="0.2" id="kiN-0Y-Zzp"/>
+                                    <constraint firstItem="PRX-uU-tvN" firstAttribute="top" secondItem="mmB-5B-8mn" secondAttribute="bottom" constant="5" id="ln7-2E-Ddi"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmB-5B-8mn" secondAttribute="trailing" constant="10" id="nct-Eg-0Yz"/>
+                                    <constraint firstItem="Khp-cg-wFI" firstAttribute="leading" secondItem="tml-XL-J54" secondAttribute="leading" constant="20" id="pYk-6r-nmZ"/>
+                                    <constraint firstItem="PRX-uU-tvN" firstAttribute="height" secondItem="tml-XL-J54" secondAttribute="height" multiplier="0.6" id="ugk-JG-emJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc3-kF-iZu">
+                                <rect key="frame" x="0.0" y="122" width="320" height="446"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNx-g9-rVu">
+                                        <rect key="frame" x="15" y="15" width="295" height="89"/>
+                                        <string key="text">1 x Welcome Drink za free
+(prosecco, kieliszek wina lub jeden drink do 25 zł)
+Wejście FREE dla max 3 kobiet na jedną kartę LADIES
+Rabat 5% (promocje się nie łączą)
+Wejście bez kolejki</string>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ladies-card" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-kV-ic0">
+                                        <rect key="frame" x="75" y="109" width="170" height="268"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pcd-kV-ic0" secondAttribute="height" multiplier="176:279" id="FSL-5r-4wG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz otrzymać swoją KARTĘ napisz do nas na adres e-mail: eliza.lazicka@xoxoparty.pl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVw-uH-2jc">
+                                        <rect key="frame" x="20" y="387" width="280" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VVw-uH-2jc" secondAttribute="bottom" constant="10" id="A2j-Br-jlx"/>
+                                    <constraint firstItem="oNx-g9-rVu" firstAttribute="leading" secondItem="Gc3-kF-iZu" secondAttribute="leading" constant="15" id="Cd1-k9-Dxr"/>
+                                    <constraint firstItem="VVw-uH-2jc" firstAttribute="leading" secondItem="Gc3-kF-iZu" secondAttribute="leading" constant="20" id="DCD-Nc-X3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="oNx-g9-rVu" secondAttribute="trailing" constant="10" id="KX8-Hh-MFG"/>
+                                    <constraint firstItem="Pcd-kV-ic0" firstAttribute="centerX" secondItem="Gc3-kF-iZu" secondAttribute="centerX" id="RGa-Ny-Ymv"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVw-uH-2jc" secondAttribute="trailing" constant="20" id="UOo-og-5qd"/>
+                                    <constraint firstItem="Pcd-kV-ic0" firstAttribute="top" secondItem="oNx-g9-rVu" secondAttribute="bottom" constant="5" id="Ulr-mi-yTP"/>
+                                    <constraint firstItem="oNx-g9-rVu" firstAttribute="top" secondItem="Gc3-kF-iZu" secondAttribute="top" constant="15" id="bya-CW-P4O"/>
+                                    <constraint firstItem="Pcd-kV-ic0" firstAttribute="height" secondItem="Gc3-kF-iZu" secondAttribute="height" multiplier="0.6" id="fxx-oR-QM1"/>
+                                    <constraint firstItem="oNx-g9-rVu" firstAttribute="height" secondItem="Gc3-kF-iZu" secondAttribute="height" multiplier="0.2" id="qMe-C4-yQc"/>
+                                    <constraint firstItem="VVw-uH-2jc" firstAttribute="top" secondItem="Pcd-kV-ic0" secondAttribute="bottom" constant="10" id="uN1-CK-DQf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gc3-kF-iZu" firstAttribute="top" secondItem="78e-8J-xiE" secondAttribute="bottom" constant="8" id="5vh-Yn-Eyj"/>
+                            <constraint firstItem="78e-8J-xiE" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" constant="20" id="DUn-R1-8HL"/>
+                            <constraint firstItem="Gc3-kF-iZu" firstAttribute="bottom" secondItem="n51-Fx-zu6" secondAttribute="bottom" id="HNd-CO-tQD"/>
+                            <constraint firstItem="78e-8J-xiE" firstAttribute="top" secondItem="n51-Fx-zu6" secondAttribute="top" constant="10" id="HRt-e4-v7I"/>
+                            <constraint firstItem="tml-XL-J54" firstAttribute="top" secondItem="78e-8J-xiE" secondAttribute="bottom" constant="8" id="Idp-nr-qX9"/>
+                            <constraint firstItem="tml-XL-J54" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" id="MYA-uh-0j6"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="trailing" secondItem="tml-XL-J54" secondAttribute="trailing" id="MvI-p3-3EN"/>
+                            <constraint firstItem="Gc3-kF-iZu" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" id="P8S-JE-VkY"/>
+                            <constraint firstItem="Gc3-kF-iZu" firstAttribute="trailing" secondItem="n51-Fx-zu6" secondAttribute="trailing" id="fEf-Eg-Db5"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="bottom" secondItem="tml-XL-J54" secondAttribute="bottom" id="hgk-ZC-D0L"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="trailing" secondItem="78e-8J-xiE" secondAttribute="trailing" constant="20" id="ocV-NG-MYT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n51-Fx-zu6"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="ladiesCardView" destination="Gc3-kF-iZu" id="sDq-j0-HPh"/>
+                        <outlet property="vipCardView" destination="tml-XL-J54" id="imX-XN-aNN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvz-c3-15a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178.4000000000001" y="-147.07646176911544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ladies-card" width="175" height="279"/>
+        <image name="Vip-card" width="176" height="281"/>
+    </resources>
+</document>
