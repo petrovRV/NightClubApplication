@@ -6,9 +6,18 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Club Cards View Controller-->
         <scene sceneID="pyO-hI-PJC">
@@ -18,10 +27,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="78e-8J-xiE" customClass="CustomSegmentedControl" customModule="Night_Club_Application" customModuleProvider="target">
-                                <rect key="frame" x="21" y="66" width="332" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78e-8J-xiE" customClass="CustomSegmentedControl" customModule="Night_Club_Application" customModuleProvider="target">
+                                <rect key="frame" x="20" y="76" width="335" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CS5-3H-LTT"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -38,14 +49,114 @@
                                     <action selector="segmentControlValueChanged:" destination="Jcy-Su-Axd" eventType="valueChanged" id="1cz-4y-KTd"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tml-XL-J54">
+                                <rect key="frame" x="0.0" y="136" width="375" height="451"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_vip_300x386" translatesAutoresizingMaskIntoConstraints="NO" id="T3r-MR-6YZ">
+                                        <rect key="frame" x="90" y="10" width="195" height="256.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="T3r-MR-6YZ" secondAttribute="height" multiplier="193:253" id="SXl-we-1KX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmB-5B-8mn">
+                                        <rect key="frame" x="20" y="286.5" width="335" height="101"/>
+                                        <string key="text">Rabat 10% na barach (promocje nie łączą się)
+Wejście free dla 3 osób na jedną kartę VIP
+Wejście do strefy VIP dla posiadacza karty
+Wejście bez kolejki</string>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="1" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mmB-5B-8mn" secondAttribute="trailing" constant="20" id="2q6-0f-3bC"/>
+                                    <constraint firstItem="mmB-5B-8mn" firstAttribute="top" secondItem="T3r-MR-6YZ" secondAttribute="bottom" constant="20" id="MY7-wc-v66"/>
+                                    <constraint firstItem="T3r-MR-6YZ" firstAttribute="top" secondItem="tml-XL-J54" secondAttribute="top" constant="10" id="dah-qG-eRO"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="T3r-MR-6YZ" secondAttribute="trailing" constant="90" id="gcR-Am-bTs"/>
+                                    <constraint firstItem="T3r-MR-6YZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tml-XL-J54" secondAttribute="leading" constant="90" id="mVk-pU-djq"/>
+                                    <constraint firstItem="mmB-5B-8mn" firstAttribute="leading" secondItem="tml-XL-J54" secondAttribute="leading" constant="20" id="rep-Zr-7qq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KARTY KLUBOWE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jz9-2c-fw1">
+                                <rect key="frame" x="0.0" y="30" width="375" height="31"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz otrzymać swoją KARTĘ napisz do nas na adres e-mail: eliza.lazicka@xoxoparty.pl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRf-pC-G28">
+                                <rect key="frame" x="10" y="597" width="355" height="65"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5f-1n-yh6">
+                                <rect key="frame" x="0.0" y="136" width="375" height="451"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_ladies_300x386 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="SIC-JR-aJz">
+                                        <rect key="frame" x="90" y="10" width="195" height="256.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SIC-JR-aJz" secondAttribute="height" multiplier="193:253" id="WpB-Mc-guu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cq-Pz-uYm">
+                                        <rect key="frame" x="20" y="286.5" width="335" height="101"/>
+                                        <string key="text">1 x Welcome Drink za free
+Wejście FREE dla max 3 kobiet na jedną kartę LADIES
+Rabat 5% (promocje się nie łączą)
+Wejście bez kolejki</string>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="1" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="SIC-JR-aJz" secondAttribute="trailing" constant="90" id="BVF-Q9-ZLw"/>
+                                    <constraint firstItem="SIC-JR-aJz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="H5f-1n-yh6" secondAttribute="leading" constant="90" id="E2R-Or-7ds"/>
+                                    <constraint firstItem="2cq-Pz-uYm" firstAttribute="top" secondItem="SIC-JR-aJz" secondAttribute="bottom" constant="20" id="JQj-1u-dnU"/>
+                                    <constraint firstItem="SIC-JR-aJz" firstAttribute="top" secondItem="H5f-1n-yh6" secondAttribute="top" constant="10" id="Qgd-ph-kiJ"/>
+                                    <constraint firstItem="2cq-Pz-uYm" firstAttribute="leading" secondItem="H5f-1n-yh6" secondAttribute="leading" constant="20" id="aU3-fW-CIx"/>
+                                    <constraint firstAttribute="trailing" secondItem="2cq-Pz-uYm" secondAttribute="trailing" constant="20" id="ggA-l8-FdP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H5f-1n-yh6" firstAttribute="top" secondItem="78e-8J-xiE" secondAttribute="bottom" constant="10" id="4bz-GQ-vw4"/>
+                            <constraint firstItem="vRf-pC-G28" firstAttribute="top" secondItem="tml-XL-J54" secondAttribute="bottom" constant="10" id="AaA-Hj-4so"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="trailing" secondItem="78e-8J-xiE" secondAttribute="trailing" constant="20" id="Ah0-lS-ycs"/>
+                            <constraint firstItem="tml-XL-J54" firstAttribute="trailing" secondItem="n51-Fx-zu6" secondAttribute="trailing" id="Dvp-L4-cfU"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="bottom" secondItem="H5f-1n-yh6" secondAttribute="bottom" constant="80" id="Eb3-M6-KHV"/>
+                            <constraint firstItem="jz9-2c-fw1" firstAttribute="top" secondItem="n51-Fx-zu6" secondAttribute="top" constant="10" id="O0Z-tz-juP"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="bottom" secondItem="tml-XL-J54" secondAttribute="bottom" constant="80" id="Q1N-WU-MN9"/>
+                            <constraint firstItem="tml-XL-J54" firstAttribute="top" secondItem="78e-8J-xiE" secondAttribute="bottom" constant="10" id="Y63-RN-yvt"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="trailing" secondItem="vRf-pC-G28" secondAttribute="trailing" constant="10" id="bEi-sk-YhZ"/>
+                            <constraint firstItem="H5f-1n-yh6" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" id="bv3-hJ-QfC"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="trailing" secondItem="jz9-2c-fw1" secondAttribute="trailing" id="cf3-cw-Yql"/>
+                            <constraint firstItem="n51-Fx-zu6" firstAttribute="bottom" secondItem="vRf-pC-G28" secondAttribute="bottom" constant="5" id="f7c-Xb-fwX"/>
+                            <constraint firstItem="78e-8J-xiE" firstAttribute="top" secondItem="jz9-2c-fw1" secondAttribute="bottom" constant="15" id="gpH-6W-Evh"/>
+                            <constraint firstItem="tml-XL-J54" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" id="jlA-iK-AfE"/>
+                            <constraint firstItem="78e-8J-xiE" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" constant="20" id="kpG-8o-WXR"/>
+                            <constraint firstItem="vRf-pC-G28" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" constant="10" id="rty-BM-PT3"/>
+                            <constraint firstItem="H5f-1n-yh6" firstAttribute="trailing" secondItem="n51-Fx-zu6" secondAttribute="trailing" id="w2Q-9t-XfD"/>
+                            <constraint firstItem="jz9-2c-fw1" firstAttribute="leading" secondItem="n51-Fx-zu6" secondAttribute="leading" id="yNJ-RK-T9e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n51-Fx-zu6"/>
                     </view>
+                    <connections>
+                        <outlet property="LediesCardView" destination="H5f-1n-yh6" id="ywl-lc-bHR"/>
+                        <outlet property="vipCardView" destination="tml-XL-J54" id="imX-XN-aNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvz-c3-15a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178.4000000000001" y="-147.07646176911544"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vip_ladies_300x386 (1)" width="150" height="193"/>
+        <image name="vip_vip_300x386" width="150" height="193"/>
+    </resources>
 </document>

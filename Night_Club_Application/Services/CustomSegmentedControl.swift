@@ -98,11 +98,6 @@ class CustomSegmentedControl: UIControl {
             if btn == button {
                 selectedSegmentIndex = buttonIndex
                 
-                
-//                UIView.animate(withDuration: 0.3, animations: {
-//                    self.selector.frame.origin.x = button.frame.origin.x
-//                })
-                
                 let segmentControlAnimator = UIViewPropertyAnimator(duration: 0.3, curve: .linear, animations: {
                      self.selector.frame.origin.x = button.frame.origin.x
                 })
@@ -114,7 +109,6 @@ class CustomSegmentedControl: UIControl {
         sendActions(for: .valueChanged)
         
     }
-    
     
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = frame.height / 2
