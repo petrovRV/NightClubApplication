@@ -15,6 +15,7 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     
     let videosService = VideosNetworkService()
     var responceVideos = [(title: String, channelId: String, previewImage: String)]()
+    let videoIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,13 +60,18 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
         }
-//        let videoCode = self.responceVideos[indexPath.row].channelId
-//
-//        let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-//        let youtubeRequest = URLRequest(url: myURL!)
-//        cell.videoWKWebView.load(youtubeRequest)
 
-        
+
         return cell
+    }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVideo" {
+            if let indexPath = videosTableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! PlayVideoViewController
+                destinationController.videoURL = responceVideos[indexPath.row].channelId
+            }
+        }
     }
 }

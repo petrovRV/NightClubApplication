@@ -69,7 +69,7 @@
                                         <connections>
                                             <outlet property="previewImage" destination="8fO-0v-QdI" id="WHi-nq-U69"/>
                                             <outlet property="videoNameLabel" destination="jxm-ON-5oT" id="iVu-gM-Cle"/>
-                                            <segue destination="NWp-2j-qQa" kind="show" id="3Vg-a5-ewv"/>
+                                            <segue destination="NWp-2j-qQa" kind="show" identifier="showVideo" id="g28-Vo-0HQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-rq-Z2a">
-                                <rect key="frame" x="0.0" y="178" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="198" width="375" height="211"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yl2-rq-Z2a" secondAttribute="height" multiplier="16:9" id="WcZ-el-RCe"/>
@@ -115,16 +115,21 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="biW-S1-0Fn">
+                                <rect key="frame" x="177" y="293" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yl2-rq-Z2a" firstAttribute="leading" secondItem="vly-8w-BDG" secondAttribute="leading" id="gc9-hB-7Re"/>
                             <constraint firstItem="yl2-rq-Z2a" firstAttribute="trailing" secondItem="vly-8w-BDG" secondAttribute="trailing" id="nMh-gU-y0G"/>
-                            <constraint firstItem="yl2-rq-Z2a" firstAttribute="centerY" secondItem="wQF-fV-gsM" secondAttribute="centerY" constant="-50" id="uCx-an-UkS"/>
+                            <constraint firstItem="yl2-rq-Z2a" firstAttribute="centerY" secondItem="wQF-fV-gsM" secondAttribute="centerY" constant="-30" id="uCx-an-UkS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vly-8w-BDG"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="biW-S1-0Fn" id="CoP-lT-Qk9"/>
                         <outlet property="videoWebView" destination="yl2-rq-Z2a" id="WQR-tZ-g9c"/>
                     </connections>
                 </viewController>
