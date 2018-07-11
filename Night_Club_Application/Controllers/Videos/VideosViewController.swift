@@ -7,13 +7,14 @@
 //
 
 import UIKit
+
 class VideosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     
     @IBOutlet weak var videosTableView: UITableView!
     
     let videosService = VideosNetworkService()
-    var responceVideos = [(title: String, channelId: String)]()
+    var responceVideos = [(title: String, channelId: String, previewImage: String)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +24,8 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
             
             responce.forEach() { video in
                 if let id = video.id.videoId {
-                    let videoInfo = (video.snippet.title, id)
+                    let videoInfo = (video.snippet.title, id, video.snippet.thumbnails.high.url)
                     self?.responceVideos.append(videoInfo)
-                    print("get json")
                 }
             }
             self?.videosTableView.reloadData()
@@ -47,13 +47,24 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! VideosCell
         
         cell.videoNameLabel.text = self.responceVideos[indexPath.row].title
-        let videoCode = self.responceVideos[indexPath.row].channelId
+        
+        if let imageURL = URL(string: self.responceVideos[indexPath.row].previewImage) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                       cell.previewImage.image = image
+                    }
+                }
+            }
+        }
+//        let videoCode = self.responceVideos[indexPath.row].channelId
+//
+//        let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+//        let youtubeRequest = URLRequest(url: myURL!)
+//        cell.videoWKWebView.load(youtubeRequest)
 
-        let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-        let youtubeRequest = URLRequest(url: myURL!)
-        print("video loaded")
-        cell.videoWKWebView.load(youtubeRequest)
-        print("video loaded1")
         
         return cell
     }

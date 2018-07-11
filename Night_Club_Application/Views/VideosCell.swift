@@ -11,7 +11,8 @@ import WebKit
 
 class VideosCell: UITableViewCell {
 
-    @IBOutlet weak var videoWKWebView: WKWebView!
+
+    @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var videoNameLabel: UILabel!
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -21,4 +21,14 @@ struct Id: Decodable {
 }
 struct Snippet: Decodable {
     let title: String
+    let thumbnails: Thumbnails
 }
+
+struct Thumbnails: Decodable {
+    let high: High
+}
+struct High: Decodable {
+    let url: String
+}
+
+

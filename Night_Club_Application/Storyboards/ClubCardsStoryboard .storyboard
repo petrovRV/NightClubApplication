@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jcy-Su-Axd">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,11 +22,11 @@
             <objects>
                 <viewController title="Karty Klubowe" id="Jcy-Su-Axd" customClass="ClubCardsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1g-yL-Q4j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78e-8J-xiE" customClass="CustomSegmentedControl" customModule="Night_Club_Application" customModuleProvider="target">
-                                <rect key="frame" x="20" y="74" width="280" height="40"/>
+                                <rect key="frame" x="20" y="74" width="335" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Xdp-VU-MLs"/>
@@ -48,10 +48,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tml-XL-J54">
-                                <rect key="frame" x="0.0" y="122" width="320" height="446"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmB-5B-8mn">
-                                        <rect key="frame" x="15" y="15" width="295" height="89"/>
+                                        <rect key="frame" x="15" y="15" width="350" height="109"/>
                                         <string key="text">Rabat 10% na barach                               (promocje nie łączą się)
 Wejście free dla 3 osób na jedną kartę VIP
 Wejście do strefy VIP dla posiadacza karty
@@ -61,13 +61,13 @@ Wejście bez kolejki</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vip-card" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-uU-tvN">
-                                        <rect key="frame" x="75" y="109" width="170" height="268"/>
+                                        <rect key="frame" x="84.5" y="129" width="206" height="327"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PRX-uU-tvN" secondAttribute="height" multiplier="176:279" id="cAN-fI-NMw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz otrzymać swoją KARTĘ napisz do nas na adres e-mail: eliza.lazicka@xoxoparty.pl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-cg-wFI">
-                                        <rect key="frame" x="20" y="387" width="280" height="49"/>
+                                        <rect key="frame" x="20" y="466" width="335" height="69"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -88,10 +88,10 @@ Wejście bez kolejki</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc3-kF-iZu">
-                                <rect key="frame" x="0.0" y="122" width="320" height="446"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNx-g9-rVu">
-                                        <rect key="frame" x="15" y="15" width="295" height="89"/>
+                                        <rect key="frame" x="15" y="15" width="350" height="109"/>
                                         <string key="text">1 x Welcome Drink za free
 (prosecco, kieliszek wina lub jeden drink do 25 zł)
 Wejście FREE dla max 3 kobiet na jedną kartę LADIES
@@ -102,13 +102,13 @@ Wejście bez kolejki</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ladies-card" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-kV-ic0">
-                                        <rect key="frame" x="75" y="109" width="170" height="268"/>
+                                        <rect key="frame" x="84.5" y="129" width="206" height="327"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Pcd-kV-ic0" secondAttribute="height" multiplier="176:279" id="FSL-5r-4wG"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz otrzymać swoją KARTĘ napisz do nas na adres e-mail: eliza.lazicka@xoxoparty.pl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVw-uH-2jc">
-                                        <rect key="frame" x="20" y="387" width="280" height="49"/>
+                                        <rect key="frame" x="20" y="466" width="335" height="69"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
