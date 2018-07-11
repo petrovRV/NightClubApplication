@@ -23,6 +23,10 @@ class LargePhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sharePhotoButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sharePhotoAction))
+        self.navigationItem.rightBarButtonItem = sharePhotoButton
+        
         updatePhoto(with: NavigationHelper.firstLoad)
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.numberOfTapsRequired = 1
@@ -67,6 +71,12 @@ class LargePhotoViewController: UIViewController {
         updatePhoto(with: NavigationHelper.previous)
     }
   
-    
+    @objc func sharePhotoAction() {
+        
+        let imageToShare = images[currentImage]
+
+        let activityViewController = UIActivityViewController(activityItems: [imageToShare], applicationActivities: nil)
+        self.present(activityViewController, animated: true, completion: nil)
+    }
     
 }
