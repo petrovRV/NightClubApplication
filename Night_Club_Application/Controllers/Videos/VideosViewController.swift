@@ -60,8 +60,6 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
         }
-
-
         return cell
     }
     
@@ -70,7 +68,7 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         if segue.identifier == "showVideo" {
             if let indexPath = videosTableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! PlayVideoViewController
-                destinationController.videoURL = responceVideos[indexPath.row].channelId
+                destinationController.videoId = responceVideos[indexPath.row].channelId
             }
         }
     }

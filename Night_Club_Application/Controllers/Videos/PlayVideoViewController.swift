@@ -13,25 +13,43 @@ class PlayVideoViewController: UIViewController, WKNavigationDelegate {
 
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    var videoURL: String = ""
     @IBOutlet weak var videoWebView: WKWebView!
+    
+    var videoId: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-                let videoCode = self.videoURL
         
-                let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-                let youtubeRequest = URLRequest(url: myURL!)
-                videoWebView.load(youtubeRequest)
-        
+        let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction))
+        self.navigationItem.rightBarButtonItem = shareButton
+            
+            
+            
+            
         self.activityIndicator.startAnimating()
         self.videoWebView.navigationDelegate = self
         self.activityIndicator.hidesWhenStopped = true
+        loadYoutubeVideo()
+        
     }
+    @objc func shareAction() {
+     
+        let shareLink = "www.youtube.com/watch?v=\(self.videoId)"
+        let activityViewController = UIActivityViewController(activityItems: [shareLink], applicationActivities: nil)
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    
+    private func loadYoutubeVideo() {
+    let videoCode = self.videoId
+    let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+    let youtubeRequest = URLRequest(url: myURL!)
+    videoWebView.load(youtubeRequest)
+    }
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityIndicator.stopAnimating()
+        
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
