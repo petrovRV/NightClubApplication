@@ -62,7 +62,27 @@ class LargePhotoViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.setZoomScale(0.0, animated: false)
         photoNumber.text = "\(currentImage + 1)/\(images.count)"
         largePhoto.image = images[currentImage]
+        disableNavigationButton()
     }
+    
+    
+    func disableNavigationButton(){
+        let lastImageIndex = self.images.count - 1
+        switch currentImage {
+        case 0:
+            self.nextOutlet.isHidden = false
+            self.backOutlet.isHidden = true
+        case lastImageIndex: do {
+            self.nextOutlet.isHidden = true
+            self.backOutlet.isHidden = false
+            }
+        default:
+            self.nextOutlet.isHidden = false
+            self.backOutlet.isHidden = false
+        }
+    }
+    
+    
     
     @IBAction func nextButton(_ sender: Any) {
         
