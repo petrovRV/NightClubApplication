@@ -11,5 +11,6 @@ import UIKit
 class ApartmentGalleryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
 }

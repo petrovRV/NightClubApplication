@@ -55,7 +55,7 @@ class ApartmentOldViewController: UIViewController, UICollectionViewDataSource, 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.frame.height
-        let width = collectionView.frame.width
+        let width = height * 1.5
         return CGSize(width: width, height: height)
     }
 }

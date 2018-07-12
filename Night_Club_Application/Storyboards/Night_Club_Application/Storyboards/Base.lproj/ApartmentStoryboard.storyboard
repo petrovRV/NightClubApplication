@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mKZ-v3-f3X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T8J-wk-3ep">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,166 +7,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Apartment Old View Controller-->
-        <scene sceneID="5S2-aO-HCV">
-            <objects>
-                <viewController id="mKZ-v3-f3X" customClass="ApartmentOldViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YW2-zf-DhC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APARTMENT BY XOXO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-Ho-lwV">
-                                <rect key="frame" x="40" y="30" width="295" height="33"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-cc-a6S">
-                                <rect key="frame" x="0.0" y="71" width="375" height="209"/>
-                                <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WR4-S1-aeA" customClass="ApartmentPhotosCVFlowLayout" customModule="Night_Club_Application" customModuleProvider="target">
-                                    <size key="itemSize" width="299" height="180"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ClE-fG-5A9" customClass="ApartmentGalleryCollectionViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="14.5" width="299" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="299" height="180"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-UT-0AR">
-                                                    <rect key="frame" x="0.0" y="-6" width="299" height="180"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="leading" secondItem="ClE-fG-5A9" secondAttribute="leading" id="7tG-5Q-pHl"/>
-                                            <constraint firstItem="x4P-UT-0AR" firstAttribute="top" secondItem="ClE-fG-5A9" secondAttribute="top" id="FzI-jA-vHn"/>
-                                            <constraint firstAttribute="bottom" secondItem="x4P-UT-0AR" secondAttribute="bottom" id="dAw-f0-Gys"/>
-                                            <constraint firstAttribute="trailing" secondItem="x4P-UT-0AR" secondAttribute="trailing" id="uos-gX-Vda"/>
-                                        </constraints>
-                                        <size key="customSize" width="299" height="180"/>
-                                        <connections>
-                                            <outlet property="apartmentImage" destination="x4P-UT-0AR" id="Pqa-ff-XfT"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="mKZ-v3-f3X" id="X9x-6P-cg9"/>
-                                    <outlet property="delegate" destination="mKZ-v3-f3X" id="WkZ-n9-cuT"/>
-                                </connections>
-                            </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="haj-JX-DAK">
-                                <rect key="frame" x="15" y="313" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="UHG-lA-cdB"/>
-                                    <constraint firstAttribute="width" constant="60" id="gB1-eb-7ue"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ozv-TJ-Fd3">
-                                <rect key="frame" x="15" y="383.5" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="qc4-rH-8K0"/>
-                                    <constraint firstAttribute="height" constant="60" id="sx9-uH-Q1D"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-3" translatesAutoresizingMaskIntoConstraints="NO" id="zNZ-hq-2pI">
-                                <rect key="frame" x="15" y="461" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="WyX-ai-A2C"/>
-                                    <constraint firstAttribute="height" constant="60" id="mef-NT-f89"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-icon-4" translatesAutoresizingMaskIntoConstraints="NO" id="jnn-xd-VFa">
-                                <rect key="frame" x="15" y="531.5" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6qo-Tb-awu"/>
-                                    <constraint firstAttribute="width" constant="60" id="GpD-rw-a7S"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5f-tV-grh">
-                                <rect key="frame" x="83" y="313" width="277" height="62.5"/>
-                                <string key="text">Niezależne nagłośnienie firmy VOID, oświetlenie, klimatyzacja, profesjonalna obsługa i trunki z najwyższej półki to tylko niektóre zalety Apartment by XOXO Party…</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kot-Ql-vdx">
-                                <rect key="frame" x="83" y="383.5" width="277" height="62.5"/>
-                                <string key="text">Intymna powierzchnia Prive Roomu nie odcina Cię od imprezy, która trwa na parkiecie w klubie XOXO. Dzięki live streaming – śledzisz ją na bieżąco!</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikz-yk-tCf">
-                                <rect key="frame" x="83" y="461" width="277" height="62.5"/>
-                                <string key="text">Podczas, kiedy w klubie odbywa się tłoczna i głośna impreza – Prive Room może pozostać spokojnym miejscem spotkań biznesowych, kolacji lub innych uroczystości.</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-Jl-GMy">
-                                <rect key="frame" x="83" y="531.5" width="277" height="62.5"/>
-                                <string key="text">I na odwrót! Kiedy XOXO już „zasypia”… Apartment budzi się do życia… bo to właśnie w nim odbywają się najlepsze, ekskluzywne afterparty Warszawy…</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <color key="textColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-fW-kuJ">
-                                <rect key="frame" x="168" y="280" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="haj-JX-DAK" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="8i9-Dw-g1f"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="z5f-tV-grh" secondAttribute="trailing" constant="15" id="8sl-bV-ls0"/>
-                            <constraint firstItem="IGx-cc-a6S" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" id="ApD-Q3-r3A"/>
-                            <constraint firstItem="Ikz-yk-tCf" firstAttribute="leading" secondItem="zNZ-hq-2pI" secondAttribute="trailing" constant="8" id="CG5-kq-3lZ"/>
-                            <constraint firstItem="zNZ-hq-2pI" firstAttribute="top" secondItem="Ikz-yk-tCf" secondAttribute="top" id="DZ7-EQ-WSz"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="eu5-Ho-lwV" secondAttribute="trailing" constant="40" id="GO7-sn-8ah"/>
-                            <constraint firstItem="Ozv-TJ-Fd3" firstAttribute="top" secondItem="Kot-Ql-vdx" secondAttribute="top" id="Hkk-Hj-zV3"/>
-                            <constraint firstItem="jnn-xd-VFa" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="JEE-rj-ewg"/>
-                            <constraint firstItem="IGx-cc-a6S" firstAttribute="height" secondItem="YW2-zf-DhC" secondAttribute="height" multiplier="0.33" id="LHy-nH-CLV"/>
-                            <constraint firstItem="z5f-tV-grh" firstAttribute="top" secondItem="IGx-cc-a6S" secondAttribute="bottom" constant="15" id="Qej-kd-cbb"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="YWF-Jl-GMy" secondAttribute="trailing" constant="15" id="RJ9-0L-lvL"/>
-                            <constraint firstItem="Ikz-yk-tCf" firstAttribute="top" secondItem="Kot-Ql-vdx" secondAttribute="bottom" constant="15" id="TwN-5S-mYQ"/>
-                            <constraint firstItem="haj-JX-DAK" firstAttribute="top" secondItem="z5f-tV-grh" secondAttribute="top" id="YGM-9C-5gS"/>
-                            <constraint firstItem="IGx-cc-a6S" firstAttribute="trailing" secondItem="gVF-65-PZQ" secondAttribute="trailing" id="aLT-Ze-Rok"/>
-                            <constraint firstItem="eu5-Ho-lwV" firstAttribute="top" secondItem="gVF-65-PZQ" secondAttribute="top" constant="10" id="aWr-p9-I5t"/>
-                            <constraint firstItem="Ozv-TJ-Fd3" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="aod-AC-Hvx"/>
-                            <constraint firstItem="Kot-Ql-vdx" firstAttribute="leading" secondItem="Ozv-TJ-Fd3" secondAttribute="trailing" constant="8" id="bIa-YJ-aOZ"/>
-                            <constraint firstItem="IGx-cc-a6S" firstAttribute="top" secondItem="eu5-Ho-lwV" secondAttribute="bottom" constant="15" id="dcF-fP-0r6"/>
-                            <constraint firstItem="YWF-Jl-GMy" firstAttribute="leading" secondItem="jnn-xd-VFa" secondAttribute="trailing" constant="8" id="gnM-hF-czQ"/>
-                            <constraint firstItem="YWF-Jl-GMy" firstAttribute="top" secondItem="Ikz-yk-tCf" secondAttribute="bottom" constant="8" id="hdb-9T-ahn"/>
-                            <constraint firstItem="jnn-xd-VFa" firstAttribute="top" secondItem="YWF-Jl-GMy" secondAttribute="top" id="j5I-kt-zlS"/>
-                            <constraint firstItem="z5f-tV-grh" firstAttribute="leading" secondItem="haj-JX-DAK" secondAttribute="trailing" constant="8" id="mKx-26-nf4"/>
-                            <constraint firstItem="zNZ-hq-2pI" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="15" id="quQ-Jh-RTX"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="Kot-Ql-vdx" secondAttribute="trailing" constant="15" id="reE-Ht-5ch"/>
-                            <constraint firstItem="Kot-Ql-vdx" firstAttribute="top" secondItem="z5f-tV-grh" secondAttribute="bottom" constant="8" id="sSf-54-IhU"/>
-                            <constraint firstItem="gVF-65-PZQ" firstAttribute="trailing" secondItem="Ikz-yk-tCf" secondAttribute="trailing" constant="15" id="tDv-aS-mUa"/>
-                            <constraint firstItem="eu5-Ho-lwV" firstAttribute="leading" secondItem="gVF-65-PZQ" secondAttribute="leading" constant="40" id="wdq-01-Pxc"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gVF-65-PZQ"/>
-                    </view>
-                    <connections>
-                        <outlet property="apartmentPhotosCollectionView" destination="IGx-cc-a6S" id="1Ca-Hc-pan"/>
-                        <outlet property="pageControl" destination="dgV-fW-kuJ" id="y7o-aH-3PY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hU7-Fe-uLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1869.5999999999999" y="406.14692653673166"/>
-        </scene>
         <!--Apartment by XOXO-->
         <scene sceneID="Fpl-T4-pEN">
             <objects>
@@ -179,32 +28,32 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ApartmentsGalleryCell" rowHeight="229" id="AHw-AS-cf0" customClass="ApartmentGalleryTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="229"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ApartmentsGalleryTableViewCell" rowHeight="292" id="AHw-AS-cf0" customClass="ApartmentGalleryTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="292"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHw-AS-cf0" id="17D-Qq-9yV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="291.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qLV-tq-IKP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="228.5"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qLV-tq-IKP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="291.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ihb-Kt-Bx6" customClass="ApartmentPhotosCVFlowLayout" customModule="Night_Club_Application" customModuleProvider="target">
-                                                        <size key="itemSize" width="356" height="211"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ihb-Kt-Bx6" customClass="ApartmentPhotosCVFlowLayout" customModule="Night_Club_Application" customModuleProvider="target">
+                                                        <size key="itemSize" width="373" height="242.5"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7zX-L0-Fv6" customClass="ApartmentGalleryCollectionViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                                            <rect key="frame" x="9.5" y="0.0" width="356" height="211"/>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="7zX-L0-Fv6" customClass="ApartmentGalleryCollectionViewCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="24.5" width="373" height="242.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="356" height="211"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="373" height="242.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E8c-Ut-kJa">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="356" height="211"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="242.5"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </view>
@@ -214,48 +63,58 @@
                                                                 <constraint firstAttribute="trailing" secondItem="E8c-Ut-kJa" secondAttribute="trailing" id="anw-ex-KsO"/>
                                                                 <constraint firstAttribute="bottom" secondItem="E8c-Ut-kJa" secondAttribute="bottom" id="gjY-eC-1wc"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="apartmentImage" destination="E8c-Ut-kJa" id="TmJ-LY-HVJ"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lsV-JR-tzw">
+                                                    <rect key="frame" x="168" y="249.5" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lsV-JR-tzw" secondAttribute="bottom" constant="5" id="3DR-tl-cOd"/>
                                                 <constraint firstAttribute="trailing" secondItem="qLV-tq-IKP" secondAttribute="trailing" id="4gM-4C-nMP"/>
                                                 <constraint firstItem="qLV-tq-IKP" firstAttribute="leading" secondItem="17D-Qq-9yV" secondAttribute="leading" id="Dk9-us-C7f"/>
+                                                <constraint firstItem="lsV-JR-tzw" firstAttribute="centerX" secondItem="17D-Qq-9yV" secondAttribute="centerX" id="Zbw-W9-Q4l"/>
                                                 <constraint firstAttribute="bottom" secondItem="qLV-tq-IKP" secondAttribute="bottom" id="awo-7W-bfI"/>
                                                 <constraint firstItem="qLV-tq-IKP" firstAttribute="top" secondItem="17D-Qq-9yV" secondAttribute="top" id="pNI-vZ-SbX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="collectionView" destination="qLV-tq-IKP" id="Oxw-nr-cwy"/>
+                                            <outlet property="pageControl" destination="lsV-JR-tzw" id="AJO-ED-LDJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailCell" rowHeight="101" id="2hh-L9-DjW" customClass="ApartmentTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="257" width="375" height="101"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailCell" rowHeight="116" id="2hh-L9-DjW" customClass="ApartmentTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="320" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hh-L9-DjW" id="3sM-uk-6Ro">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-ks-fwZ">
-                                                    <rect key="frame" x="23" y="19" width="50" height="50"/>
+                                                    <rect key="frame" x="20" y="16" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="ijJ-CP-SFt"/>
                                                         <constraint firstAttribute="height" constant="50" id="yJJ-9P-QTZ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8i-NU-QUG">
-                                                    <rect key="frame" x="81" y="19" width="269" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="75" y="16" width="275" height="84"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="e8i-NU-QUG" firstAttribute="leading" secondItem="JrT-ks-fwZ" secondAttribute="trailing" constant="8" id="HnI-ab-IhA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="e8i-NU-QUG" secondAttribute="bottom" constant="5" id="D3c-R0-IDK"/>
+                                                <constraint firstItem="e8i-NU-QUG" firstAttribute="leading" secondItem="JrT-ks-fwZ" secondAttribute="trailing" constant="5" id="HnI-ab-IhA"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="e8i-NU-QUG" secondAttribute="trailing" constant="10" id="QtN-mD-795"/>
-                                                <constraint firstItem="JrT-ks-fwZ" firstAttribute="top" secondItem="3sM-uk-6Ro" secondAttribute="topMargin" constant="8" id="T4Q-TR-Isq"/>
+                                                <constraint firstItem="JrT-ks-fwZ" firstAttribute="top" secondItem="3sM-uk-6Ro" secondAttribute="topMargin" constant="5" id="T4Q-TR-Isq"/>
                                                 <constraint firstItem="e8i-NU-QUG" firstAttribute="top" secondItem="JrT-ks-fwZ" secondAttribute="top" id="Zjb-v1-9Iv"/>
-                                                <constraint firstItem="JrT-ks-fwZ" firstAttribute="leading" secondItem="3sM-uk-6Ro" secondAttribute="leadingMargin" constant="8" id="i3i-bT-FlL"/>
+                                                <constraint firstItem="JrT-ks-fwZ" firstAttribute="leading" secondItem="3sM-uk-6Ro" secondAttribute="leadingMargin" constant="5" id="i3i-bT-FlL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -280,16 +139,13 @@
                         <viewLayoutGuide key="safeArea" id="Njh-QU-MTp"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Z1q-UU-mdI" id="Nsn-wv-UlE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfr-mK-oeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2693.5999999999999" y="403.44827586206901"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="apartment-icon-1" width="100" height="100"/>
-        <image name="apartment-icon-2" width="100" height="100"/>
-        <image name="apartment-icon-3" width="100" height="100"/>
-        <image name="apartment-icon-4" width="100" height="100"/>
-    </resources>
 </document>

@@ -11,6 +11,6 @@ import UIKit
 class ApartmentGalleryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var apartmentImage: UIImageView!
-
+    
     
 }
