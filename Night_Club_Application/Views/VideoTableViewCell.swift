@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class VideosCell: UITableViewCell {
+class VideoTableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var previewImage: UIImageView!

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ApartmentPhotosCVFlowLauout: UICollectionViewFlowLayout {
+class ApartmentPhotosCVFlowLayout: UICollectionViewFlowLayout {
     let standardItemAlpha: CGFloat = 0.5
     let standardItemScale: CGFloat = 0.5
     var isSetup = false

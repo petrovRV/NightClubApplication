@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ApartmentPhotoCell: UICollectionViewCell {
+class ApartmentGalleryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var apartmentImage: UIImageView!
 
+    
 }
