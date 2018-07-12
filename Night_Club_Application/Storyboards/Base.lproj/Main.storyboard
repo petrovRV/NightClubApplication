@@ -172,7 +172,7 @@
                 <viewControllerPlaceholder storyboardName="MapStoryboard" id="dVL-oQ-Qdu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp1-Gw-7af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="98"/>
+            <point key="canvasLocation" x="1039" y="101"/>
         </scene>
         <!--ApartmentStoryboard-->
         <scene sceneID="c91-bI-dAt">
@@ -180,7 +180,7 @@
                 <viewControllerPlaceholder storyboardName="ApartmentStoryboard" id="Fts-la-EBd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-KR-Gdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="153"/>
+            <point key="canvasLocation" x="1035" y="163"/>
         </scene>
         <!--ClubCardsStoryboard -->
         <scene sceneID="dR1-U9-WnT">
@@ -188,7 +188,7 @@
                 <viewControllerPlaceholder storyboardName="ClubCardsStoryboard " id="lNL-l6-Pse" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Qe-M2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-51"/>
+            <point key="canvasLocation" x="1077" y="-10"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">
@@ -196,7 +196,7 @@
                 <viewControllerPlaceholder storyboardName="ReservationStoryboard" id="EBb-zD-6g3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqE-MD-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="45"/>
+            <point key="canvasLocation" x="1055" y="45"/>
         </scene>
         <!--GalleryStoryboard-->
         <scene sceneID="j5f-eN-QSB">
@@ -204,7 +204,7 @@
                 <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="255"/>
+            <point key="canvasLocation" x="1035" y="261"/>
         </scene>
         <!--VideosStoryboard-->
         <scene sceneID="9po-Gm-L1Z">
@@ -212,7 +212,7 @@
                 <viewControllerPlaceholder storyboardName="VideosStoryboard" id="TL2-8y-I2h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-70-WbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="204"/>
+            <point key="canvasLocation" x="1054" y="207"/>
         </scene>
     </scenes>
     <resources>

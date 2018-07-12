@@ -8,9 +8,10 @@
 
 import UIKit
 
-class LargePhotoViewController: UIViewController {
+class LargePhotoViewController: UIViewController, UIScrollViewDelegate {
     
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var photoNumber: UILabel!
     @IBOutlet weak var largePhoto: UIImageView!
     @IBOutlet weak var nextOutlet: UIButton!
@@ -24,13 +25,15 @@ class LargePhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 3.0
         let sharePhotoButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sharePhotoAction))
         self.navigationItem.rightBarButtonItem = sharePhotoButton
         
         updatePhoto(with: NavigationHelper.firstLoad)
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.numberOfTapsRequired = 1
-        largePhoto.addGestureRecognizer(tap)
+        scrollView.addGestureRecognizer(tap)
 
     }
 
@@ -56,7 +59,7 @@ class LargePhotoViewController: UIViewController {
         case .firstLoad:
             break
         }
-
+        self.scrollView.setZoomScale(0.0, animated: false)
         photoNumber.text = "\(currentImage + 1)/\(images.count)"
         largePhoto.image = images[currentImage]
     }
@@ -79,4 +82,7 @@ class LargePhotoViewController: UIViewController {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.largePhoto
+    }
 }

@@ -88,18 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
-                                <rect key="frame" x="50" y="417" width="275" height="20.5"/>
-                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-Bg-DF0">
-                                <rect key="frame" x="0.0" y="159" width="375" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wFx-Bg-DF0" secondAttribute="height" multiplier="3:2" id="4Fd-PY-ZC8"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="u7Y-GH-8qR">
                                 <rect key="frame" x="96" y="577" width="183" height="80"/>
                                 <subviews>
@@ -127,26 +115,53 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-8n-Cix">
+                                <rect key="frame" x="0.0" y="153" width="375" height="281"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vt5-fn-WIO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vt5-fn-WIO" firstAttribute="leading" secondItem="Ci5-8n-Cix" secondAttribute="leading" id="4qb-GC-gPl"/>
+                                    <constraint firstAttribute="trailing" secondItem="vt5-fn-WIO" secondAttribute="trailing" id="8fK-mu-d9c"/>
+                                    <constraint firstAttribute="bottom" secondItem="vt5-fn-WIO" secondAttribute="bottom" id="CEm-fJ-adG"/>
+                                    <constraint firstAttribute="width" secondItem="Ci5-8n-Cix" secondAttribute="height" multiplier="4:3" id="Hjx-Fa-lYT"/>
+                                    <constraint firstItem="vt5-fn-WIO" firstAttribute="centerY" secondItem="Ci5-8n-Cix" secondAttribute="centerY" id="Iz9-mo-vnw"/>
+                                    <constraint firstItem="vt5-fn-WIO" firstAttribute="top" secondItem="Ci5-8n-Cix" secondAttribute="top" id="ZJJ-cb-XRn"/>
+                                    <constraint firstItem="vt5-fn-WIO" firstAttribute="centerX" secondItem="Ci5-8n-Cix" secondAttribute="centerX" id="t20-eT-2Ss"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="L6R-6x-HTT" id="89w-ch-bSi"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
+                                <rect key="frame" x="50" y="442" width="275" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="centerX" secondItem="Y8e-lp-QqW" secondAttribute="centerX" id="4Mz-8y-Nqe"/>
                             <constraint firstItem="1BG-dd-Vym" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Y8e-lp-QqW" secondAttribute="leading" constant="50" id="581-OC-NBi"/>
-                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="leading" secondItem="Y8e-lp-QqW" secondAttribute="leading" id="AZ5-gB-Shx"/>
-                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" secondItem="wFx-Bg-DF0" secondAttribute="trailing" id="QgD-x7-KRR"/>
+                            <constraint firstItem="Ci5-8n-Cix" firstAttribute="leading" secondItem="Y8e-lp-QqW" secondAttribute="leading" id="5pg-p8-5Wx"/>
                             <constraint firstItem="u7Y-GH-8qR" firstAttribute="centerX" secondItem="Y8e-lp-QqW" secondAttribute="centerX" id="YLv-gq-vFk"/>
+                            <constraint firstItem="1BG-dd-Vym" firstAttribute="top" secondItem="Ci5-8n-Cix" secondAttribute="bottom" constant="8" id="esm-MH-9Ny"/>
                             <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1BG-dd-Vym" secondAttribute="trailing" constant="50" id="ngd-B4-VK1"/>
                             <constraint firstItem="Y8e-lp-QqW" firstAttribute="bottom" secondItem="u7Y-GH-8qR" secondAttribute="bottom" constant="10" id="nyr-6q-VxO"/>
-                            <constraint firstItem="1BG-dd-Vym" firstAttribute="top" secondItem="wFx-Bg-DF0" secondAttribute="bottom" constant="8" id="qiB-EY-V0p"/>
-                            <constraint firstItem="1BG-dd-Vym" firstAttribute="centerX" secondItem="wFx-Bg-DF0" secondAttribute="centerX" id="sXr-Wk-uTU"/>
-                            <constraint firstItem="wFx-Bg-DF0" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" constant="-50" id="wxG-eW-569"/>
+                            <constraint firstItem="Ci5-8n-Cix" firstAttribute="centerY" secondItem="SAu-Rj-Pnz" secondAttribute="centerY" constant="-40" id="rkf-Bo-GK7"/>
+                            <constraint firstItem="Y8e-lp-QqW" firstAttribute="trailing" secondItem="Ci5-8n-Cix" secondAttribute="trailing" id="sYh-pV-BfI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y8e-lp-QqW"/>
                     </view>
                     <connections>
                         <outlet property="backOutlet" destination="qyQ-TL-Bb2" id="QZi-dY-MFz"/>
-                        <outlet property="largePhoto" destination="wFx-Bg-DF0" id="GXB-35-Vg0"/>
+                        <outlet property="largePhoto" destination="vt5-fn-WIO" id="qnL-xt-HaZ"/>
                         <outlet property="nextOutlet" destination="AKV-g5-zuS" id="nEl-Le-iok"/>
                         <outlet property="photoNumber" destination="1BG-dd-Vym" id="NCc-gx-vci"/>
+                        <outlet property="scrollView" destination="Ci5-8n-Cix" id="PD8-gK-rI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-fD-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
