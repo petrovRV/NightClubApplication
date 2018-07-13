@@ -1,0 +1,183 @@
+.DS_Store
+GalleryStoryboard~.storyboard
+Night_Club_Application.xcodeproj/project.pbxproj
+Night_Club_Application.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Night_Club_Application.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Night_Club_Application.xcodeproj/project.xcworkspace/xcuserdata/lubomirolshansky.xcuserdatad/UserInterfaceState.xcuserstate
+Night_Club_Application.xcodeproj/xcuserdata/lubomirolshansky.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+Night_Club_Application.xcodeproj/xcuserdata/lubomirolshansky.xcuserdatad/xcschemes/xcschememanagement.plist
+Night_Club_Application.xcworkspace/contents.xcworkspacedata
+Night_Club_Application.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Night_Club_Application.xcworkspace/xcuserdata/lubomirolshansky.xcuserdatad/UserInterfaceState.xcuserstate
+Night_Club_Application.xcworkspace/xcuserdata/lubomirolshansky.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+Night_Club_Application/.DS_Store
+Night_Club_Application/AppDelegate.swift
+Night_Club_Application/Assets.xcassets/Apartament/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-1.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-1.imageset/icons8-1st-100.png
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-2.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-2.imageset/icons8-heart-outline-100 (2).png
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-3.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-3.imageset/icons8-chat-100.png
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-4.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Icons/apartment-icon-4.imageset/icons8-audio-100.png
+Night_Club_Application/Assets.xcassets/Apartament/Images/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament1.imageset/17991708_631703737021202_8962676798521801293_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament1.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament10.imageset/18422162_631703887021187_8607328554683573737_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament10.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament11.imageset/18422182_631703680354541_1003345174958581700_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament11.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament12.imageset/18422267_631703693687873_6499940214154777767_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament12.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament14.imageset/18449266_631704017021174_7474725349926311478_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament14.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament2.imageset/18359119_631703707021205_6718092170242332596_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament2.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament3.imageset/18359334_631703807021195_3749865485011865921_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament3.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament4.imageset/18359419_631703873687855_6972650248357044282_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament4.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament5.imageset/18403948_631703953687847_225234193753699882_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament5.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament6.imageset/18403986_631703780354531_3418212093672309204_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament6.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament7.imageset/18403987_631703727021203_8652239996546506555_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament7.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament8.imageset/18404049_631703683687874_8834536607998522329_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament8.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament9.imageset/18404166_631703853687857_3242432962182431116_o.jpg
+Night_Club_Application/Assets.xcassets/Apartament/Images/apartament9.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/AppIcon.appiconset/Contents.json
+Night_Club_Application/Assets.xcassets/Contents.json
+Night_Club_Application/Assets.xcassets/Ladies-card.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Ladies-card.imageset/Untitled-1.jpg
+Night_Club_Application/Assets.xcassets/Maps/Contents.json
+Night_Club_Application/Assets.xcassets/Maps/icons8-waypoint-map-100.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Maps/icons8-waypoint-map-100.imageset/icons8-waypoint-map-100.png
+Night_Club_Application/Assets.xcassets/Maps/xoxo_party_map.imageset/534509748.jpg
+Night_Club_Application/Assets.xcassets/Maps/xoxo_party_map.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Navigation/Contents.json
+Night_Club_Application/Assets.xcassets/Navigation/navigation-nextPage.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Navigation/navigation-nextPage.imageset/icons8-more-than-100 (1).png
+Night_Club_Application/Assets.xcassets/Navigation/navigation-previousPage.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Navigation/navigation-previousPage.imageset/icons8-less-than-100.png
+Night_Club_Application/Assets.xcassets/Other Icons/Contents.json
+Night_Club_Application/Assets.xcassets/Other Icons/icons-facebook-100.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Other Icons/icons-facebook-100.imageset/icons8-facebook-100.png
+Night_Club_Application/Assets.xcassets/Other Icons/icons-instagram-100.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Other Icons/icons-instagram-100.imageset/icons8-instagram-100.png
+Night_Club_Application/Assets.xcassets/Reservation/Contents.json
+Night_Club_Application/Assets.xcassets/Reservation/cell.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Reservation/cell.imageset/icons8-telephone-100.png
+Night_Club_Application/Assets.xcassets/Reservation/icon-marketing.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Reservation/icon-marketing.imageset/icons8-omnichannel-100.png
+Night_Club_Application/Assets.xcassets/Reservation/icon-media.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Reservation/icon-media.imageset/icons8-stop-squared-100.png
+Night_Club_Application/Assets.xcassets/Reservation/icon-reservation.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Reservation/icon-reservation.imageset/icons8-reservation-100.png
+Night_Club_Application/Assets.xcassets/Vip-card.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/Vip-card.imageset/Untitled-2.jpg
+Night_Club_Application/Assets.xcassets/backIndicatorImage.imageset/Contents.json
+Night_Club_Application/Assets.xcassets/backIndicatorImage.imageset/icons8-menu-100.png
+Night_Club_Application/Assets.xcassets/share.imageset/Contents.json
+"Night_Club_Application/Assets.xcassets/share.imageset/icons8-\320\277\320\276\320\264\320\265\320\273\320\270\321\202\321\214\321\201\321\217-100.png"
+Night_Club_Application/Assets.xcassets/xoxo.imageset/600x150_color.png
+Night_Club_Application/Assets.xcassets/xoxo.imageset/Contents.json
+Night_Club_Application/Controllers/ApartmentOldViewController.swift
+Night_Club_Application/Controllers/ApartmentViewController.swift
+Night_Club_Application/Controllers/ClubCardsViewController.swift
+Night_Club_Application/Controllers/Gallery/GalleryViewController.swift
+Night_Club_Application/Controllers/Gallery/LargePhotoViewController.swift
+Night_Club_Application/Controllers/MainViewController.swift
+Night_Club_Application/Controllers/MapViewController.swift
+Night_Club_Application/Controllers/ReservationViewController.swift
+Night_Club_Application/Controllers/Videos/PlayVideoViewController.swift
+Night_Club_Application/Controllers/Videos/VideosViewController.swift
+Night_Club_Application/Info.plist
+Night_Club_Application/Layouts/ApartmentPhotosCVFlowLayout.swift
+Night_Club_Application/Models/Videos.swift
+Night_Club_Application/Resources/Fonts/Gotham Bold Regular.ttf
+Night_Club_Application/Resources/Fonts/OFL.txt
+Night_Club_Application/Resources/Fonts/Rubik-Black.ttf
+Night_Club_Application/Resources/Fonts/Rubik-BlackItalic.ttf
+Night_Club_Application/Resources/Fonts/Rubik-Bold.ttf
+Night_Club_Application/Resources/Fonts/Rubik-BoldItalic.ttf
+Night_Club_Application/Resources/Fonts/Rubik-Italic.ttf
+Night_Club_Application/Resources/Fonts/Rubik-Light.ttf
+Night_Club_Application/Resources/Fonts/Rubik-LightItalic.ttf
+Night_Club_Application/Resources/Fonts/Rubik-Medium.ttf
+Night_Club_Application/Resources/Fonts/Rubik-MediumItalic.ttf
+Night_Club_Application/Resources/Fonts/Rubik-Regular.ttf
+Night_Club_Application/Resources/MainViewButton.swift
+Night_Club_Application/Services/CustomSegmentedControl.swift
+Night_Club_Application/Services/Environment.swift
+Night_Club_Application/Services/VideosNetworkService.swift
+Night_Club_Application/Storyboards/.DS_Store
+Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard~.storyboard
+Night_Club_Application/Storyboards/Base.lproj/GalleryStoryboard~.storyboard
+Night_Club_Application/Storyboards/Base.lproj/LaunchScreen.storyboard
+Night_Club_Application/Storyboards/Base.lproj/Main.storyboard
+Night_Club_Application/Storyboards/Base.lproj/ReservationStoryboard~.storyboard
+Night_Club_Application/Storyboards/Base.lproj/VideosStoryboard~.storyboard
+Night_Club_Application/Storyboards/ClubCardsStoryboard .storyboard
+Night_Club_Application/Storyboards/GalleryStoryboard.storyboard
+Night_Club_Application/Storyboards/Main~.storyboard
+Night_Club_Application/Storyboards/MapStoryboard.storyboard
+Night_Club_Application/Storyboards/Night_Club_Application/.DS_Store
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/.DS_Store
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard.storyboard
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/Base.lproj/Main~.storyboard
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/Base.lproj/ReservationStoryboard.storyboard
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/Main~.storyboard
+Night_Club_Application/Storyboards/Night_Club_Application/Storyboards/VideosStoryboard]~.storyboard
+Night_Club_Application/Storyboards/VideosStoryboard.storyboard
+Night_Club_Application/Storyboards/dg~.storyboard
+Night_Club_Application/Views/ApartmentGalleryCollectionViewCell.swift
+Night_Club_Application/Views/ApartmentGalleryTableViewCell.swift
+Night_Club_Application/Views/ApartmentTableViewCell.swift
+Night_Club_Application/Views/GalleryPhotoCell.swift
+Night_Club_Application/Views/VideoTableViewCell.swift
+Podfile
+Podfile.lock
+Pods/Alamofire/LICENSE
+Pods/Alamofire/README.md
+Pods/Alamofire/Source/AFError.swift
+Pods/Alamofire/Source/Alamofire.swift
+Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Pods/Alamofire/Source/MultipartFormData.swift
+Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Pods/Alamofire/Source/Notifications.swift
+Pods/Alamofire/Source/ParameterEncoding.swift
+Pods/Alamofire/Source/Request.swift
+Pods/Alamofire/Source/Response.swift
+Pods/Alamofire/Source/ResponseSerialization.swift
+Pods/Alamofire/Source/Result.swift
+Pods/Alamofire/Source/ServerTrustPolicy.swift
+Pods/Alamofire/Source/SessionDelegate.swift
+Pods/Alamofire/Source/SessionManager.swift
+Pods/Alamofire/Source/TaskDelegate.swift
+Pods/Alamofire/Source/Timeline.swift
+Pods/Alamofire/Source/Validation.swift
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/lubomirolshansky.xcuserdatad/xcschemes/Alamofire.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/lubomirolshansky.xcuserdatad/xcschemes/Pods-Night_Club_Application.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/lubomirolshansky.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Pods/Target Support Files/Alamofire/Alamofire.xcconfig
+Pods/Target Support Files/Alamofire/Info.plist
+Pods/Target Support Files/Pods-Night_Club_Application/Info.plist
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-acknowledgements.markdown
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-acknowledgements.plist
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-dummy.m
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-frameworks.sh
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-resources.sh
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application-umbrella.h
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application.debug.xcconfig
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application.modulemap
+Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application.release.xcconfig

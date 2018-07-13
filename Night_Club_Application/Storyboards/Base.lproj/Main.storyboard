@@ -34,6 +34,9 @@
                                         <state key="normal" title="O Nas">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gfO-7L-OPn" kind="show" id="EPx-eH-kpC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50.5" width="320" height="50"/>
@@ -189,6 +192,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Qe-M2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077" y="-10"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="Vyq-Qw-dgV">
+            <objects>
+                <viewController id="gfO-7L-OPn" customClass="AboutUsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qf0-g2-sOI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="33a-T2-Kdd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyt-Zh-fYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="16"/>
         </scene>
         <!--ReservationStoryboard-->
         <scene sceneID="Iq5-f5-lV0">

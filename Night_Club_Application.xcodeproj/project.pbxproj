@@ -19,6 +19,7 @@
 		8D438C6B20F789BD005743A6 /* ApartmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6A20F789BD005743A6 /* ApartmentTableViewCell.swift */; };
 		8D438C6F20F78C8F005743A6 /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */; };
 		8D438C7620F7F771005743A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D438C7520F7F771005743A6 /* Assets.xcassets */; };
+		8D438C7820F8EA5C005743A6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */; };
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
 		8D446A0020C182150004FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4469FE20C182150004FA10 /* Main.storyboard */; };
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
@@ -67,6 +68,7 @@
 		8D438C6A20F789BD005743A6 /* ApartmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentTableViewCell.swift; sourceTree = "<group>"; };
 		8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
 		8D438C7520F7F771005743A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		8D4469F720C182150004FA10 /* Night_Club_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Club_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4469FA20C182150004FA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4469FF20C182150004FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				8D44AE4520D1561F008F3ACE /* ApartmentOldViewController.swift */,
 				8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */,
 				8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */,
+				8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */,
 				8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */,
 				8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */,
+				8D438C7820F8EA5C005743A6 /* AboutUsViewController.swift in Sources */,
 				8D438C6920F78962005743A6 /* ApartmentGalleryTableViewCell.swift in Sources */,
 				8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
