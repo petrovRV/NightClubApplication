@@ -14,11 +14,9 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var aboutUsTableView: UITableView!
     
     var expandCell = false
-    let tableHeaderViewHeight: CGFloat = 242.0
-    let tableHeaderViewCutaway: CGFloat = 25.0
+    let tableHeaderViewHeight: CGFloat = 250.0
     
     var headerView: UIView!
-    var headerMaskLayer: CAShapeLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,11 +47,6 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
         headerView.frame = headerRect
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

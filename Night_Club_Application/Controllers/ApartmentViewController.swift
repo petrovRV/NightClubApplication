@@ -25,11 +25,6 @@ class ApartmentViewController: UIViewController {
         invalidateLayout()
 
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
     
     func invalidateLayout(){
         let indexPath = IndexPath(item: 0, section: 0)

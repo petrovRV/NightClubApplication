@@ -33,12 +33,6 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return responceVideos.count
     }

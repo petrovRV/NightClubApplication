@@ -26,10 +26,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-xm-irP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-xm-irP">
                                 <rect key="frame" x="0.0" y="20" width="375" height="880"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="v0y-pV-H6n" userLabel="Header View">
+                                <view key="tableHeaderView" contentMode="scaleAspectFill" id="v0y-pV-H6n" userLabel="Header View">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -47,7 +47,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubDetailTableViewCell" id="T0j-X9-Ggg" customClass="ClubDetailTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="270" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="243" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T0j-X9-Ggg" id="yb6-Ba-DEF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -85,7 +85,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubDescriptionTableViewCell" id="fer-Mz-xFZ" customClass="ClubDescriptionTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="314" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="287" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fer-Mz-xFZ" id="a21-RR-eaw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -110,7 +110,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkingHoursTableViewCell" rowHeight="109" id="rf9-gv-Cd2" customClass="WorkingHoursTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="358" width="375" height="109"/>
+                                        <rect key="frame" x="0.0" y="331" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rf9-gv-Cd2" id="5hy-9X-BsM">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
@@ -220,7 +220,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HowToGetTableViewCell" rowHeight="109" id="a8V-z8-GrR" customClass="HowToGetTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="467" width="375" height="109"/>
+                                        <rect key="frame" x="0.0" y="440" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a8V-z8-GrR" id="0HU-Hp-pdm">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
@@ -254,7 +254,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubMapTableViewCell" rowHeight="215" id="9b0-c4-PzC" customClass="ClubMapTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="576" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="549" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9b0-c4-PzC" id="X0L-Tt-Izg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>

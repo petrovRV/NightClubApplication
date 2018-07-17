@@ -27,7 +27,6 @@
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
-		8D44AE4620D1561F008F3ACE /* ApartmentOldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4520D1561F008F3ACE /* ApartmentOldViewController.swift */; };
 		8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */; };
 		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift */; };
 		8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */; };
@@ -84,7 +83,6 @@
 		8D446A0620C182150004FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
-		8D44AE4520D1561F008F3ACE /* ApartmentOldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentOldViewController.swift; sourceTree = "<group>"; };
 		8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosCVFlowLayout.swift; sourceTree = "<group>"; };
 		8D5E1F3020D1D90100766996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard.storyboard; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
-				8D44AE4520D1561F008F3ACE /* ApartmentOldViewController.swift */,
 				8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */,
 				8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */,
 				8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */,
@@ -474,7 +471,6 @@
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D438C7D20F91E16005743A6 /* ClubDetailTableViewCell.swift in Sources */,
 				8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */,
-				8D44AE4620D1561F008F3ACE /* ApartmentOldViewController.swift in Sources */,
 				8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */,
 				8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */,
 			);

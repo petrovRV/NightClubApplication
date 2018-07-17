@@ -29,6 +29,10 @@ class MainViewController: UIViewController {
         
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 
     func openUrl(appUrl: NSURL, webUrl: NSURL) {
         if UIApplication.shared.canOpenURL(appUrl as URL) {

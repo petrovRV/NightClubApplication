@@ -20,11 +20,6 @@ class ClubCardsViewController: UIViewController {
         ladiesCardView.alpha = 0
 
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
     
     @IBAction func segmentControlValueChanged(_ sender: CustomSegmentedControl) {
         switch sender.selectedSegmentIndex {

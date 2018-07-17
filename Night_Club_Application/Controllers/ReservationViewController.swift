@@ -66,12 +66,6 @@ class ReservationViewController: UIViewController {
             break
         }
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
     
     func makeAPhoneCall()  {
         let url: NSURL = URL(string: "TEL://1234567890")! as NSURL
