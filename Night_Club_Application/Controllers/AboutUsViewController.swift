@@ -14,7 +14,7 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var aboutUsTableView: UITableView!
     
     var expandCell = false
-    let tableHeaderViewHeight: CGFloat = 240.0
+    let tableHeaderViewHeight: CGFloat = 242.0
     let tableHeaderViewCutaway: CGFloat = 25.0
     
     var headerView: UIView!
@@ -22,13 +22,33 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupHeaderView()
+    }
+    
+    func setupHeaderView() {
+        headerView = aboutUsTableView.tableHeaderView
+        aboutUsTableView.tableHeaderView = nil
+        aboutUsTableView.addSubview(headerView)
         
-    headerView = aboutUsTableView.tableHeaderView
-    aboutUsTableView.tableHeaderView = nil
-    aboutUsTableView.addSubview(headerView)
+        aboutUsTableView.contentInset = UIEdgeInsets(top: tableHeaderViewHeight, left: 0, bottom: 0, right: 0)
         
-//    aboutUsTableView.contentInset = UIEdgeInsets(top: tableHeaderViewHeight, left: 0, bottom: 0, right: 0)
+        // 64 for navigation bar
+        aboutUsTableView.contentOffset = CGPoint(x: 0, y: -tableHeaderViewHeight + 64)
         
+        aboutUsTableView.contentInset = UIEdgeInsets(top: tableHeaderViewHeight, left: 0, bottom: 0, right: 0)
+        aboutUsTableView.contentOffset = CGPoint(x: 0, y: -tableHeaderViewHeight)
+    }
+    
+   func updateHeaderView() {
+
+        var headerRect = CGRect(x: 0, y: -tableHeaderViewHeight, width: aboutUsTableView.bounds.width, height: tableHeaderViewHeight)
+    
+        if aboutUsTableView.contentOffset.y < -tableHeaderViewHeight {
+        headerRect.origin.y = aboutUsTableView.contentOffset.y
+        headerRect.size.height = -aboutUsTableView.contentOffset.y
+    }
+    
+        headerView.frame = headerRect
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -99,6 +119,10 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.aboutUsTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             self.aboutUsTableView.endUpdates()
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        updateHeaderView()
     }
 
 }
