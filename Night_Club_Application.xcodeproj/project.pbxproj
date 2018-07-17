@@ -51,6 +51,9 @@
 		8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */; };
 		8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */; };
 		8D9CF27220FD635A0041FD6C /* WorkingHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27120FD635A0041FD6C /* WorkingHoursTableViewCell.swift */; };
+		8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27320FD7A920041FD6C /* ClubMapTableViewCell.swift */; };
+		8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27520FD7CE40041FD6C /* HowToGetTableViewCell.swift */; };
+		8D9CF27C20FD8EB50041FD6C /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 		D36AA7C67A1C52F5A5B6D01D /* Pods_Night_Club_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197CC2B86A419368CF6F74CA /* Pods_Night_Club_Application.framework */; };
@@ -105,6 +108,9 @@
 		8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
 		8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePhotoViewController.swift; sourceTree = "<group>"; };
 		8D9CF27120FD635A0041FD6C /* WorkingHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHoursTableViewCell.swift; sourceTree = "<group>"; };
+		8D9CF27320FD7A920041FD6C /* ClubMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubMapTableViewCell.swift; sourceTree = "<group>"; };
+		8D9CF27520FD7CE40041FD6C /* HowToGetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetTableViewCell.swift; sourceTree = "<group>"; };
+		8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		8DBF9DF820DD97B500A1DEB9 /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
@@ -181,6 +187,8 @@
 				8D438C7C20F91E16005743A6 /* ClubDetailTableViewCell.swift */,
 				8D438C7E20F91F66005743A6 /* ClubDescriptionTableViewCell.swift */,
 				8D9CF27120FD635A0041FD6C /* WorkingHoursTableViewCell.swift */,
+				8D9CF27320FD7A920041FD6C /* ClubMapTableViewCell.swift */,
+				8D9CF27520FD7CE40041FD6C /* HowToGetTableViewCell.swift */,
 			);
 			path = "About Us";
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 				8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */,
 				8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */,
+				8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */,
 				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */,
 			);
 			path = Storyboards;
@@ -373,6 +382,7 @@
 				8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */,
 				8D86B22E20DDA7F2006A447F /* OFL.txt in Resources */,
 				8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */,
+				8D9CF27C20FD8EB50041FD6C /* AboutUsStoryboard.storyboard in Resources */,
 				8D86B22B20DDA7F2006A447F /* Rubik-LightItalic.ttf in Resources */,
 				8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */,
 				8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */,
@@ -445,6 +455,7 @@
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */,
 				8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */,
+				8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */,
 				8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */,
 				8D438C6620F6595E005743A6 /* PlayVideoViewController.swift in Sources */,
 				8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */,
@@ -464,6 +475,7 @@
 				8D438C7D20F91E16005743A6 /* ClubDetailTableViewCell.swift in Sources */,
 				8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */,
 				8D44AE4620D1561F008F3ACE /* ApartmentOldViewController.swift in Sources */,
+				8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */,
 				8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

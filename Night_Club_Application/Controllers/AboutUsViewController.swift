@@ -12,10 +12,23 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     @IBOutlet weak var aboutUsTableView: UITableView!
+    
     var expandCell = false
+    let tableHeaderViewHeight: CGFloat = 240.0
+    let tableHeaderViewCutaway: CGFloat = 25.0
+    
+    var headerView: UIView!
+    var headerMaskLayer: CAShapeLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    headerView = aboutUsTableView.tableHeaderView
+    aboutUsTableView.tableHeaderView = nil
+    aboutUsTableView.addSubview(headerView)
+        
+//    aboutUsTableView.contentInset = UIEdgeInsets(top: tableHeaderViewHeight, left: 0, bottom: 0, right: 0)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,7 +37,7 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 4
+       return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,6 +64,17 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
                 cell.collapseArrow.image = #imageLiteral(resourceName: "AboutUs-expand")
             }
             return cell
+            
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HowToGetTableViewCell", for: indexPath) as! HowToGetTableViewCell
+            cell.titleLable.text = "Do klubu dojść można na dwa sposoby:"
+            cell.directionLabel.text = "pieszo: od Placu Trzech Krzyży, w przejściu pomiędzy budynkami (z napisem TEATR IMKA), tuż przed hotelem Sheraton (idąc od strony ulicy Książęcej). samochodem: jadąc ulicą Prusa należy skręcić w lewo zaraz za hotelem Sheraton."
+            return cell
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ClubMapTableViewCell", for: indexPath) as! ClubMapTableViewCell
+            cell.configure(location: "Marii Konopnickiej 6, 00-491 Warszawa")
+            return cell
         default:
             fatalError("Failed to instantiate the table view cell")
         }
@@ -69,7 +93,7 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 3 {
-            print("click")
+            
             expandCell = !expandCell
             self.aboutUsTableView.beginUpdates()
             self.aboutUsTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)

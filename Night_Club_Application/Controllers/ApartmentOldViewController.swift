@@ -47,7 +47,7 @@ class ApartmentOldViewController: UIViewController, UICollectionViewDataSource, 
         
         let layout = self.apartmentPhotosCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
-        var offset = targetContentOffset.pointee
+        let offset = targetContentOffset.pointee
         let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
         let roundedIndex = round(index)
         self.pageControl.currentPage = Int(roundedIndex)

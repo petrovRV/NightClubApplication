@@ -18,9 +18,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backIndicatorImage")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backIndicatorImage")
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+//        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backIndicatorImage")
+//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backIndicatorImage")
+//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
 
     }
     

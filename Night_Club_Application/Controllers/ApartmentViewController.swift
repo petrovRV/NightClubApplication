@@ -22,12 +22,22 @@ class ApartmentViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
+        invalidateLayout()
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    func invalidateLayout(){
+        let indexPath = IndexPath(item: 0, section: 0)
+        DispatchQueue.main.async {
+            self.apartmentCollectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
+    }
+    
 }
 
 extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
@@ -58,15 +68,15 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }
     }
-    func tableView(_ tableView: UITableView, heightForRowAt
-        indexPath: IndexPath) -> CGFloat
-    {
-        if indexPath.row == 0 {
-            return tableView.bounds.height / 2.5
-        } else {
-            return UITableViewAutomaticDimension
-        }
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt
+//        indexPath: IndexPath) -> CGFloat
+//    {
+//        if indexPath.row == 0 {
+//            return tableView.bounds.height / 2.7
+//        } else {
+//            return UITableViewAutomaticDimension
+//        }
+//    }
 }
 
 extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -92,5 +102,11 @@ extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewD
         let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
         let roundedIndex = round(abs(index))
         self.pageControl.currentPage = Int(roundedIndex)
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = collectionView.frame.height
+        let width = collectionView.frame.width
+        return CGSize(width: width, height: height)
     }
 }
