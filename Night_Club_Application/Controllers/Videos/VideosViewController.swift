@@ -38,8 +38,10 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "VideoCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! VideoTableViewCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
+        
+//        cell.setPreviewAndName(with: responceVideos[indexPath.row])
         
         cell.videoNameLabel.text = self.responceVideos[indexPath.row].title
         

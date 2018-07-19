@@ -28,7 +28,7 @@
 		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
 		8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */; };
-		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift */; };
+		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */; };
 		8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */; };
 		8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */; };
 		8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */; };
@@ -84,7 +84,7 @@
 		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosCVFlowLayout.swift; sourceTree = "<group>"; };
+		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosFlowLayout.swift; sourceTree = "<group>"; };
 		8D5E1F3020D1D90100766996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Night_Club_Application/Storyboards/Base.lproj/ApartmentStoryboard.storyboard; sourceTree = "<group>"; };
 		8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideosStoryboard.storyboard; sourceTree = "<group>"; };
 		8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		8D5E1F3220D3E9A800766996 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift */,
+				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -446,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosCVFlowLayout.swift in Sources */,
+				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift in Sources */,
 				8D438C6F20F78C8F005743A6 /* ApartmentViewController.swift in Sources */,
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
 				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,

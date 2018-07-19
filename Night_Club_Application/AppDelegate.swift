@@ -53,3 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.actionIdentifier == "nightclub.makeReservation" {
+            
+            let url: NSURL = URL(string: "TEL://1234567890")! as NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        completionHandler()
+    }
+}

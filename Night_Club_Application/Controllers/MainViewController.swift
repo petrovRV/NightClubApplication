@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class MainViewController: UIViewController {
 
@@ -17,7 +18,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addNotification()
+//        addNotification()
 //        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backIndicatorImage")
 //        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backIndicatorImage")
 //        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -48,6 +50,30 @@ class MainViewController: UIViewController {
                 UIApplication.shared.openURL(webUrl as URL)
             }
         }
+    }
+    
+    @IBAction func notification(_ sender: Any) {
+        addNotification()
+    }
+    func addNotification(){
+        
+    let content = UNMutableNotificationContent()
+    content.title = "ZORGANIZUJ SWOJĄ IMPREZĘ!"
+    content.subtitle = "XOXO Party"
+    content.body = "Doskonała lokalizacja w centrum Warszawy i muzyka na najwyższym poziomie"
+    content.sound = UNNotificationSound.default()
+
+    let categoryIdentifer = "nightclub.action"
+    let makeReservationAction = UNNotificationAction(identifier: "nightclub.makeReservation", title: "Zarezerwować stolik", options: [.foreground])
+    let cancelAction = UNNotificationAction(identifier: "nightclub.cancel", title: "Później", options: [])
+    let category = UNNotificationCategory(identifier: categoryIdentifer, actions: [makeReservationAction, cancelAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+        content.categoryIdentifier = categoryIdentifer
+        
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 86400, repeats: false)
+    let request = UNNotificationRequest(identifier: "nightclub.notification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     @IBAction func openFacebookPageButton(_ sender: Any) {

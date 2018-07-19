@@ -20,7 +20,7 @@ class VideoTableViewCell: UITableViewCell {
 
     }
 
-//    func setVideoAndLabel(with) {
+//    func setPreviewAndName(with: responceVideos) {
 //        
 //    }
 }

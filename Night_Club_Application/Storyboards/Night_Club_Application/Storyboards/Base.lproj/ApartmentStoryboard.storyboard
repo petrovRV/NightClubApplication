@@ -42,7 +42,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="qLV-tq-IKP" secondAttribute="height" multiplier="3:2" id="y4d-w1-ABp"/>
                                                     </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ihb-Kt-Bx6" customClass="ApartmentPhotosCVFlowLayout" customModule="Night_Club_Application" customModuleProvider="target">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ihb-Kt-Bx6" customClass="ApartmentPhotosFlowLayout" customModule="Night_Club_Application" customModuleProvider="target">
                                                         <size key="itemSize" width="373" height="230.5"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

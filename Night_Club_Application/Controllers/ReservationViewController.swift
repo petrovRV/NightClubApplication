@@ -31,7 +31,7 @@ class ReservationViewController: UIViewController {
     
     var animators: [UIViewPropertyAnimator] = []
     
-    var viewOffset: CGFloat = 250
+    var viewOffset: CGFloat = 230
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,9 @@ class ReservationViewController: UIViewController {
     }
     
     
+    @IBAction func Cellll(_ sender: Any) {
+        makeAPhoneCall()
+    }
     @objc func drag (_ gesture: UIPanGestureRecognizer) {
         
         switch gesture.state {
