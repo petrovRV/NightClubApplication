@@ -31,7 +31,7 @@ class ReservationViewController: UIViewController {
     
     var animators: [UIViewPropertyAnimator] = []
     
-    var viewOffset: CGFloat = 230
+    var viewOffset: CGFloat = 242
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,7 @@ class ReservationViewController: UIViewController {
         self.topViewIcon.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         self.blurView.effect = nil
         self.blurView.isHidden = false
+        self.blurView.isHidden = true
         self.view.layoutIfNeeded()
         
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.drag(_:)))
@@ -48,9 +49,6 @@ class ReservationViewController: UIViewController {
     }
     
     
-    @IBAction func Cellll(_ sender: Any) {
-        makeAPhoneCall()
-    }
     @objc func drag (_ gesture: UIPanGestureRecognizer) {
         
         switch gesture.state {
@@ -70,14 +68,15 @@ class ReservationViewController: UIViewController {
         }
     }
     
+    @IBAction func makeCell(_ sender: Any) {
+        makeAPhoneCall()
+    }
+    
     func makeAPhoneCall()  {
         let url: NSURL = URL(string: "TEL://+48881216566")! as NSURL
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
-    @IBAction func cellButton(_ sender: Any) {
-        self.makeAPhoneCall()
-    }
     
     func animateView(to state: State, duration: TimeInterval) {
         
@@ -100,10 +99,10 @@ class ReservationViewController: UIViewController {
         basicAnimator.addAnimations {
             switch state {
             case .open:
-                self.contactsTitleConstraint.constant = 120
+                self.contactsTitleConstraint.constant = 90
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 1, y: 1)
             case .closed:
-                self.contactsTitleConstraint.constant = 22
+                self.contactsTitleConstraint.constant = 20
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
             self.view.layoutIfNeeded()
@@ -112,8 +111,10 @@ class ReservationViewController: UIViewController {
         let blurAnimator = UIViewPropertyAnimator(duration: duration, controlPoint1: CGPoint(x: 0.8, y: 0.2), controlPoint2: CGPoint(x: 0.8, y: 0.2)) {
             switch state {
             case .open:
+                self.blurView.isHidden = false
                 self.blurView.effect = UIBlurEffect(style: .light)
             case .closed:
+                self.blurView.isHidden = true
                 self.blurView.effect = nil
             }
         }

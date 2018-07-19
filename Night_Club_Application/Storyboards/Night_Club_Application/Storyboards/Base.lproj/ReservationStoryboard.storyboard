@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Rubik-Medium.ttf">
-            <string>Rubik-Medium</string>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -31,29 +31,39 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aby dokonac rezerwacji skontaktuj się z nami telefonicznie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-kb-cfn">
-                                <rect key="frame" x="15" y="290" width="345" height="76"/>
-                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="21"/>
+                                <rect key="frame" x="15" y="290" width="345" height="50"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKF-uB-8Pn">
-                                <rect key="frame" x="130" y="376" width="185" height="100"/>
+                                <rect key="frame" x="170" y="368" width="190" height="75"/>
                                 <string key="text">Numer telefonu:
-+48 888 888 888
++48 881 216 566
 </string>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC0-6i-lVm">
-                                <rect key="frame" x="15" y="376" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-K4-Owz">
+                                <rect key="frame" x="15" y="348" width="140" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="4Aa-xa-dC7"/>
-                                    <constraint firstAttribute="width" constant="100" id="Q7w-pj-0ua"/>
+                                    <constraint firstAttribute="width" constant="140" id="3xx-Dm-9KU"/>
+                                    <constraint firstAttribute="height" constant="90" id="frP-Vh-h3v"/>
                                 </constraints>
-                                <state key="normal" image="cell"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="23"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Zadzwoń"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="cellButton:" destination="4c7-M9-wzQ" eventType="touchUpInside" id="H6a-zH-ELM"/>
+                                    <action selector="makeCell:" destination="4c7-M9-wzQ" eventType="touchUpInside" id="L29-ub-afj"/>
                                 </connections>
                             </button>
                             <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="208-zP-FdO">
@@ -70,14 +80,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smz-qf-b7J" userLabel="TopView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KONTAKT Z KLUBEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-Ju-HoQ">
-                                                <rect key="frame" x="52" y="21" width="234.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANE KONTAKTOWE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-Ju-HoQ">
+                                                <rect key="frame" x="52" y="21" width="236" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" red="0.58801951139999997" green="0.58801951139999997" blue="0.58801951139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Um4-Ju-HoQ" firstAttribute="leading" secondItem="Smz-qf-b7J" secondAttribute="leading" constant="52" id="UM8-6m-1x1"/>
                                             <constraint firstItem="Um4-Ju-HoQ" firstAttribute="centerY" secondItem="Smz-qf-b7J" secondAttribute="centerY" id="bsv-Mv-sX4"/>
@@ -258,27 +268,26 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p9a-5Z-gnW" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" id="4XA-iD-ojX"/>
-                            <constraint firstItem="OKF-uB-8Pn" firstAttribute="leading" secondItem="wC0-6i-lVm" secondAttribute="trailing" constant="15" id="4bW-kc-TR2"/>
                             <constraint firstItem="208-zP-FdO" firstAttribute="trailing" secondItem="8wl-WS-I0S" secondAttribute="trailing" id="6pI-oe-kQE"/>
                             <constraint firstItem="CM4-6q-pdq" firstAttribute="trailing" secondItem="8wl-WS-I0S" secondAttribute="trailing" id="7Nk-O2-7g1"/>
-                            <constraint firstItem="OKF-uB-8Pn" firstAttribute="height" secondItem="wC0-6i-lVm" secondAttribute="height" id="9zf-N0-HrT"/>
                             <constraint firstItem="qPI-kb-cfn" firstAttribute="top" secondItem="p9a-5Z-gnW" secondAttribute="bottom" constant="10" id="AuH-bk-Mvw"/>
                             <constraint firstItem="p9a-5Z-gnW" firstAttribute="trailing" secondItem="8wl-WS-I0S" secondAttribute="trailing" id="Hda-jW-ggR"/>
-                            <constraint firstItem="OKF-uB-8Pn" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="10" id="LwY-DB-UCo"/>
                             <constraint firstItem="p9a-5Z-gnW" firstAttribute="width" secondItem="p9a-5Z-gnW" secondAttribute="height" multiplier="3:2" id="Ng0-ii-ZNr"/>
                             <constraint firstItem="208-zP-FdO" firstAttribute="top" secondItem="t1x-l4-Oh9" secondAttribute="top" id="Ou9-f9-psZ"/>
                             <constraint firstItem="208-zP-FdO" firstAttribute="bottom" secondItem="8wl-WS-I0S" secondAttribute="bottom" id="QiD-gT-4HE"/>
+                            <constraint firstItem="8wl-WS-I0S" firstAttribute="trailing" secondItem="OKF-uB-8Pn" secondAttribute="trailing" constant="15" id="RSO-tq-l8b"/>
                             <constraint firstItem="CM4-6q-pdq" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" id="YUZ-ew-Cud"/>
+                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="bIR-aq-rEg"/>
+                            <constraint firstItem="OKF-uB-8Pn" firstAttribute="leading" secondItem="QZ2-K4-Owz" secondAttribute="trailing" constant="15" id="bK9-Dp-fy8"/>
                             <constraint firstItem="8wl-WS-I0S" firstAttribute="bottom" secondItem="Smz-qf-b7J" secondAttribute="bottom" constant="300" id="dEt-WO-EGL"/>
-                            <constraint firstItem="wC0-6i-lVm" firstAttribute="top" secondItem="OKF-uB-8Pn" secondAttribute="top" id="ejG-Od-Eub"/>
-                            <constraint firstItem="8wl-WS-I0S" firstAttribute="trailing" secondItem="OKF-uB-8Pn" secondAttribute="trailing" constant="60" id="ey3-T5-rst"/>
-                            <constraint firstItem="wC0-6i-lVm" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="gSD-F0-86q"/>
+                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="gNF-qg-d2j"/>
                             <constraint firstItem="qPI-kb-cfn" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="gd2-eW-cfH"/>
+                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="8" id="i5G-Z7-0tj"/>
                             <constraint firstItem="8wl-WS-I0S" firstAttribute="trailing" secondItem="qPI-kb-cfn" secondAttribute="trailing" constant="15" id="ioK-dQ-S3i"/>
-                            <constraint firstItem="wC0-6i-lVm" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="10" id="nHY-xX-8yg"/>
+                            <constraint firstItem="OKF-uB-8Pn" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="28" id="nvh-N9-HsG"/>
                             <constraint firstItem="p9a-5Z-gnW" firstAttribute="top" secondItem="8wl-WS-I0S" secondAttribute="top" constant="10" id="sLd-eY-LaW"/>
                             <constraint firstItem="208-zP-FdO" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" id="u8c-vr-X1S"/>
-                            <constraint firstItem="wC0-6i-lVm" firstAttribute="top" secondItem="p9a-5Z-gnW" secondAttribute="bottom" constant="96" id="zsL-3i-i2T"/>
+                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="8" id="u96-j1-TbL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8wl-WS-I0S"/>
                     </view>
@@ -297,7 +306,6 @@
     </scenes>
     <resources>
         <image name="apartament1" width="2048" height="1365"/>
-        <image name="cell" width="100" height="100"/>
         <image name="icon-marketing" width="50" height="50"/>
         <image name="icon-media" width="50" height="50"/>
         <image name="icon-reservation" width="50" height="50"/>

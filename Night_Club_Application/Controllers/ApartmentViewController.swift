@@ -10,7 +10,7 @@ import UIKit
 
 class ApartmentViewController: UIViewController {
     
-    var nightClubInformation: NightClubInformation = NightClubInformation.fetchInformation()
+    var apartmentData: ApartmentModel = ApartmentModel.fetchData()
     
     var pageControl: UIPageControl!
     var apartmentCollectionView: UICollectionView!
@@ -30,8 +30,7 @@ class ApartmentViewController: UIViewController {
         DispatchQueue.main.async {
             self.apartmentCollectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
-    }
-    
+    }  
 }
 
 extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
@@ -45,8 +44,8 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ApartmentTableViewCell", for: indexPath) as! ApartmentTableViewCell
-            cell.detailImage.image = nightClubInformation.apartmentDetailImages[indexPath.row - 1]
-            cell.detailLabel.text = nightClubInformation.apartmentDetailText[indexPath.row - 1]
+            cell.detailImage.image = apartmentData.apartmentDetailImages[indexPath.row - 1]
+            cell.detailLabel.text = apartmentData.apartmentDetailText[indexPath.row - 1]
 
             return cell
         }
@@ -57,7 +56,7 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.collectionView.dataSource = self
                 cell.collectionView.delegate = self
                 self.apartmentCollectionView = cell.collectionView
-                cell.pageControl.numberOfPages = self.nightClubInformation.apartmentImages.count
+                cell.pageControl.numberOfPages = self.apartmentData.apartmentImages.count
                 self.pageControl = cell.pageControl
                 cell.collectionView.reloadData()
             }
@@ -77,14 +76,14 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
 extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return nightClubInformation.apartmentImages.count
+        return apartmentData.apartmentImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ApartmentGalleryCollectionViewCell", for: indexPath) as! ApartmentGalleryCollectionViewCell
         
-        cell.apartmentImage.image = nightClubInformation.apartmentImages[indexPath.row]
+        cell.apartmentImage.image = apartmentData.apartmentImages[indexPath.row]
         
         return cell
     }

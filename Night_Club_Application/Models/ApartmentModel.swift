@@ -8,27 +8,22 @@
 
 import UIKit
 
-class NightClubInformation {
+class ApartmentModel {
     
-    var location: String
     var apartmentImages: [UIImage]
     var apartmentDetailImages: [UIImage]
     var apartmentDetailText: [String]
     
     
-    
-    init(location: String, apartmentImages: [UIImage], apartmentDetailImages: [UIImage], apartmentDetailText: [String])
-    
-    {
-        self.location = location
+    init(apartmentImages: [UIImage], apartmentDetailImages: [UIImage], apartmentDetailText: [String]) {
         self.apartmentImages = apartmentImages
         self.apartmentDetailImages = apartmentDetailImages
         self.apartmentDetailText = apartmentDetailText
         
     }
     
-    class func fetchInformation() -> NightClubInformation {
-        let location = "Marii Konopnickiej 6, 00-491 Warszawa"
+    class func fetchData() -> ApartmentModel {
+        
         var apartmentImages = [UIImage]()
         for i in  1...5 {
             apartmentImages.append(UIImage(named: "apartament\(i)")!)
@@ -40,14 +35,9 @@ class NightClubInformation {
         }
         let apartmentDetailText = ["Niezależne nagłośnienie firmy VOID, oświetlenie, klimatyzacja, profesjonalna obsługa i trunki z najwyższej półki to tylko niektóre zalety Apartment by XOXO Party…", "Intymna powierzchnia Prive Roomu nie odcina Cię od imprezy, która trwa na parkiecie w klubie XOXO. Dzięki live streaming – śledzisz ją na bieżąco!", "Podczas, kiedy w klubie odbywa się tłoczna i głośna impreza – Prive Room może pozostać spokojnym miejscem spotkań biznesowych, kolacji lub innych uroczystości.", "I na odwrót! Kiedy XOXO już „zasypia”… Apartment budzi się do życia… bo to właśnie w nim odbywają się najlepsze, ekskluzywne afterparty Warszawy…"]
         
-        let nightClubInformation = NightClubInformation(location: location, apartmentImages: apartmentImages, apartmentDetailImages: apartmentDetailImages, apartmentDetailText: apartmentDetailText)
+        let apartmentData = ApartmentModel(apartmentImages: apartmentImages, apartmentDetailImages: apartmentDetailImages, apartmentDetailText: apartmentDetailText)
         
-        
-        
-        return nightClubInformation
+        return apartmentData
     }
-    
-    
-    
 }
 

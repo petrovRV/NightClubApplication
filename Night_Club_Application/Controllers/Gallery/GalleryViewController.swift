@@ -10,7 +10,7 @@ import UIKit
 
 class GalleryViewController: UIViewController {
 
-    let galleryPhotos = [#imageLiteral(resourceName: "apartament1"), #imageLiteral(resourceName: "apartament2"), #imageLiteral(resourceName: "apartament3"), #imageLiteral(resourceName: "apartament4"), #imageLiteral(resourceName: "apartament5"), #imageLiteral(resourceName: "apartament6"), #imageLiteral(resourceName: "apartament7"), #imageLiteral(resourceName: "apartament8"), #imageLiteral(resourceName: "apartament9"), #imageLiteral(resourceName: "apartament10")]
+    let galleryPhotos: GalleryModel = GalleryModel.fetchData()
     var imageIndex = 0
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class GalleryViewController: UIViewController {
         if segue.identifier == "showImage" {
         
             let largePhotoVC = segue.destination as! LargePhotoViewController
-            largePhotoVC.images = self.galleryPhotos
+            largePhotoVC.images = self.galleryPhotos.images
             largePhotoVC.currentImage = self.imageIndex
         }
     }
@@ -30,7 +30,7 @@ class GalleryViewController: UIViewController {
 extension GalleryViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return galleryPhotos.count
+        return galleryPhotos.images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,7 +38,7 @@ extension GalleryViewController: UICollectionViewDataSource {
         let cellIdentifier = "GalleryCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GalleryPhotoCell
         
-        cell.galleryImage.image = galleryPhotos[indexPath.row]
+        cell.galleryImage.image = galleryPhotos.images[indexPath.row]
         
         cell.layer.borderColor = UIColor.lightText.cgColor
         cell.layer.borderWidth = 2
@@ -49,7 +49,7 @@ extension GalleryViewController: UICollectionViewDataSource {
 
 extension GalleryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let photo = galleryPhotos[indexPath.row]
+        let photo = galleryPhotos.images[indexPath.row]
         self.imageIndex = indexPath.row
         
         performSegue(withIdentifier: "showImage", sender: photo)
