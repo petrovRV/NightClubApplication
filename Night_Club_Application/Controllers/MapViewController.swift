@@ -65,12 +65,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        navigationController?.setNavigationBarHidden(false, animated: true)
-//    }
-    
     @IBAction func showDirection(sender: UIButton) {
         
         guard let currentPlacemark = currentPlacemark else {

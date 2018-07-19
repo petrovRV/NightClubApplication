@@ -33,6 +33,7 @@
 		8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */; };
 		8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */; };
 		8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606F20EEBFA600DD9D50 /* Environment.swift */; };
+		8D6AC79A21001A4700310714 /* NightClubInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AC79921001A4700310714 /* NightClubInformation.swift */; };
 		8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B21C20DDA416006A447F /* MainViewButton.swift */; };
 		8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */; };
 		8D86B22A20DDA7F2006A447F /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */; };
@@ -89,6 +90,7 @@
 		8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideosStoryboard.storyboard; sourceTree = "<group>"; };
 		8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		8D63606F20EEBFA600DD9D50 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		8D6AC79921001A4700310714 /* NightClubInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightClubInformation.swift; sourceTree = "<group>"; };
 		8D86B21C20DDA416006A447F /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
 		8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0FCB7D20ED218500ABC50B /* Videos.swift */,
+				8D6AC79921001A4700310714 /* NightClubInformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */,
 				8D438C7820F8EA5C005743A6 /* AboutUsViewController.swift in Sources */,
 				8D438C7F20F91F66005743A6 /* ClubDescriptionTableViewCell.swift in Sources */,
+				8D6AC79A21001A4700310714 /* NightClubInformation.swift in Sources */,
 				8D438C6920F78962005743A6 /* ApartmentGalleryTableViewCell.swift in Sources */,
 				8D9CF27220FD635A0041FD6C /* WorkingHoursTableViewCell.swift in Sources */,
 				8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */,

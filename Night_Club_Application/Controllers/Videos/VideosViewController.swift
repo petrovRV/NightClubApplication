@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class VideosViewController: UIViewController {
    
     
     @IBOutlet weak var videosTableView: UITableView!
@@ -33,6 +33,18 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVideo" {
+            if let indexPath = videosTableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! PlayVideoViewController
+                destinationController.videoId = responceVideos[indexPath.row].channelId
+            }
+        }
+    }
+}
+
+extension VideosViewController: UITableViewDataSource  {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return responceVideos.count
     }
@@ -41,7 +53,6 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
         
-//        cell.setPreviewAndName(with: responceVideos[indexPath.row])
         
         cell.videoNameLabel.text = self.responceVideos[indexPath.row].title
         
@@ -51,21 +62,11 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
                 if let data = data {
                     let image = UIImage(data: data)
                     DispatchQueue.main.async {
-                       cell.previewImage.image = image
+                        cell.previewImage.image = image
                     }
                 }
             }
         }
         return cell
-    }
-    
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showVideo" {
-            if let indexPath = videosTableView.indexPathForSelectedRow {
-                let destinationController = segue.destination as! PlayVideoViewController
-                destinationController.videoId = responceVideos[indexPath.row].channelId
-            }
-        }
     }
 }
