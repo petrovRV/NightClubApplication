@@ -12,6 +12,9 @@ class VideosViewController: UIViewController {
    
     
     @IBOutlet weak var videosTableView: UITableView!
+    @IBOutlet weak var emptyVideosView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     
     let videosService = VideosNetworkService()
     var responceVideos = [(title: String, channelId: String, previewImage: String)]()
@@ -19,7 +22,11 @@ class VideosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.activityIndicator.startAnimating()
+        self.activityIndicator.hidesWhenStopped = true
+        videosTableView.backgroundView = emptyVideosView
+        videosTableView.backgroundView?.isHidden = true
+        
         videosService.loadVideosData() { [weak self]
             responce in
             
@@ -29,7 +36,7 @@ class VideosViewController: UIViewController {
                     self?.responceVideos.append(videoInfo)
                 }
             }
-            self?.videosTableView.reloadData()
+            self?.reloadTableView()
         }
     }
     
@@ -41,10 +48,21 @@ class VideosViewController: UIViewController {
             }
         }
     }
+    func reloadTableView() {
+        activityIndicator.stopAnimating()
+        if self.responceVideos.count > 0 {
+            self.videosTableView.reloadData()
+        } else {
+            videosTableView.backgroundView?.isHidden = true
+        }
+    }
+    
 }
 
 extension VideosViewController: UITableViewDataSource  {
     
+
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return responceVideos.count
     }

@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-xv-ndH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoTableViewCell" rowHeight="313" id="XK7-Op-be3" customClass="VideoTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
@@ -78,21 +78,47 @@
                                     <outlet property="delegate" destination="gFg-2V-jbA" id="Rv4-6T-egH"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="52i-8R-wW7">
+                                <rect key="frame" x="178" y="355" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="52i-8R-wW7" firstAttribute="centerY" secondItem="jkD-Ai-xL4" secondAttribute="centerY" id="DM7-Vj-tsw"/>
                             <constraint firstItem="PVe-xv-ndH" firstAttribute="top" secondItem="jkD-Ai-xL4" secondAttribute="top" id="Dak-L1-NXF"/>
                             <constraint firstItem="jkD-Ai-xL4" firstAttribute="bottom" secondItem="PVe-xv-ndH" secondAttribute="bottom" id="GYd-RK-BAw"/>
                             <constraint firstItem="PVe-xv-ndH" firstAttribute="leading" secondItem="jkD-Ai-xL4" secondAttribute="leading" id="Wbg-YL-Snf"/>
+                            <constraint firstItem="52i-8R-wW7" firstAttribute="centerX" secondItem="jkD-Ai-xL4" secondAttribute="centerX" id="bbz-62-CDP"/>
                             <constraint firstItem="jkD-Ai-xL4" firstAttribute="trailing" secondItem="PVe-xv-ndH" secondAttribute="trailing" id="zTC-tu-ZQL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jkD-Ai-xL4"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="52i-8R-wW7" id="uEL-Rv-M0l"/>
+                        <outlet property="emptyVideosView" destination="UnF-UE-JLG" id="JDN-W7-CET"/>
                         <outlet property="videosTableView" destination="PVe-xv-ndH" id="CYy-2K-Z5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt4-FH-E1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="UnF-UE-JLG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brakuje niektórych informacji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-2f-UFB">
+                            <rect key="frame" x="64.5" y="239" width="246" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YLe-2f-UFB" firstAttribute="centerX" secondItem="UnF-UE-JLG" secondAttribute="centerX" id="4en-FD-an4"/>
+                        <constraint firstItem="YLe-2f-UFB" firstAttribute="centerY" secondItem="UnF-UE-JLG" secondAttribute="centerY" id="wVq-4V-JBf"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="iSe-uJ-PcJ"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1741.5999999999999" y="390.85457271364322"/>
         </scene>
