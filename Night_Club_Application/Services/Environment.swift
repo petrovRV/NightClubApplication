@@ -29,14 +29,4 @@ extension EnvironmentImp {
         let channelId = "UCwkfbdM_Evl9k0sBZ1uA44w"
         let baseUrl = "https://www.googleapis.com"
     }
-    
 }
-
-
-
-//class Environment {
-//
-//    let apiKey = "AIzaSyAfsBcF5oRVZ1gaDDMAht_aAk-CQR-9s3Q"
-//    let channelId = "UCwkfbdM_Evl9k0sBZ1uA44w"
-//
-//}

@@ -155,13 +155,37 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="biW-S1-0Fn">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wizyty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9r-kc-M6Z">
+                                <rect key="frame" x="8" y="446" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-oi-248">
+                                <rect key="frame" x="72" y="446" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nq-N5-sEs">
+                                <rect key="frame" x="313" y="445" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="T9r-kc-M6Z" firstAttribute="leading" secondItem="vly-8w-BDG" secondAttribute="leading" constant="8" id="1MU-Gu-OI1"/>
+                            <constraint firstItem="vly-8w-BDG" firstAttribute="trailing" secondItem="8nq-N5-sEs" secondAttribute="trailing" constant="16" id="3RS-iG-maz"/>
                             <constraint firstItem="biW-S1-0Fn" firstAttribute="centerX" secondItem="dVI-iD-Z88" secondAttribute="centerX" id="9LV-Ec-hnF"/>
                             <constraint firstItem="dVI-iD-Z88" firstAttribute="trailing" secondItem="vly-8w-BDG" secondAttribute="trailing" id="Dt9-vI-H0V"/>
+                            <constraint firstItem="JgF-oi-248" firstAttribute="leading" secondItem="T9r-kc-M6Z" secondAttribute="trailing" constant="7" id="HDQ-gD-g1v"/>
+                            <constraint firstItem="8nq-N5-sEs" firstAttribute="top" secondItem="dVI-iD-Z88" secondAttribute="bottom" constant="6" id="LR6-61-tBQ"/>
                             <constraint firstItem="biW-S1-0Fn" firstAttribute="centerY" secondItem="dVI-iD-Z88" secondAttribute="centerY" id="QZN-db-lev"/>
                             <constraint firstItem="dVI-iD-Z88" firstAttribute="leading" secondItem="vly-8w-BDG" secondAttribute="leading" id="Vgz-q2-PDB"/>
+                            <constraint firstItem="T9r-kc-M6Z" firstAttribute="top" secondItem="dVI-iD-Z88" secondAttribute="bottom" constant="7" id="abA-Yc-7lG"/>
+                            <constraint firstItem="JgF-oi-248" firstAttribute="top" secondItem="dVI-iD-Z88" secondAttribute="bottom" constant="7" id="qOa-Uy-nKU"/>
                             <constraint firstItem="dVI-iD-Z88" firstAttribute="centerY" secondItem="wQF-fV-gsM" secondAttribute="centerY" id="tQ5-dS-qbV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vly-8w-BDG"/>
@@ -169,7 +193,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="activityIndicator" destination="biW-S1-0Fn" id="CoP-lT-Qk9"/>
+                        <outlet property="duration" destination="8nq-N5-sEs" id="UQY-xn-wd4"/>
                         <outlet property="videoWebView" destination="F3v-lZ-svu" id="aH5-jZ-Tz3"/>
+                        <outlet property="viewCount" destination="JgF-oi-248" id="MUT-60-sJd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvq-Pm-Fei" userLabel="First Responder" sceneMemberID="firstResponder"/>
