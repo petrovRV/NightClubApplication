@@ -18,6 +18,7 @@ class PlayVideoViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var duration: UILabel!
     
     let videosDetailService = VideoDetailNetworkService()
+    
     var videoId: String = ""
     
     override func viewDidLoad() {
@@ -32,10 +33,8 @@ class PlayVideoViewController: UIViewController, WKNavigationDelegate {
         
         videosDetailService.loadVideoDetail(id: self.videoId) { [weak self]
             responce in
-            self?.viewCount.text = responce.first?.items.first?.statistics.viewCount
-            self?.duration.text = responce.first?.items.first?.contentDetails.duration.getYoutubeFormattedDuration()
-            
-            
+            self?.viewCount.text = responce.items.first?.statistics.viewCount
+            self?.duration.text = responce.items.first?.contentDetails.duration.getYoutubeFormattedDuration()
         }
         
     }

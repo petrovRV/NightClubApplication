@@ -20,7 +20,20 @@ class VideoTableViewCell: UITableViewCell {
 
     }
 
-//    func setPreviewAndName(with: responceVideos) {
-//        
-//    }
+    func setPreviewAndName(with item: Items) {
+        
+        videoNameLabel.text = item.snippet.title
+        
+        if let imageURL = URL(string: item.snippet.thumbnails.high.url) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.previewImage.image = image
+                    }
+                }
+            }
+        }
+    }
 }

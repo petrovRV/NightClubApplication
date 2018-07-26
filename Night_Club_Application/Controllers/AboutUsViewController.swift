@@ -13,9 +13,9 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var aboutUsTableView: UITableView!
     
+    let aboutUsData: AboutUsModel = AboutUsModel.fetchData()
     var expandCell = false
     let tableHeaderViewHeight: CGFloat = 250.0
-    
     var headerView: UIView!
     
     override func viewDidLoad() {
@@ -57,36 +57,34 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ClubDetailTableViewCell", for: indexPath) as! ClubDetailTableViewCell
-            cell.iconImageView.image = #imageLiteral(resourceName: "AboutUs-phone")
-            cell.detailTextView.text = "+4881126566"
+            cell.iconImageView.image = aboutUsData.aboutUsIcons[0]
+            cell.detailTextView.text = aboutUsData.phoneNumber
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ClubDetailTableViewCell", for: indexPath) as! ClubDetailTableViewCell
-            cell.iconImageView.image = #imageLiteral(resourceName: "AboutUs-map")
-            cell.detailTextView.text = "Marii Konopnickiej 6, 00-491 Warszawa"
+            cell.iconImageView.image = aboutUsData.aboutUsIcons[1]
+            cell.detailTextView.text = aboutUsData.location
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ClubDescriptionTableViewCell", for: indexPath) as! ClubDescriptionTableViewCell
-            cell.descriptionTextLabel.text = "XOXO Party to serce klubowego zagłębia przy legendarnej ulicy Mazowieckiej. Doskonała lokalizacja w centrum Warszawy, nowoczesne wnętrza wkomponowane w zabytkową architekturę i muzyka na najwyższym poziomie - wszystkie te cechy sprawiają, że XOXO party to najlepszy wybór na klubowej mapie Warszawy.  Wykwalifikowana obsługa, klimatyczne oświetlenie i profesjonalne nagłośnienie - to wszystko czeka na naszych gości w XOXO party."
+            cell.descriptionTextLabel.text = aboutUsData.description
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WorkingHoursTableViewCell", for: indexPath) as! WorkingHoursTableViewCell
             if expandCell == true {
-                cell.collapseArrow.image = #imageLiteral(resourceName: "AboutUs-collapse")
+                cell.collapseArrow.image = aboutUsData.aboutUsIcons[2]
             } else {
-                cell.collapseArrow.image = #imageLiteral(resourceName: "AboutUs-expand")
+                cell.collapseArrow.image = aboutUsData.aboutUsIcons[3]
             }
             return cell
-            
-            
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "HowToGetTableViewCell", for: indexPath) as! HowToGetTableViewCell
-            cell.titleLable.text = "Do klubu dojść można na dwa sposoby:"
-            cell.directionLabel.text = "pieszo: od Placu Trzech Krzyży, w przejściu pomiędzy budynkami (z napisem TEATR IMKA), tuż przed hotelem Sheraton (idąc od strony ulicy Książęcej). samochodem: jadąc ulicą Prusa należy skręcić w lewo zaraz za hotelem Sheraton."
+            cell.titleLable.text = aboutUsData.directionTitle
+            cell.directionLabel.text = aboutUsData.directionText
             return cell
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ClubMapTableViewCell", for: indexPath) as! ClubMapTableViewCell
-            cell.configure(location: "Marii Konopnickiej 6, 00-491 Warszawa")
+            cell.configure(location: aboutUsData.location)
             return cell
         default:
             fatalError("Failed to instantiate the table view cell")

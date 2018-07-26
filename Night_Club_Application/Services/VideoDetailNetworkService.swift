@@ -12,7 +12,7 @@ import Alamofire
 
 class VideoDetailNetworkService {
     
-    typealias loadVideoDetailDataCompletion = ([VideosDetail]) -> Void
+    typealias loadVideoDetailDataCompletion = (VideosDetail) -> Void
     
     var environment: Environment {
         return EnvironmentImp.Debug()
@@ -31,12 +31,10 @@ class VideoDetailNetworkService {
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON(queue: .global(qos: .userInteractive))
         { respons in
             guard let data = respons.data else {return}
-            print(data)
             do {
-                let videosDecoded = try JSONDecoder().decode(VideosDetail.self, from: data)
-                print(videosDecoded)
+                let videoDetailsDecoded = try JSONDecoder().decode(VideosDetail.self, from: data)
                 DispatchQueue.main.async {
-                    completion([videosDecoded])
+                    completion(videoDetailsDecoded)
                     return
                 }
             } catch let jsonErr {

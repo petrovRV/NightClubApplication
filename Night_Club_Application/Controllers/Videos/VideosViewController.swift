@@ -17,6 +17,7 @@ class VideosViewController: UIViewController {
     
     
     let videosService = VideosNetworkService()
+    var videosList = [Items]()
     var responceVideos = [(title: String, channelId: String, previewImage: String)]()
     let videoIndex = 0
     
@@ -32,6 +33,7 @@ class VideosViewController: UIViewController {
             
             responce.forEach() { video in
                 if let id = video.id.videoId {
+                    self?.videosList.append(video)
                     let videoInfo = (video.snippet.title, id, video.snippet.thumbnails.high.url)
                     self?.responceVideos.append(videoInfo)
                 }
@@ -44,7 +46,8 @@ class VideosViewController: UIViewController {
         if segue.identifier == "showVideo" {
             if let indexPath = videosTableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! PlayVideoViewController
-                destinationController.videoId = responceVideos[indexPath.row].channelId
+                guard let videoId = videosList[indexPath.row].id.videoId else { return }
+                destinationController.videoId = videoId
             }
         }
     }
@@ -71,20 +74,8 @@ extension VideosViewController: UITableViewDataSource  {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
         
-        
-        cell.videoNameLabel.text = self.responceVideos[indexPath.row].title
-        
-        if let imageURL = URL(string: self.responceVideos[indexPath.row].previewImage) {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imageURL)
-                if let data = data {
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell.previewImage.image = image
-                    }
-                }
-            }
-        }
+        cell.setPreviewAndName(with: videosList[indexPath.row])
+       
         return cell
     }
 }
