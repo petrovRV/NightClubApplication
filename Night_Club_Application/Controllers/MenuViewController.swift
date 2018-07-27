@@ -10,26 +10,32 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    var section = [MenuModel(sectionTitle: "Vodka", rowsInSection:["1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1"], isExpanded: false), MenuModel(sectionTitle: "Piwo", rowsInSection:["2":"1", "1":"1", "2":"1", "1":"1", "1":"1", "1":"1"], isExpanded: false), MenuModel(sectionTitle: "Whisky", rowsInSection:["2":"1", "3":"1", "2":"1"], isExpanded: false)]
+    
+    @IBOutlet weak var menuTableView: UITableView!
+    let headerHeight: CGFloat = 70
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension MenuViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+     
+        
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return section.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
-    */
-
+    
+    
 }

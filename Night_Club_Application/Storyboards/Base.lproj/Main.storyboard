@@ -266,6 +266,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="flh-lc-INR"/>
                     </view>
+                    <connections>
+                        <outlet property="menuTableView" destination="nps-KH-iwX" id="MyK-n5-XNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KX4-lz-So6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

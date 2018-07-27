@@ -38,6 +38,8 @@
 		8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63606F20EEBFA600DD9D50 /* Environment.swift */; };
 		8D6AC79A21001A4700310714 /* ApartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AC79921001A4700310714 /* ApartmentModel.swift */; };
 		8D6AC79C2100A0C300310714 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AC79B2100A0C300310714 /* GalleryModel.swift */; };
+		8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49E6210B64D600E3AB34 /* MenuModel.swift */; };
+		8D6B49E9210B67B100E3AB34 /* MenuHeaderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */; };
 		8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B21C20DDA416006A447F /* MainViewButton.swift */; };
 		8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */; };
 		8D86B22A20DDA7F2006A447F /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */; };
@@ -101,6 +103,8 @@
 		8D63606F20EEBFA600DD9D50 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		8D6AC79921001A4700310714 /* ApartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentModel.swift; sourceTree = "<group>"; };
 		8D6AC79B2100A0C300310714 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		8D6B49E6210B64D600E3AB34 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderViewDelegate.swift; sourceTree = "<group>"; };
 		8D86B21C20DDA416006A447F /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
 		8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		8D86B21F20DDA7ED006A447F /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				8D6AC79B2100A0C300310714 /* GalleryModel.swift */,
 				8D6AC79921001A4700310714 /* ApartmentModel.swift */,
 				8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */,
+				8D6B49E6210B64D600E3AB34 /* MenuModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 		8DBF9DF620DD972000A1DEB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */,
 				8D86B21C20DDA416006A447F /* MainViewButton.swift */,
 				8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */,
 				8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */,
@@ -475,6 +481,7 @@
 				8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */,
 				8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */,
 				8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */,
+				8D6B49E9210B67B100E3AB34 /* MenuHeaderViewDelegate.swift in Sources */,
 				8D438C6620F6595E005743A6 /* PlayVideoViewController.swift in Sources */,
 				8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */,
 				8DE32014210248A900D8FD51 /* VideosDetail.swift in Sources */,
@@ -484,6 +491,7 @@
 				8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */,
 				8D438C6B20F789BD005743A6 /* ApartmentTableViewCell.swift in Sources */,
 				8D0A7481210A849E00EBAA04 /* AboutUsModel.swift in Sources */,
+				8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */,
 				8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */,
 				8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */,
 				8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */,
