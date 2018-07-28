@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    var section = [MenuModel(sectionTitle: "Vodka", rowsInSection:["1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1", "1":"1"], isExpanded: false), MenuModel(sectionTitle: "Piwo", rowsInSection:["2":"1", "1":"1", "2":"1", "1":"1", "1":"1", "1":"1"], isExpanded: false), MenuModel(sectionTitle: "Whisky", rowsInSection:["2":"1", "3":"1", "2":"1"], isExpanded: false)]
+    var sections = [MenuModel(sectionTitle: "VODKA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "GIN", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "RUM", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "TEQUILA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "WHISKEY", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "SHOTS", rowsInSection: [("B52", "23zł"), ("MAD DOG", "15zł"), ("FLAT LINER", "18zł"), ("FRUIT SHOTS", "28zł")], isExpanded: false), MenuModel(sectionTitle: "CLASSIC COCKTAILS", rowsInSection: [("LONG ISLAND ICE TEA", "34zł"), ("COSMOPOLITAN", "25zł"), ("WHITE RUSSIAN", "0.21zł")], isExpanded: false)]
     
     @IBOutlet weak var menuTableView: UITableView!
     let headerHeight: CGFloat = 70
@@ -22,20 +22,57 @@ class MenuViewController: UIViewController {
 
 extension MenuViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-     
-        
-    }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return section.count
+        return sections.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return sections[section].rowsInSection.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as! MenuTableViewCell
+        cell.nameLabel.text = sections[indexPath.section].rowsInSection[indexPath.row].name
+        cell.priceLabel.text = sections[indexPath.section].rowsInSection[indexPath.row].price
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return sections[indexPath.section].isExpanded ? 30 : 0
+        
+    }
+  
+}
+extension MenuViewController: UITableViewDelegate, MenuHeaderViewDelegate {
+    
+    func toggleSection(header: MenuHeaderView, section: Int) {
+        if sections[section].isExpanded == false {
+            for i in 0...self.sections.count - 1 {
+                self.sections[i].isExpanded = false
+            }
+        }
+        sections[section].isExpanded = !sections[section].isExpanded
+        
+        menuTableView.beginUpdates()
+        UIView.transition(with: menuTableView, duration: 0.5, options: .curveLinear, animations: {
+            self.menuTableView.reloadData()
+            if self.sections[section].isExpanded == true {
+                self.menuTableView.scrollToRow(at: IndexPath(row: 0, section: section), at: .top, animated: true)
+            } else {
+                self.menuTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            }
+        }, completion: nil)
+        menuTableView.endUpdates()
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let headerHeight = ((menuTableView.frame.size.height) - CGFloat(2 * sections.count)) / CGFloat(sections.count)
+        return headerHeight
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = MenuHeaderView()
+        header.customInit(title: sections[section].sectionTitle, section: section, delegate: self)
+        return header
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 2
+    }
 }

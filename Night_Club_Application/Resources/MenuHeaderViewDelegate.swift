@@ -31,7 +31,13 @@ class MenuHeaderView: UITableViewHeaderFooterView {
     }
     
     @objc func selectHeaderAction(gestureRecognizer: UITapGestureRecognizer) {
-        let cell = gestureRecognizer.view
+        let cell = gestureRecognizer.view as! MenuHeaderView
         delegate?.toggleSection(header: self, section: cell.section)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.textLabel?.textColor = UIColor.white
+        self.contentView.backgroundColor = UIColor.lightGray
     }
 }

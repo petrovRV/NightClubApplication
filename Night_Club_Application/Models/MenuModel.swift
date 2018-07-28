@@ -10,10 +10,10 @@ import Foundation
 
 struct MenuModel {
     var sectionTitle: String!
-    var rowsInSection: [String: String]!
+    var rowsInSection: [(name: String, price: String)]!
     var isExpanded: Bool
     
-    init(sectionTitle: String, rowsInSection: [String: String], isExpanded: Bool) {
+    init(sectionTitle: String, rowsInSection: [(name: String, price: String)], isExpanded: Bool) {
         self.sectionTitle = sectionTitle
         self.rowsInSection = rowsInSection
         self.isExpanded = isExpanded
