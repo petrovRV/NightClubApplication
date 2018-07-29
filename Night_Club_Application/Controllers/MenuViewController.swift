@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    var sections = [MenuModel(sectionTitle: "VODKA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "GIN", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "RUM", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "TEQUILA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "WHISKEY", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "SHOTS", rowsInSection: [("B52", "23zł"), ("MAD DOG", "15zł"), ("FLAT LINER", "18zł"), ("FRUIT SHOTS", "28zł")], isExpanded: false), MenuModel(sectionTitle: "CLASSIC COCKTAILS", rowsInSection: [("LONG ISLAND ICE TEA", "34zł"), ("COSMOPOLITAN", "25zł"), ("WHITE RUSSIAN", "0.21zł")], isExpanded: false)]
+    var sections = [MenuModel(sectionTitle: "VODKA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "GIN", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "RUM", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "TEQUILA", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "WHISKEY", rowsInSection: [("Absolut", "0.55zł"), ("Absolut", "0.55zł"), ("Absolut", "0.55zł")], isExpanded: false), MenuModel(sectionTitle: "SHOTS", rowsInSection: [("B52", "23zł"), ("MAD DOG", "15zł"), ("FLAT LINER", "18zł"), ("FRUIT SHOTS", "28zł")], isExpanded: false), MenuModel(sectionTitle: "CLASSIC COCKTAILS", rowsInSection: [("LONG ISLAND ICE TEA", "34zł"), ("COSMOPOLITAN", "25zł"), ("WHITE RUSSIAN", "0.21zł")], isExpanded: false)]
     
     @IBOutlet weak var menuTableView: UITableView!
     let headerHeight: CGFloat = 70
@@ -51,7 +51,6 @@ extension MenuViewController: UITableViewDelegate, MenuHeaderViewDelegate {
         }
         sections[section].isExpanded = !sections[section].isExpanded
         
-        menuTableView.beginUpdates()
         UIView.transition(with: menuTableView, duration: 0.5, options: .curveLinear, animations: {
             self.menuTableView.reloadData()
             if self.sections[section].isExpanded == true {
@@ -60,7 +59,6 @@ extension MenuViewController: UITableViewDelegate, MenuHeaderViewDelegate {
                 self.menuTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
             }
         }, completion: nil)
-        menuTableView.endUpdates()
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
