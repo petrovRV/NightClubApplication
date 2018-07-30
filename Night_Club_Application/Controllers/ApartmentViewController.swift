@@ -21,7 +21,7 @@ class ApartmentViewController: UIViewController {
         
         self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        invalidateLayout()
+//        invalidateLayout()
 
     }
     
