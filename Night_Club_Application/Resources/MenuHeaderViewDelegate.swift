@@ -53,8 +53,16 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
+//        self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
         self.textLabel?.textColor = UIColor.white
         self.contentView.backgroundColor = UIColor.lightGray
+    }
+    
+    func setExtended(_ extended: Bool) {
+        if extended {
+              self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
+        } else {
+            self.imageView.image = #imageLiteral(resourceName: "icons8-plus-math-60")
+        }
     }
 }

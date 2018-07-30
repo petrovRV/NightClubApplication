@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="77"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Menu-->
         <scene sceneID="iYZ-aI-oYV">
             <objects>
-                <viewController id="GNr-OF-NLU" customClass="MenuViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Menu" id="GNr-OF-NLU" customClass="MenuViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EiC-0F-6eZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,11 +248,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="3cV-cR-Pcq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="26232630_1502797563168848_1742396817443615022_o" translatesAutoresizingMaskIntoConstraints="NO" id="fwr-BV-4D9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocktails" translatesAutoresizingMaskIntoConstraints="NO" id="fwr-BV-4D9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,7 +265,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" rowHeight="50" id="etc-Nu-HKh" customClass="MenuTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="198" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="228" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="etc-Nu-HKh" id="bnR-SM-1Je">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
@@ -323,7 +323,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="26232630_1502797563168848_1742396817443615022_o" width="1920" height="1080"/>
+        <image name="cocktails" width="1920" height="989"/>
         <image name="icons-facebook-100" width="50" height="50"/>
         <image name="icons-instagram-100" width="50" height="50"/>
         <image name="xoxo" width="300" height="75"/>

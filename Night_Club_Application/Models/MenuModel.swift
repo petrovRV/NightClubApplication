@@ -13,7 +13,7 @@ struct MenuModel {
     var rowsInSection: [(name: String, price: String)]!
     var isExpanded: Bool
     
-    init(sectionTitle: String, rowsInSection: [(name: String, price: String)], isExpanded: Bool) {
+    init(sectionTitle: String, rowsInSection: [(name: String, price: String)], isExpanded: Bool = false) {
         self.sectionTitle = sectionTitle
         self.rowsInSection = rowsInSection
         self.isExpanded = isExpanded

@@ -18,7 +18,6 @@ class VideosViewController: UIViewController {
     
     let videosService = VideosNetworkService()
     var videosList = [Items]()
-    var responceVideos = [(title: String, channelId: String, previewImage: String)]()
     let videoIndex = 0
     
     override func viewDidLoad() {
@@ -35,7 +34,6 @@ class VideosViewController: UIViewController {
                 if let id = video.id.videoId {
                     self?.videosList.append(video)
                     let videoInfo = (video.snippet.title, id, video.snippet.thumbnails.high.url)
-                    self?.responceVideos.append(videoInfo)
                 }
             }
             self?.reloadTableView()
@@ -53,7 +51,7 @@ class VideosViewController: UIViewController {
     }
     func reloadTableView() {
         activityIndicator.stopAnimating()
-        if self.responceVideos.count > 0 {
+        if self.videosList.count > 0 {
             self.videosTableView.reloadData()
         } else {
             videosTableView.backgroundView?.isHidden = true
@@ -67,7 +65,7 @@ extension VideosViewController: UITableViewDataSource  {
 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return responceVideos.count
+        return videosList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
