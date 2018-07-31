@@ -31,9 +31,8 @@ class VideosViewController: UIViewController {
             responce in
             
             responce.forEach() { video in
-                if let id = video.id.videoId {
+                if video.id.videoId != nil {
                     self?.videosList.append(video)
-                    let videoInfo = (video.snippet.title, id, video.snippet.thumbnails.high.url)
                 }
             }
             self?.reloadTableView()

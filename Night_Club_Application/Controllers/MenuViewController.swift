@@ -19,9 +19,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menuTableView.estimatedRowHeight = 44.0
-        menuTableView.rowHeight = UITableViewAutomaticDimension
-//        setupHeaderView()
+        setupHeaderView()
 
     }
     func setupHeaderView() {
@@ -50,7 +48,7 @@ class MenuViewController: UIViewController {
         headerView.frame = headerRect
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        updateHeaderView()
+        updateHeaderView()
     }
 }
 
@@ -69,6 +67,7 @@ extension MenuViewController: UITableViewDataSource {
         cell.priceLabel.text = sections[indexPath.section].menuItems[indexPath.row].glassPrice
         cell.buttlePrice.text = sections[indexPath.section].menuItems[indexPath.row].bottlePrice
         cell.itemDetail.text = sections[indexPath.section].menuItems[indexPath.row].detail
+        
         if sections[indexPath.section].menuItems[indexPath.row].detail == "" {
             cell.bottleStackView.isHidden = false } else {
             cell.bottleStackView.isHidden = true
@@ -105,10 +104,10 @@ extension MenuViewController : MenuHeaderViewDelegate {
         
         
 //        menuTableView.beginUpdates()
-        //        for i in 0 ..< sections[section].rowsInSection.count {
-        //            menuTableView.reloadRows(at: [IndexPath(row: i, section: section)], with: .automatic)
+//                for i in 0 ..< sections[section].menuItems.count {
+//                    menuTableView.reloadRows(at: [IndexPath(row: i, section: section)], with: .automatic)
         menuTableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
-        //        }
+//                }
 //        menuTableView.endUpdates()
     }
     
