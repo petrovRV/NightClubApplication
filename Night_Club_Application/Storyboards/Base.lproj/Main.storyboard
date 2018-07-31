@@ -253,20 +253,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nps-KH-iwX">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="3cV-cR-Pcq">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="tGN-D8-efs">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-1481391564276-da6fcacaee31" translatesAutoresizingMaskIntoConstraints="NO" id="fwr-BV-4D9">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-1481391564276-da6fcacaee31" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-vG-VqA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="fwr-BV-4D9" firstAttribute="top" secondItem="3cV-cR-Pcq" secondAttribute="top" id="2u6-y1-w4M"/>
-                                        <constraint firstAttribute="trailing" secondItem="fwr-BV-4D9" secondAttribute="trailing" id="IcT-L3-elf"/>
-                                        <constraint firstAttribute="bottom" secondItem="fwr-BV-4D9" secondAttribute="bottom" id="N99-TG-EVO"/>
-                                        <constraint firstItem="fwr-BV-4D9" firstAttribute="leading" secondItem="3cV-cR-Pcq" secondAttribute="leading" id="t4y-zZ-wUb"/>
+                                        <constraint firstAttribute="trailing" secondItem="Q3c-vG-VqA" secondAttribute="trailing" id="Bl3-Xr-pcp"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q3c-vG-VqA" secondAttribute="bottom" id="ZCo-v5-xTd"/>
+                                        <constraint firstItem="Q3c-vG-VqA" firstAttribute="leading" secondItem="tGN-D8-efs" secondAttribute="leading" id="wlA-Yp-jJh"/>
+                                        <constraint firstItem="Q3c-vG-VqA" firstAttribute="top" secondItem="tGN-D8-efs" secondAttribute="top" id="xjY-aH-GGY"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
