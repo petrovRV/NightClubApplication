@@ -297,11 +297,11 @@
 		8D44AE4920D1613D008F3ACE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DB5A3102110B31800BDAE45 /* Menu */,
 				8D438C7B20F8ED4B005743A6 /* Apartment */,
 				8D438C7A20F8ED34005743A6 /* About Us */,
 				8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */,
 				8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */,
-				8D6B49EA210CFB9300E3AB34 /* MenuTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,6 +312,14 @@
 				8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		8DB5A3102110B31800BDAE45 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B49EA210CFB9300E3AB34 /* MenuTableViewCell.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		8DBF9DF620DD972000A1DEB9 /* Resources */ = {

@@ -22,9 +22,7 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapHeader)))
         
         let marginGuide = contentView.layoutMarginsGuide
-        
-        
-//        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+
         contentView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.widthAnchor.constraint(equalToConstant: 12).isActive = true
@@ -53,9 +51,8 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-//        self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
         self.textLabel?.textColor = UIColor.white
-        self.contentView.backgroundColor = UIColor.lightGray
+        self.contentView.backgroundColor = UIColor(red: CGFloat(200/255.0), green: CGFloat(192/255.0), blue: CGFloat(195/255.0), alpha: CGFloat(0.8))
     }
     
     func setExtended(_ extended: Bool) {
