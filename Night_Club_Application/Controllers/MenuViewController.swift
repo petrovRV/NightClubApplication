@@ -67,6 +67,12 @@ extension MenuViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as! MenuTableViewCell
         cell.nameLabel.text = sections[indexPath.section].menuItems[indexPath.row].name
         cell.priceLabel.text = sections[indexPath.section].menuItems[indexPath.row].glassPrice
+        cell.buttlePrice.text = sections[indexPath.section].menuItems[indexPath.row].bottlePrice
+        cell.itemDetail.text = sections[indexPath.section].menuItems[indexPath.row].detail
+        if sections[indexPath.section].menuItems[indexPath.row].detail == "" {
+            cell.bottleStackView.isHidden = false } else {
+            cell.bottleStackView.isHidden = true
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

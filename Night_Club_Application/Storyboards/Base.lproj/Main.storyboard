@@ -14,6 +14,12 @@
         <array key="Rubik-Bold.ttf">
             <string>Rubik-Bold</string>
         </array>
+        <array key="Rubik-Light.ttf">
+            <string>Rubik-Light</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -272,8 +278,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2U-o2-HgN">
-                                                    <rect key="frame" x="10" y="10" width="42" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="10" y="10" width="43" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -314,8 +320,8 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iw-Fa-jNd">
-                                                    <rect key="frame" x="10" y="33" width="355" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="10" y="34.5" width="355" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -323,10 +329,10 @@
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="tintColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="trailing" constant="15" id="2fe-ta-hf5"/>
                                                 <constraint firstItem="Qbk-St-G2H" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="64M-1d-BFl"/>
                                                 <constraint firstItem="1iw-Fa-jNd" firstAttribute="top" secondItem="w2U-o2-HgN" secondAttribute="bottom" constant="5" id="7fH-b4-9Up"/>
                                                 <constraint firstAttribute="trailing" secondItem="1iw-Fa-jNd" secondAttribute="trailing" constant="10" id="ECl-gX-ZN4"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qbk-St-G2H" secondAttribute="trailing" constant="87" id="GU5-0w-xRE"/>
                                                 <constraint firstAttribute="bottom" secondItem="1iw-Fa-jNd" secondAttribute="bottom" constant="5" id="O7x-8A-VBd"/>
                                                 <constraint firstItem="Qbk-St-G2H" firstAttribute="leading" relation="lessThanOrEqual" secondItem="w2U-o2-HgN" secondAttribute="trailing" constant="174" id="QbN-Ph-r3v"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="bzd-c2-QGc"/>
@@ -337,6 +343,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bottleStackView" destination="Qbk-St-G2H" id="gzY-R1-wEw"/>
+                                            <outlet property="buttlePrice" destination="4JD-Sr-b27" id="Cjb-u5-pBs"/>
+                                            <outlet property="itemDetail" destination="1iw-Fa-jNd" id="by5-du-cWH"/>
                                             <outlet property="nameLabel" destination="w2U-o2-HgN" id="ESp-S9-SZl"/>
                                             <outlet property="priceLabel" destination="ORU-hw-zM3" id="go6-4j-Un9"/>
                                         </connections>
