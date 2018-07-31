@@ -117,3 +117,10 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 
 }
+
+//extension AboutUsViewController: UITableViewDataSource {
+//    
+//}
+//extension AboutUsViewController: UITableViewDelegate {
+//    
+//}

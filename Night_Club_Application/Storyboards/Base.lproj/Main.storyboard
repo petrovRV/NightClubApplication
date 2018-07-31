@@ -14,6 +14,12 @@
         <array key="Rubik-Bold.ttf">
             <string>Rubik-Bold</string>
         </array>
+        <array key="Rubik-Light.ttf">
+            <string>Rubik-Light</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -28,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="152" width="375" height="436"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-Yg-z1W" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="O Nas">
@@ -39,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="62.5" width="375" height="62"/>
+                                        <rect key="frame" x="0.0" y="54.5" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <state key="normal" title="Mapa">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-9W-4j0" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="124.5" width="375" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="109" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <state key="normal" title="Rezerwacja">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-NF-F1I" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="187" width="375" height="62"/>
+                                        <rect key="frame" x="0.0" y="163.5" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <state key="normal" title="Zdjęcia">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,8 +74,19 @@
                                             <segue destination="kgU-gU-eOG" kind="show" id="Tzx-au-1ok"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wte-wm-j8L" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="218" width="375" height="54.5"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="GNr-OF-NLU" kind="show" id="qcx-aC-J1z"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="249" width="375" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="272.5" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <state key="normal" title="Apartament">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,7 +96,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-Mh-mJV" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="311.5" width="375" height="62"/>
+                                        <rect key="frame" x="0.0" y="327" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
                                         <state key="normal" title="Karty klubowe">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,9 +106,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="373.5" width="375" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="381.5" width="375" height="54.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Videos">
+                                        <state key="normal" title="Wideo">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -225,10 +242,145 @@
             </objects>
             <point key="canvasLocation" x="1076" y="77"/>
         </scene>
+        <!--Menu-->
+        <scene sceneID="iYZ-aI-oYV">
+            <objects>
+                <viewController title="Menu" id="GNr-OF-NLU" customClass="MenuViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EiC-0F-6eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nps-KH-iwX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="tGN-D8-efs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-1481391564276-da6fcacaee31" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-vG-VqA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Q3c-vG-VqA" secondAttribute="trailing" id="Bl3-Xr-pcp"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q3c-vG-VqA" secondAttribute="bottom" id="ZCo-v5-xTd"/>
+                                        <constraint firstItem="Q3c-vG-VqA" firstAttribute="leading" secondItem="tGN-D8-efs" secondAttribute="leading" id="wlA-Yp-jJh"/>
+                                        <constraint firstItem="Q3c-vG-VqA" firstAttribute="top" secondItem="tGN-D8-efs" secondAttribute="top" id="xjY-aH-GGY"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" rowHeight="59" id="etc-Nu-HKh" customClass="MenuTableViewCell" customModule="Night_Club_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="etc-Nu-HKh" id="bnR-SM-1Je">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2U-o2-HgN">
+                                                    <rect key="frame" x="10" y="10" width="235" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-uD-1cz">
+                                                    <rect key="frame" x="324" y="10" width="41" height="20"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-bar-100" translatesAutoresizingMaskIntoConstraints="NO" id="85B-qJ-OgT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="22W-D8-nIl"/>
+                                                                <constraint firstAttribute="width" constant="20" id="S26-3s-av1"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORU-hw-zM3">
+                                                            <rect key="frame" x="20" y="0.0" width="21" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-St-G2H">
+                                                    <rect key="frame" x="253" y="10" width="41" height="20"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-vodka-50" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-Zk-qUa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="XXG-dJ-0FI"/>
+                                                                <constraint firstAttribute="height" constant="20" id="Z8T-Gv-vOS"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-Sr-b27">
+                                                            <rect key="frame" x="20" y="0.0" width="21" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iw-Fa-jNd">
+                                                    <rect key="frame" x="10" y="34.5" width="355" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="w2U-o2-HgN" secondAttribute="trailing" constant="130" id="1dT-HX-4KZ"/>
+                                                <constraint firstItem="1iw-Fa-jNd" firstAttribute="top" secondItem="w2U-o2-HgN" secondAttribute="bottom" constant="5" id="7fH-b4-9Up"/>
+                                                <constraint firstAttribute="trailing" secondItem="1iw-Fa-jNd" secondAttribute="trailing" constant="10" id="ECl-gX-ZN4"/>
+                                                <constraint firstAttribute="bottom" secondItem="1iw-Fa-jNd" secondAttribute="bottom" constant="5" id="O7x-8A-VBd"/>
+                                                <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="trailing" constant="30" id="TnA-7c-HlK"/>
+                                                <constraint firstItem="fF4-uD-1cz" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="bzd-c2-QGc"/>
+                                                <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="10" id="dw9-bF-xCM"/>
+                                                <constraint firstItem="w2U-o2-HgN" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="hIj-VL-5C5"/>
+                                                <constraint firstItem="1iw-Fa-jNd" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="i11-d0-89Z"/>
+                                                <constraint firstItem="w2U-o2-HgN" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="jJM-1H-0HU"/>
+                                                <constraint firstItem="Qbk-St-G2H" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="uIQ-lS-xr3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bottleStackView" destination="Qbk-St-G2H" id="gzY-R1-wEw"/>
+                                            <outlet property="buttlePrice" destination="4JD-Sr-b27" id="Cjb-u5-pBs"/>
+                                            <outlet property="itemDetail" destination="1iw-Fa-jNd" id="by5-du-cWH"/>
+                                            <outlet property="nameLabel" destination="w2U-o2-HgN" id="ESp-S9-SZl"/>
+                                            <outlet property="priceLabel" destination="ORU-hw-zM3" id="go6-4j-Un9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GNr-OF-NLU" id="r23-nf-Pfn"/>
+                                    <outlet property="delegate" destination="GNr-OF-NLU" id="gkW-0h-XGn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nps-KH-iwX" firstAttribute="leading" secondItem="flh-lc-INR" secondAttribute="leading" id="OYf-Z5-WcV"/>
+                            <constraint firstItem="flh-lc-INR" firstAttribute="bottom" secondItem="nps-KH-iwX" secondAttribute="bottom" id="n3x-3t-p1K"/>
+                            <constraint firstItem="nps-KH-iwX" firstAttribute="top" secondItem="flh-lc-INR" secondAttribute="top" id="nyX-UZ-rFm"/>
+                            <constraint firstItem="flh-lc-INR" firstAttribute="trailing" secondItem="nps-KH-iwX" secondAttribute="trailing" id="zIB-3I-DcV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="flh-lc-INR"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuTableView" destination="nps-KH-iwX" id="MyK-n5-XNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KX4-lz-So6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904.8" y="138.98050974512745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons-facebook-100" width="50" height="50"/>
         <image name="icons-instagram-100" width="50" height="50"/>
+        <image name="icons8-bar-100" width="50" height="50"/>
+        <image name="icons8-vodka-50" width="25" height="25"/>
+        <image name="photo-1481391564276-da6fcacaee31" width="1920" height="1060"/>
         <image name="xoxo" width="300" height="75"/>
     </resources>
 </document>
