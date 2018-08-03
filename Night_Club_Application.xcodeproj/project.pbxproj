@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D04B38D21149B1B00B283A6 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
 		8D0A7481210A849E00EBAA04 /* AboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		197CC2B86A419368CF6F74CA /* Pods_Night_Club_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Club_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4656CECDF05968EBCAE02 /* Pods-Night_Club_Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night_Club_Application.release.xcconfig"; path = "Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application.release.xcconfig"; sourceTree = "<group>"; };
+		8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
 		8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		8D446A0E20C1885D0004FA10 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */,
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
 				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
@@ -419,6 +422,7 @@
 				8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */,
 				8D9CF27C20FD8EB50041FD6C /* AboutUsStoryboard.storyboard in Resources */,
 				8D86B22B20DDA7F2006A447F /* Rubik-LightItalic.ttf in Resources */,
+				8D04B38D21149B1B00B283A6 /* MenuStoryboard.storyboard in Resources */,
 				8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */,
 				8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */,
 				8D86B23320DDA7F2006A447F /* Rubik-Bold.ttf in Resources */,
