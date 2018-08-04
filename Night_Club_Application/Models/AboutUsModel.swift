@@ -32,7 +32,7 @@ class AboutUsModel {
             "Do dyspozycji gości oddajemy Loże oraz Miejsca Siedzące ze stolikami na terenie całego klubu XOXO. Miej pewność, iż zdołasz odpocząć po energetycznym szaleństwie na parkiecie. Rezerwuj już dzisiaj swoje miejsce w naszym klubie!",
             "Myślisz o swoich urodzinach? Imieninach? Może już zbliża się magiczny moment kawalerskiego lub panieńskiego? W XOXO spędzisz czas w najlepszy możliwy sposób. Party With Friends. Tort? Confetti i tancerki z tancerzami na stole pełnym doborowych alkoholi? Zapraszamy!",
             "Pierwsza w Polsce, jedyna w pełni dyskretna strefa Premium. Specjalnie wyselekcjonowane trunki i niezależna obsługa. Zawsze świeża kawa Nespresso. Już niebawem więcej szczegółów!!!",
-            "Pierwsza w Polsce, jedyna w pełni dyskretna strefa Premium. Specjalnie wyselekcjonowane trunki i niezależna obsługa. Zawsze świeża kawa Nespresso. Już niebawem więcej szczegółów!!!",
+            "Elegancko hipsterska przestrzeń XOXO jest idealnym miejscem na Twój firmowy Event – zapraszamy do współpracy. Znajdziesz u nas wszystkie atrakcje potrzebne do zorganizowania niezapomnianej imprezy!",
             "Karta klubowa rodziny XOXO – VIP oraz LADIES upoważnia Cię do skorzystania z atrakcyjnych promocji w trakcji imprez! Jeżeli chcesz otrzymać swoją napisz do nas na adres e-mail: rezerwacje@xoxoparty.pl",
             "Bądź na bieżąco! Co tydzień nowe wydarzenia i niezapomniane przeżycia na parkiecie XOXO. Śledź nas na stronach Facebook oraz Instagram. Zachęcamy do korzystania z naszego newsletter’a – nie przegap niczego ważnego!"]
        

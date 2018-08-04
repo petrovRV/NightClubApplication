@@ -49,7 +49,7 @@ extension AboutUsPageViewController: UIPageViewControllerDataSource {
     
     
     func contentViewController(at index: Int) -> AboutUsContentViewController? {
-        print(index)
+        
         if index < 0 || index >= data.images.count {
             return nil
         }
@@ -68,12 +68,11 @@ extension AboutUsPageViewController: UIPageViewControllerDelegate {
         guard completed else { return }
             if let contentViewController = pageViewController.viewControllers?.first as? AboutUsContentViewController {
                 currentIndex = contentViewController.index
-                print("1 \(currentIndex)")
                 
                 aboutUsDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
             }
 //         guard let index = (pageViewController.viewControllers?.first as? AboutUsContentViewController)?.index else { return }
-//        print("2 \(index)")
+
         
     }
 }
