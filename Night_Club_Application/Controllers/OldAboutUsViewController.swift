@@ -8,12 +8,12 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class OldAboutUsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet weak var aboutUsTableView: UITableView!
     
-    let aboutUsData: AboutUsModel = AboutUsModel.fetchData()
+    let aboutUsData: OldAboutUsModel = OldAboutUsModel.fetchData()
     var expandCell = false
     let tableHeaderViewHeight: CGFloat = 250.0
     var headerView: UIView!

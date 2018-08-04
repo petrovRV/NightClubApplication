@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--About Us View Controller-->
+        <!--Old About Us View Controller-->
         <scene sceneID="rhu-bC-B25">
             <objects>
-                <viewController id="nJ8-fm-fTP" customClass="AboutUsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nJ8-fm-fTP" customClass="OldAboutUsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FeU-am-WLx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +227,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do klubu dojść można na dwa sposoby:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l4-Wf-dlq">
-                                                    <rect key="frame" x="33.5" y="5" width="308" height="20"/>
+                                                    <rect key="frame" x="34" y="5" width="308" height="20"/>
                                                     <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
