@@ -12,7 +12,7 @@
 		8D04B39221156CD600B283A6 /* AboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39121156CD600B283A6 /* AboutUsModel.swift */; };
 		8D04B3942115788000B283A6 /* AboutUsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */; };
 		8D04B398211578F900B283A6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B397211578F900B283A6 /* AboutUsViewController.swift */; };
-		8D04B39C21157D2C00B283A6 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B39B21157D2C00B283A6 /* AboutUs.storyboard */; };
+		8D04B39C21157D2C00B283A6 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
 		8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
@@ -82,7 +82,7 @@
 		8D04B39121156CD600B283A6 /* AboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsModel.swift; sourceTree = "<group>"; };
 		8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageViewController.swift; sourceTree = "<group>"; };
 		8D04B397211578F900B283A6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		8D04B39B21157D2C00B283A6 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
+		8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
 		8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
-				8D04B39B21157D2C00B283A6 /* AboutUs.storyboard */,
+				8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */,
 				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
 				8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */,
@@ -454,7 +454,7 @@
 				8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */,
 				8D86B22F20DDA7F2006A447F /* Rubik-Italic.ttf in Resources */,
 				8D86B22D20DDA7F2006A447F /* Rubik-MediumItalic.ttf in Resources */,
-				8D04B39C21157D2C00B283A6 /* AboutUs.storyboard in Resources */,
+				8D04B39C21157D2C00B283A6 /* AboutUsStoryboard.storyboard in Resources */,
 				8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */,
 				8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */,
 				8D438C7620F7F771005743A6 /* Assets.xcassets in Resources */,

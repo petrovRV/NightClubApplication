@@ -35,7 +35,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="AY9-8L-UoE" kind="show" id="LdN-Ig-TvC"/>
+                                            <segue destination="bCi-Bk-HOW" kind="show" id="Wt3-6v-t6e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
@@ -234,7 +234,7 @@
                 <viewControllerPlaceholder storyboardName="AboutUsStoryboard" id="bCi-Bk-HOW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DE8-yx-m2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="65"/>
+            <point key="canvasLocation" x="1767" y="73"/>
         </scene>
         <!--MenuStoryboard-->
         <scene sceneID="a9n-aX-fhD">
@@ -243,14 +243,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gD6-wA-MNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040" y="157"/>
-        </scene>
-        <!--AboutUs-->
-        <scene sceneID="Csr-gO-l3O">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AboutUs" id="AY9-8L-UoE" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="26q-BT-smD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1911" y="56"/>
         </scene>
     </scenes>
     <resources>

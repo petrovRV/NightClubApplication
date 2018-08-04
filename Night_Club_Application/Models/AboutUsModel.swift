@@ -11,19 +11,21 @@ import UIKit
 
 class AboutUsModel {
     
+    var title: [String]
     var text: [String]
     var images: [UIImage]
     
-    init(text: [String], images: [UIImage]) {
+    init(title: [String], text: [String], images: [UIImage]) {
       
+        self.title = title
         self.text = text
-       
         self.images = images
     }
     
     class func fetchData() -> AboutUsModel {
         
-       
+        let title = ["DANCEFLOOR POCZUJ XOXO", "BOGATE BARY XOXO", "PANORAMICZNA STREFA VIP", "LOŻE NA IMPREZIE. REZERWUJ TERAZ!", "ZORGANIZUJ SWOJĄ IMPREZĘ!", "PRIVE ROOM NOWA PRZESTRZEŃ", "TWÓJ EVENT FIRMOWY", "KARTA KLUBOWA VIP / LADIES", "AKTUALNOŚCI I WYDARZENIA"]
+        
         let text = ["Do Waszej dyspozycji oddajemy fantastyczny DanceFloor, bar, loże z możliwością rezerwacji, podwyższane podesty do tańca. Wszystko to możecie obserwować z antresoli. Monitory, potężny projektor i super nagłośnienie gwarantuje 100% zadowolenia.",
             "W XOXO skorzystasz z Baru Głównego, w którym serwujemy wszystkie możliwe alkohole, drinki, softy. Na poziomie niżej znajdziesz dodatkowy Bar Dancefloor, w którym serwujemy energetyczny BOOM! Nasze kelnerki dostarczą do Twojej loży komplet zamówień!",
             "Strefa VIP to oczywiście coś specjalnego! Panoramiczny widok na cały klub i dodatkowy Bar wraz z wygodnymi siedzeniami to gwarancja super imprezy! Zarezerwuj Teraz!",
@@ -40,7 +42,7 @@ class AboutUsModel {
         }
 
         
-        let aboutUsData = AboutUsModel(text: text, images: images)
+        let aboutUsData = AboutUsModel(title: title, text: text, images: images)
         
         return aboutUsData
     }

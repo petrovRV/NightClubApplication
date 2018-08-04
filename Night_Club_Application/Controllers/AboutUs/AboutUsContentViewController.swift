@@ -12,13 +12,13 @@ class AboutUsContentViewController: UIViewController {
 
     @IBOutlet weak var contentImageView: UIImageView!
     
-    var index = 0
-    var imageFile = ""
+    var index = 5
+    var imageFile: UIImage? = nil
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentImageView.image = UIImage(named: imageFile)
+        contentImageView.image = imageFile
     }
 
 }
