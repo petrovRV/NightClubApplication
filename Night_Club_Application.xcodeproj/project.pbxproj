@@ -13,6 +13,9 @@
 		8D04B3942115788000B283A6 /* AboutUsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */; };
 		8D04B398211578F900B283A6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B397211578F900B283A6 /* AboutUsViewController.swift */; };
 		8D04B39C21157D2C00B283A6 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */; };
+		8D04B39E2115F01F00B283A6 /* SocialURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39D2115F01F00B283A6 /* SocialURLs.swift */; };
+		8D04B3A02115F45C00B283A6 /* HomescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */; };
+		8D04B3A22115F4A200B283A6 /* HomescreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
 		8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
@@ -83,6 +86,9 @@
 		8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageViewController.swift; sourceTree = "<group>"; };
 		8D04B397211578F900B283A6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
+		8D04B39D2115F01F00B283A6 /* SocialURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialURLs.swift; sourceTree = "<group>"; };
+		8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewController.swift; sourceTree = "<group>"; };
+		8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
 		8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +316,7 @@
 				8D438C6720F659AB005743A6 /* Videos */,
 				8D0FCB6F20EA6EB900ABC50B /* Gallery */,
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
+				8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */,
@@ -328,6 +335,7 @@
 				8D438C7A20F8ED34005743A6 /* About Us */,
 				8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */,
 				8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */,
+				8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 				8D86B21C20DDA416006A447F /* MainViewButton.swift */,
 				8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */,
 				8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */,
+				8D04B39D2115F01F00B283A6 /* SocialURLs.swift */,
 				8DBF9DF720DD973B00A1DEB9 /* Fonts */,
 			);
 			path = Resources;
@@ -541,6 +550,8 @@
 				8D438C7820F8EA5C005743A6 /* OldAboutUsViewController.swift in Sources */,
 				8D438C7F20F91F66005743A6 /* ClubDescriptionTableViewCell.swift in Sources */,
 				8DE320122102460300D8FD51 /* VideoDetailNetworkService.swift in Sources */,
+				8D04B3A22115F4A200B283A6 /* HomescreenCollectionViewCell.swift in Sources */,
+				8D04B3A02115F45C00B283A6 /* HomescreenViewController.swift in Sources */,
 				8D6AC79A21001A4700310714 /* ApartmentModel.swift in Sources */,
 				8D438C6920F78962005743A6 /* ApartmentGalleryTableViewCell.swift in Sources */,
 				8D9CF27220FD635A0041FD6C /* WorkingHoursTableViewCell.swift in Sources */,
@@ -550,6 +561,7 @@
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D438C7D20F91E16005743A6 /* ClubDetailTableViewCell.swift in Sources */,
 				8D04B3902114CAD200B283A6 /* AboutUsContentViewController.swift in Sources */,
+				8D04B39E2115F01F00B283A6 /* SocialURLs.swift in Sources */,
 				8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */,
 				8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */,
 				8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */,

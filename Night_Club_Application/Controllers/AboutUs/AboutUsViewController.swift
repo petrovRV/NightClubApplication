@@ -63,6 +63,25 @@ class AboutUsViewController: UIViewController {
                                 self?.descriptionLabel.alpha = 1
                 }, completion: nil)
         }
+    
+    func openUrl(with social: SocialURL) {
+        
+        let res = UIApplication.shared.canOpenURL(social.getAppURL())
+        let url = res ? social.getAppURL() : social.getWebURL()
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    @IBAction func openInstagramButton(_ sender: Any) {
+         openUrl(with: .instagram)
+    }
+    @IBAction func openFacebookButton(_ sender: Any) {
+          openUrl(with: .facebook)
+    }
+
 }
 
 extension AboutUsViewController: AboutUsPageViewControllerDelegate {

@@ -101,6 +101,9 @@
                                                                 <include reference="MLv-4p-dH5"/>
                                                             </mask>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="openInstagramButton:" destination="x8D-kd-V72" eventType="touchUpInside" id="hpW-9J-s06"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-Ye-F19">
                                                         <rect key="frame" x="62" y="0.0" width="50" height="50"/>
@@ -118,6 +121,9 @@
                                                                 <include reference="PbN-0a-9wt"/>
                                                             </mask>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="openFacebookButton:" destination="x8D-kd-V72" eventType="touchUpInside" id="9qC-EC-db3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
