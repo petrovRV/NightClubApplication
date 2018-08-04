@@ -9,5 +9,7 @@
 import UIKit
 
 class HomescreenCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
 }

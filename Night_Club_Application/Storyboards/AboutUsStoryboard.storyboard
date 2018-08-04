@@ -23,7 +23,7 @@
         <!--O NAS-->
         <scene sceneID="uSI-mA-85o">
             <objects>
-                <viewController storyboardIdentifier="AboutUsViewController" title="O NAS" id="x8D-kd-V72" customClass="AboutUsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsViewController" title="O NAS" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x8D-kd-V72" customClass="AboutUsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pN-7c-8bD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,13 +80,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79U-K7-axf">
-                                        <rect key="frame" x="0.0" y="404" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="412" width="375" height="42"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iKU-5V-jAa">
-                                                <rect key="frame" x="131.5" y="0.0" width="112" height="50"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="96" height="42"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDd-6p-eWq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="uDd-6p-eWq" secondAttribute="height" multiplier="1:1" id="MLv-4p-dH5"/>
                                                         </constraints>
@@ -106,7 +106,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-Ye-F19">
-                                                        <rect key="frame" x="62" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="54" y="0.0" width="42" height="42"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GOa-Ye-F19" secondAttribute="height" multiplier="1:1" id="PbN-0a-9wt"/>
                                                         </constraints>
@@ -133,7 +133,9 @@
                                             <constraint firstItem="iKU-5V-jAa" firstAttribute="top" secondItem="79U-K7-axf" secondAttribute="top" id="PkQ-rn-ViF"/>
                                             <constraint firstItem="iKU-5V-jAa" firstAttribute="centerX" secondItem="79U-K7-axf" secondAttribute="centerX" id="Yob-Em-VfQ"/>
                                             <constraint firstAttribute="bottom" secondItem="iKU-5V-jAa" secondAttribute="bottom" id="ixM-jA-euC"/>
-                                            <constraint firstAttribute="height" constant="50" id="o4B-zK-YgD"/>
+                                            <constraint firstAttribute="height" constant="50" id="o4B-zK-YgD">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="42"/>
+                                            </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">

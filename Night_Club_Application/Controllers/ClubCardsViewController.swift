@@ -16,6 +16,7 @@ class ClubCardsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         vipCardView.alpha = 1
         ladiesCardView.alpha = 0
 
@@ -41,8 +42,4 @@ class ClubCardsViewController: UIViewController {
             break
         }
     }
-    
-    
-    
-    
 }

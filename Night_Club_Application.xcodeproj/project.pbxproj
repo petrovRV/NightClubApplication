@@ -16,6 +16,8 @@
 		8D04B39E2115F01F00B283A6 /* SocialURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39D2115F01F00B283A6 /* SocialURLs.swift */; };
 		8D04B3A02115F45C00B283A6 /* HomescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */; };
 		8D04B3A22115F4A200B283A6 /* HomescreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */; };
+		8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A321162A2E00B283A6 /* LocalNotification.swift */; };
+		8D04B3A621162B5800B283A6 /* HomescreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A521162B5800B283A6 /* HomescreenModel.swift */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
 		8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
@@ -89,6 +91,8 @@
 		8D04B39D2115F01F00B283A6 /* SocialURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialURLs.swift; sourceTree = "<group>"; };
 		8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewController.swift; sourceTree = "<group>"; };
 		8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D04B3A321162A2E00B283A6 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		8D04B3A521162B5800B283A6 /* HomescreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModel.swift; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
 		8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 				8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */,
 				8D6B49E6210B64D600E3AB34 /* MenuModel.swift */,
 				8D04B39121156CD600B283A6 /* AboutUsModel.swift */,
+				8D04B3A521162B5800B283A6 /* HomescreenModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */,
 				8D86B21C20DDA416006A447F /* MainViewButton.swift */,
 				8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */,
+				8D04B3A321162A2E00B283A6 /* LocalNotification.swift */,
 				8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */,
 				8D04B39D2115F01F00B283A6 /* SocialURLs.swift */,
 				8DBF9DF720DD973B00A1DEB9 /* Fonts */,
@@ -535,6 +541,7 @@
 				8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */,
 				8DE32014210248A900D8FD51 /* VideosDetail.swift in Sources */,
 				8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */,
+				8D04B3A621162B5800B283A6 /* HomescreenModel.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
 				8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */,
 				8D04B398211578F900B283A6 /* AboutUsViewController.swift in Sources */,
@@ -544,6 +551,7 @@
 				8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */,
 				8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */,
 				8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */,
+				8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */,
 				8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */,
 				8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */,
 				8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */,
