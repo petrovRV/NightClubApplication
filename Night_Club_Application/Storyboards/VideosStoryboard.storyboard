@@ -19,7 +19,7 @@
         <!--Videos View Controller-->
         <scene sceneID="9M8-wv-6fI">
             <objects>
-                <viewController id="gFg-2V-jbA" customClass="VideosViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gFg-2V-jbA" customClass="VideosViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUX-Eo-mjh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

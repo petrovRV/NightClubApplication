@@ -19,18 +19,9 @@ class ApartmentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
-//        invalidateLayout()
 
     }
-    
-    func invalidateLayout(){
-        let indexPath = IndexPath(item: 0, section: 0)
-        DispatchQueue.main.async {
-            self.apartmentCollectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-        }
-    }  
 }
 
 extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
@@ -62,15 +53,6 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt
-//        indexPath: IndexPath) -> CGFloat
-//    {
-//        if indexPath.row == 0 {
-//            return tableView.bounds.height / 2.7
-//        } else {
-//            return UITableViewAutomaticDimension
-//        }
-//    }
 }
 
 extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

@@ -35,8 +35,7 @@ extension GalleryViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cellIdentifier = "GalleryCell"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GalleryPhotoCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GalleryCell", for: indexPath) as! GalleryPhotoCell
         
         cell.galleryImage.image = galleryPhotos.images[indexPath.row]
         

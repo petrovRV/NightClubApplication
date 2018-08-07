@@ -19,7 +19,7 @@
         <!--Reservation View Controller-->
         <scene sceneID="xSp-0b-JiO">
             <objects>
-                <viewController id="4c7-M9-wzQ" customClass="ReservationViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReservationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4c7-M9-wzQ" customClass="ReservationViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1x-l4-Oh9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,13 +31,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aby dokonac rezerwacji skontaktuj się z nami telefonicznie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-kb-cfn">
-                                <rect key="frame" x="15" y="290" width="345" height="50"/>
+                                <rect key="frame" x="15" y="290" width="345" height="49"/>
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKF-uB-8Pn">
-                                <rect key="frame" x="170" y="368" width="190" height="75"/>
+                                <rect key="frame" x="170" y="367" width="190" height="73.5"/>
                                 <string key="text">Numer telefonu:
 +48 881 216 566
 </string>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-K4-Owz">
-                                <rect key="frame" x="15" y="348" width="140" height="90"/>
+                                <rect key="frame" x="15" y="347" width="140" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="3xx-Dm-9KU"/>
                                     <constraint firstAttribute="height" constant="90" id="frP-Vh-h3v"/>

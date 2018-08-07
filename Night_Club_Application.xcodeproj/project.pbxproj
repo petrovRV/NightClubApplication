@@ -7,22 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D04B38D21149B1B00B283A6 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */; };
+		8D04B3902114CAD200B283A6 /* AboutUsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B38F2114CAD200B283A6 /* AboutUsContentViewController.swift */; };
+		8D04B39221156CD600B283A6 /* AboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39121156CD600B283A6 /* AboutUsModel.swift */; };
+		8D04B3942115788000B283A6 /* AboutUsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */; };
+		8D04B398211578F900B283A6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B397211578F900B283A6 /* AboutUsViewController.swift */; };
+		8D04B39C21157D2C00B283A6 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */; };
+		8D04B39E2115F01F00B283A6 /* SocialURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39D2115F01F00B283A6 /* SocialURLs.swift */; };
+		8D04B3A02115F45C00B283A6 /* HomescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */; };
+		8D04B3A22115F4A200B283A6 /* HomescreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */; };
+		8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A321162A2E00B283A6 /* LocalNotification.swift */; };
+		8D04B3A621162B5800B283A6 /* HomescreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A521162B5800B283A6 /* HomescreenModel.swift */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
-		8D0A7481210A849E00EBAA04 /* AboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */; };
+		8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
 		8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */; };
 		8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */; };
 		8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */; };
 		8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */; };
 		8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7D20ED218500ABC50B /* Videos.swift */; };
-		8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */; };
+		8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */; };
 		8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */; };
 		8D438C6620F6595E005743A6 /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6520F6595E005743A6 /* PlayVideoViewController.swift */; };
 		8D438C6920F78962005743A6 /* ApartmentGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6820F78962005743A6 /* ApartmentGalleryTableViewCell.swift */; };
 		8D438C6B20F789BD005743A6 /* ApartmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6A20F789BD005743A6 /* ApartmentTableViewCell.swift */; };
 		8D438C6F20F78C8F005743A6 /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */; };
 		8D438C7620F7F771005743A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D438C7520F7F771005743A6 /* Assets.xcassets */; };
-		8D438C7820F8EA5C005743A6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */; };
+		8D438C7820F8EA5C005743A6 /* OldAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C7720F8EA5C005743A6 /* OldAboutUsViewController.swift */; };
 		8D438C7D20F91E16005743A6 /* ClubDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C7C20F91E16005743A6 /* ClubDetailTableViewCell.swift */; };
 		8D438C7F20F91F66005743A6 /* ClubDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D438C7E20F91F66005743A6 /* ClubDescriptionTableViewCell.swift */; };
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
@@ -60,7 +71,7 @@
 		8D9CF27220FD635A0041FD6C /* WorkingHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27120FD635A0041FD6C /* WorkingHoursTableViewCell.swift */; };
 		8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27320FD7A920041FD6C /* ClubMapTableViewCell.swift */; };
 		8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CF27520FD7CE40041FD6C /* HowToGetTableViewCell.swift */; };
-		8D9CF27C20FD8EB50041FD6C /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */; };
+		8D9CF27C20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 		8DE320122102460300D8FD51 /* VideoDetailNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE320112102460300D8FD51 /* VideoDetailNetworkService.swift */; };
@@ -71,22 +82,33 @@
 /* Begin PBXFileReference section */
 		197CC2B86A419368CF6F74CA /* Pods_Night_Club_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Club_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4656CECDF05968EBCAE02 /* Pods-Night_Club_Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night_Club_Application.release.xcconfig"; path = "Pods/Target Support Files/Pods-Night_Club_Application/Pods-Night_Club_Application.release.xcconfig"; sourceTree = "<group>"; };
+		8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		8D04B38F2114CAD200B283A6 /* AboutUsContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContentViewController.swift; sourceTree = "<group>"; };
+		8D04B39121156CD600B283A6 /* AboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsModel.swift; sourceTree = "<group>"; };
+		8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageViewController.swift; sourceTree = "<group>"; };
+		8D04B397211578F900B283A6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
+		8D04B39D2115F01F00B283A6 /* SocialURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialURLs.swift; sourceTree = "<group>"; };
+		8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewController.swift; sourceTree = "<group>"; };
+		8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D04B3A321162A2E00B283A6 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		8D04B3A521162B5800B283A6 /* HomescreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModel.swift; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
-		8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsModel.swift; sourceTree = "<group>"; };
+		8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GalleryStoryboard.storyboard; sourceTree = "<group>"; };
 		8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCardsViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7720ED1CD500ABC50B /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7A20ED1EE600ABC50B /* VideosNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosNetworkService.swift; sourceTree = "<group>"; };
 		8D0FCB7D20ED218500ABC50B /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
-		8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ClubCardsStoryboard .storyboard"; sourceTree = "<group>"; };
+		8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClubCardsStoryboard.storyboard; sourceTree = "<group>"; };
 		8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomSegmentedControl.swift; path = Night_Club_Application/Services/CustomSegmentedControl.swift; sourceTree = SOURCE_ROOT; };
 		8D438C6520F6595E005743A6 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayVideoViewController.swift; path = Night_Club_Application/Controllers/Videos/PlayVideoViewController.swift; sourceTree = SOURCE_ROOT; };
 		8D438C6820F78962005743A6 /* ApartmentGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentGalleryTableViewCell.swift; sourceTree = "<group>"; };
 		8D438C6A20F789BD005743A6 /* ApartmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentTableViewCell.swift; sourceTree = "<group>"; };
 		8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
 		8D438C7520F7F771005743A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		8D438C7720F8EA5C005743A6 /* OldAboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsViewController.swift; sourceTree = "<group>"; };
 		8D438C7C20F91E16005743A6 /* ClubDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailTableViewCell.swift; sourceTree = "<group>"; };
 		8D438C7E20F91F66005743A6 /* ClubDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		8D4469F720C182150004FA10 /* Night_Club_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Club_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +148,7 @@
 		8D9CF27120FD635A0041FD6C /* WorkingHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHoursTableViewCell.swift; sourceTree = "<group>"; };
 		8D9CF27320FD7A920041FD6C /* ClubMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubMapTableViewCell.swift; sourceTree = "<group>"; };
 		8D9CF27520FD7CE40041FD6C /* HowToGetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetTableViewCell.swift; sourceTree = "<group>"; };
-		8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
+		8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OldAboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		8DBF9DF820DD97B500A1DEB9 /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
@@ -164,6 +186,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D04B38E2114CA2900B283A6 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				8D04B38F2114CAD200B283A6 /* AboutUsContentViewController.swift */,
+				8D04B3932115788000B283A6 /* AboutUsPageViewController.swift */,
+				8D04B397211578F900B283A6 /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
 		8D0FCB6F20EA6EB900ABC50B /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +222,10 @@
 				8DE32013210248A900D8FD51 /* VideosDetail.swift */,
 				8D6AC79B2100A0C300310714 /* GalleryModel.swift */,
 				8D6AC79921001A4700310714 /* ApartmentModel.swift */,
-				8D0A7480210A849E00EBAA04 /* AboutUsModel.swift */,
+				8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */,
 				8D6B49E6210B64D600E3AB34 /* MenuModel.swift */,
+				8D04B39121156CD600B283A6 /* AboutUsModel.swift */,
+				8D04B3A521162B5800B283A6 /* HomescreenModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,14 +300,16 @@
 			isa = PBXGroup;
 			children = (
 				8D4469FE20C182150004FA10 /* Main.storyboard */,
+				8D04B39B21157D2C00B283A6 /* AboutUsStoryboard.storyboard */,
 				8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
 				8D86B23420DDB8FC006A447F /* ReservationStoryboard.storyboard */,
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 				8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */,
 				8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */,
-				8D9CF27B20FD8EB50041FD6C /* AboutUsStoryboard.storyboard */,
-				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard .storyboard */,
+				8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */,
+				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */,
+				8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -281,14 +317,16 @@
 		8D446A0F20C189100004FA10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D04B38E2114CA2900B283A6 /* AboutUs */,
 				8D438C6720F659AB005743A6 /* Videos */,
 				8D0FCB6F20EA6EB900ABC50B /* Gallery */,
 				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
+				8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
 				8D438C6E20F78C8F005743A6 /* ApartmentViewController.swift */,
 				8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */,
-				8D438C7720F8EA5C005743A6 /* AboutUsViewController.swift */,
+				8D438C7720F8EA5C005743A6 /* OldAboutUsViewController.swift */,
 				8D0A7482210B578000EBAA04 /* MenuViewController.swift */,
 			);
 			path = Controllers;
@@ -302,6 +340,7 @@
 				8D438C7A20F8ED34005743A6 /* About Us */,
 				8D63606D20EE53B500DD9D50 /* VideoTableViewCell.swift */,
 				8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */,
+				8D04B3A12115F4A200B283A6 /* HomescreenCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,7 +367,9 @@
 				8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */,
 				8D86B21C20DDA416006A447F /* MainViewButton.swift */,
 				8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */,
+				8D04B3A321162A2E00B283A6 /* LocalNotification.swift */,
 				8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */,
+				8D04B39D2115F01F00B283A6 /* SocialURLs.swift */,
 				8DBF9DF720DD973B00A1DEB9 /* Fonts */,
 			);
 			path = Resources;
@@ -417,8 +458,9 @@
 				8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */,
 				8D86B22E20DDA7F2006A447F /* OFL.txt in Resources */,
 				8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */,
-				8D9CF27C20FD8EB50041FD6C /* AboutUsStoryboard.storyboard in Resources */,
+				8D9CF27C20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard in Resources */,
 				8D86B22B20DDA7F2006A447F /* Rubik-LightItalic.ttf in Resources */,
+				8D04B38D21149B1B00B283A6 /* MenuStoryboard.storyboard in Resources */,
 				8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */,
 				8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */,
 				8D86B23320DDA7F2006A447F /* Rubik-Bold.ttf in Resources */,
@@ -427,12 +469,13 @@
 				8D86B23620DDB8FC006A447F /* ReservationStoryboard.storyboard in Resources */,
 				8D86B22F20DDA7F2006A447F /* Rubik-Italic.ttf in Resources */,
 				8D86B22D20DDA7F2006A447F /* Rubik-MediumItalic.ttf in Resources */,
+				8D04B39C21157D2C00B283A6 /* AboutUsStoryboard.storyboard in Resources */,
 				8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */,
 				8D86B23220DDA7F2006A447F /* Rubik-BoldItalic.ttf in Resources */,
 				8D438C7620F7F771005743A6 /* Assets.xcassets in Resources */,
 				8D86B23020DDA7F2006A447F /* Rubik-Regular.ttf in Resources */,
 				8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */,
-				8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard .storyboard in Resources */,
+				8D335FF020EFBCEF00527E7B /* ClubCardsStoryboard.storyboard in Resources */,
 				8D446A0020C182150004FA10 /* Main.storyboard in Resources */,
 				8D86B23120DDA7F2006A447F /* Rubik-Medium.ttf in Resources */,
 			);
@@ -493,23 +536,30 @@
 				8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */,
 				8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */,
 				8D6B49E9210B67B100E3AB34 /* MenuHeaderViewDelegate.swift in Sources */,
+				8D04B3942115788000B283A6 /* AboutUsPageViewController.swift in Sources */,
 				8D438C6620F6595E005743A6 /* PlayVideoViewController.swift in Sources */,
 				8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */,
 				8DE32014210248A900D8FD51 /* VideosDetail.swift in Sources */,
 				8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */,
+				8D04B3A621162B5800B283A6 /* HomescreenModel.swift in Sources */,
 				8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */,
 				8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */,
+				8D04B398211578F900B283A6 /* AboutUsViewController.swift in Sources */,
+				8D04B39221156CD600B283A6 /* AboutUsModel.swift in Sources */,
 				8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */,
 				8D438C6B20F789BD005743A6 /* ApartmentTableViewCell.swift in Sources */,
-				8D0A7481210A849E00EBAA04 /* AboutUsModel.swift in Sources */,
+				8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */,
 				8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */,
 				8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */,
+				8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */,
 				8D0FCB7B20ED1EE600ABC50B /* VideosNetworkService.swift in Sources */,
 				8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */,
 				8D0FCB7820ED1CD500ABC50B /* VideosViewController.swift in Sources */,
-				8D438C7820F8EA5C005743A6 /* AboutUsViewController.swift in Sources */,
+				8D438C7820F8EA5C005743A6 /* OldAboutUsViewController.swift in Sources */,
 				8D438C7F20F91F66005743A6 /* ClubDescriptionTableViewCell.swift in Sources */,
 				8DE320122102460300D8FD51 /* VideoDetailNetworkService.swift in Sources */,
+				8D04B3A22115F4A200B283A6 /* HomescreenCollectionViewCell.swift in Sources */,
+				8D04B3A02115F45C00B283A6 /* HomescreenViewController.swift in Sources */,
 				8D6AC79A21001A4700310714 /* ApartmentModel.swift in Sources */,
 				8D438C6920F78962005743A6 /* ApartmentGalleryTableViewCell.swift in Sources */,
 				8D9CF27220FD635A0041FD6C /* WorkingHoursTableViewCell.swift in Sources */,
@@ -518,6 +568,8 @@
 				8D6B49EB210CFB9300E3AB34 /* MenuTableViewCell.swift in Sources */,
 				8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */,
 				8D438C7D20F91E16005743A6 /* ClubDetailTableViewCell.swift in Sources */,
+				8D04B3902114CAD200B283A6 /* AboutUsContentViewController.swift in Sources */,
+				8D04B39E2115F01F00B283A6 /* SocialURLs.swift in Sources */,
 				8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */,
 				8D9CF27620FD7CE40041FD6C /* HowToGetTableViewCell.swift in Sources */,
 				8D63607020EEBFA600DD9D50 /* Environment.swift in Sources */,

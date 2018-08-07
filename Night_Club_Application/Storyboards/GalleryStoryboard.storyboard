@@ -19,7 +19,7 @@
         <!--Gallery View Controller-->
         <scene sceneID="w0N-T2-RI9">
             <objects>
-                <viewController id="nCE-hn-eSm" customClass="GalleryViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GalleryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nCE-hn-eSm" customClass="GalleryViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQf-9B-zZr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
