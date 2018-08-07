@@ -11,7 +11,7 @@ import UIKit
 class HomescreenViewController: UIViewController {
 
     @IBOutlet weak var homescreenColectionView: UICollectionView!
-    var images = [#imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3"), #imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3")]
+    var images = [#imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3"), #imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3")]
     var names = ["O nas", "Mapa", "Rezerwacja", "O nas", "Mapa", "Rezerwacja", "O nas", "Mapa"]
     var storyboardNames = ["AboutUsStoryboard", "MapStoryboard", "ReservationStoryboard", "AboutUsStoryboard", "MapStoryboard", "ReservationStoryboard", "AboutUsStoryboard", "MapStoryboard"]
     private let notifacation = LocalNotification()
@@ -49,7 +49,9 @@ extension HomescreenViewController: UICollectionViewDelegate {
 extension HomescreenViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width / 2 - 2
-        return CGSize(width: width, height: width)
+        let height = (collectionView.frame.height - 6) / 3
+        
+        return CGSize(width: width, height: height)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 3.0

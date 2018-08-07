@@ -8,9 +8,9 @@
 
 import Foundation
 
-class HomescreenModel {
-    var icon: [String]
-    var text: [String]
-    var images: [UIImage]
-    
-}
+//class HomescreenModel {
+//    var icon: [String]
+//    var text: [String]
+//    var images: [UIImage]
+//    
+//}
