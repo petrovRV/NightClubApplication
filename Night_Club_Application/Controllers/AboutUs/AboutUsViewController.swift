@@ -64,6 +64,16 @@ class AboutUsViewController: UIViewController {
                 }, completion: nil)
         }
     
+    @objc func closeView() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionReveal
+        transition.subtype = kCATransitionFromBottom
+        navigationController?.view.layer.add(transition, forKey: nil)
+        _ = navigationController?.popViewController(animated: false)
+    }
+    
     func openUrl(with social: SocialURL) {
         
         let res = UIApplication.shared.canOpenURL(social.getAppURL())

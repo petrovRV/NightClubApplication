@@ -20,7 +20,7 @@
         <!--Apartment by XOXO-->
         <scene sceneID="Fpl-T4-pEN">
             <objects>
-                <viewController title="Apartment by XOXO" id="T8J-wk-3ep" customClass="ApartmentViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ApartmentViewController" title="Apartment by XOXO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T8J-wk-3ep" customClass="ApartmentViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XB6-CW-byE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

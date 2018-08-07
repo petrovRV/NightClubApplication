@@ -6,11 +6,19 @@
 //  Copyright © 2018 Lubomir Olshansky. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-//class HomescreenModel {
-//    var icon: [String]
-//    var text: [String]
-//    var images: [UIImage]
-//    
-//}
+class HomescreenModel {
+    var name: String
+    var image: UIImage
+    var storyboardName: String
+    var viewControllerName: String
+    
+    init(name: String, image: UIImage, storyboardName: String, viewControllerName: String) {
+        
+        self.name = name
+        self.image = image
+        self.storyboardName = storyboardName
+        self.viewControllerName = viewControllerName
+    }
+}

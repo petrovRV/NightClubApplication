@@ -20,7 +20,7 @@
         <!--Karty Klubowe-->
         <scene sceneID="pyO-hI-PJC">
             <objects>
-                <viewController title="Karty Klubowe" id="Jcy-Su-Axd" customClass="ClubCardsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClubCardsViewController" title="Karty Klubowe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jcy-Su-Axd" customClass="ClubCardsViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1g-yL-Q4j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

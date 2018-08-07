@@ -11,27 +11,45 @@ import UIKit
 class HomescreenViewController: UIViewController {
 
     @IBOutlet weak var homescreenColectionView: UICollectionView!
-    var images = [#imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3"), #imageLiteral(resourceName: "HomeIcon-1"), #imageLiteral(resourceName: "HomeIcon-2"), #imageLiteral(resourceName: "HomeIcon-3")]
-    var names = ["O nas", "Mapa", "Rezerwacja", "O nas", "Mapa", "Rezerwacja", "O nas", "Mapa"]
-    var storyboardNames = ["AboutUsStoryboard", "MapStoryboard", "ReservationStoryboard", "AboutUsStoryboard", "MapStoryboard", "ReservationStoryboard", "AboutUsStoryboard", "MapStoryboard"]
+    
+    private var data: [HomescreenModel] = [HomescreenModel(name: "Rezerwacja", image: #imageLiteral(resourceName: "HomeIcon-reservation"), storyboardName: "ReservationStoryboard", viewControllerName: "ReservationViewController"), HomescreenModel(name: "Zdjęcia", image: #imageLiteral(resourceName: "HomeIcon-gallery"), storyboardName: "GalleryStoryboard", viewControllerName: "GalleryViewController"), HomescreenModel(name: "Menu", image: #imageLiteral(resourceName: "HomeIcon-menu"), storyboardName: "MenuStoryboard", viewControllerName: "MenuViewController"), HomescreenModel(name: "Apartament", image: #imageLiteral(resourceName: "HomeIcon-apartment"), storyboardName: "ApartmentStoryboard", viewControllerName: "ApartmentViewController"), HomescreenModel(name: "Karty klubowe", image: #imageLiteral(resourceName: "HomeIcon-cards"), storyboardName: "ClubCardsStoryboard", viewControllerName: "ClubCardsViewController"), HomescreenModel(name: "Wideo", image: #imageLiteral(resourceName: "HomeIcon-videos"), storyboardName: "VideosStoryboard", viewControllerName: "VideosViewController")]
     private let notifacation = LocalNotification()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        notifacation.addNotification()
+        
+    notifacation.addNotification()
+    }
+    @IBAction func aboutUsButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
+        
+        let navigationController = self.navigationController
+        
+        
+        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: viewController, action: #selector(viewController.closeView))
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: viewController, action: nil)
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionMoveIn
+        transition.subtype = kCATransitionFromTop
+        navigationController?.view.layer.add(transition, forKey: nil)
+        navigationController?.pushViewController(viewController, animated: false)
     }
 }
 
 extension HomescreenViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomescreenCollectionViewCell", for: indexPath) as! HomescreenCollectionViewCell
-        cell.iconImage.image = images[indexPath.row]
-        cell.nameLabel.text = names[indexPath.row]
+        cell.iconImage.image = data[indexPath.row].image
+        cell.nameLabel.text = data[indexPath.row].name
         return cell
     }
     
@@ -39,9 +57,10 @@ extension HomescreenViewController: UICollectionViewDataSource {
 
 extension HomescreenViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let name = "AboutUsViewController"
-        let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: name)
+        let storybaordName = data[indexPath.row].storyboardName
+        let viewControllerName = data[indexPath.row].viewControllerName
+        let storyboard = UIStoryboard(name: storybaordName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
