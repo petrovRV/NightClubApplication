@@ -13,11 +13,10 @@ class ApartmentPhotosFlowLayout: UICollectionViewFlowLayout {
     let standardItemScale: CGFloat = 0.5
     var isSetup = false
     
-    
     override func prepare() {
         super.prepare()
         if isSetup == false {
-            setupCollectionView()
+            self.collectionView!.decelerationRate = UIScrollViewDecelerationRateNormal
             isSetup = true
         }
     }
@@ -32,7 +31,6 @@ class ApartmentPhotosFlowLayout: UICollectionViewFlowLayout {
             changeLayoutAttributes(itemAttributesCopy)
             attributesCopy.append(itemAttributesCopy)
         }
-        
         
         return attributesCopy
     }
@@ -71,24 +69,14 @@ class ApartmentPhotosFlowLayout: UICollectionViewFlowLayout {
         return targetContentOffset
     }
     
-    func setupCollectionView() {
-        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
-        
-        let collectionSize = collectionView!.bounds.size
-        let yInset = (collectionSize.height - self.itemSize.height) / 2
-        let xInset = (collectionSize.width - self.itemSize.width) / 2
-        
-        self.sectionInset = UIEdgeInsetsMake(yInset, xInset, yInset, xInset)
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+//    func setupCollectionView() {
+//        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateNormal
+//        
+//        let collectionSize = collectionView!.bounds.size
+//        let yInset = (collectionSize.height - self.itemSize.height) / 2
+//        let xInset = (collectionSize.width - self.itemSize.width) / 2
+//        
+//        self.sectionInset = UIEdgeInsetsMake(yInset, xInset, yInset, xInset)
+//    }
 }
 

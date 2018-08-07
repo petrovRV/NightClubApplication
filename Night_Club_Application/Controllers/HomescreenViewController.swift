@@ -20,6 +20,7 @@ class HomescreenViewController: UIViewController {
         
     notifacation.addNotification()
     }
+    
     @IBAction func aboutUsButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
@@ -52,7 +53,6 @@ extension HomescreenViewController: UICollectionViewDataSource {
         cell.nameLabel.text = data[indexPath.row].name
         return cell
     }
-    
 }
 
 extension HomescreenViewController: UICollectionViewDelegate {
