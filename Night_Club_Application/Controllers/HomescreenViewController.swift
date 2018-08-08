@@ -21,18 +21,15 @@ class HomescreenViewController: UIViewController {
         notifacation.addNotification()
     }
     
+    
     @IBAction func aboutUsButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
-        
         let navigationController = self.navigationController
-        
-        
         viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Zamknąć", style: .plain, target: viewController, action: #selector(viewController.closeView))
         viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: viewController, action: nil)
         viewController.navigationController?.navigationBar.barStyle = .black
-        
         let transition = CATransition()
         transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)

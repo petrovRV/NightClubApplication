@@ -21,13 +21,13 @@ class LargePhotoViewController: UIViewController, UIScrollViewDelegate {
     var currentImage = 0
     enum NavigationHelper { case next; case previous; case firstLoad }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 3.0
         let sharePhotoButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sharePhotoAction))
+        sharePhotoButton.tintColor = UIColor.white
         self.navigationItem.rightBarButtonItem = sharePhotoButton
         
         updatePhoto(with: NavigationHelper.firstLoad)
@@ -65,7 +65,6 @@ class LargePhotoViewController: UIViewController, UIScrollViewDelegate {
         disableNavigationButton()
     }
     
-    
     func disableNavigationButton(){
         let lastImageIndex = self.images.count - 1
         switch currentImage {
@@ -81,8 +80,6 @@ class LargePhotoViewController: UIViewController, UIScrollViewDelegate {
             self.backOutlet.isHidden = false
         }
     }
-    
-    
     
     @IBAction func nextButton(_ sender: Any) {
         

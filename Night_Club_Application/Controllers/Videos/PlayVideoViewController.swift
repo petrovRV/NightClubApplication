@@ -18,44 +18,44 @@ class PlayVideoViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var duration: UILabel!
     
     let videosDetailService = VideoDetailNetworkService()
-    
     var videoId: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction))
+        shareButton.tintColor = UIColor.white
         self.navigationItem.rightBarButtonItem = shareButton
         self.activityIndicator.startAnimating()
         self.videoWebView.navigationDelegate = self
         self.activityIndicator.hidesWhenStopped = true
         loadYoutubeVideo()
-        
+        loadVideoDetail()
+    }
+    
+    func loadVideoDetail() {
         videosDetailService.loadVideoDetail(id: self.videoId) { [weak self]
             responce in
             self?.viewCount.text = responce.items.first?.statistics.viewCount
             self?.duration.text = responce.items.first?.contentDetails.duration.getYoutubeFormattedDuration()
         }
-        
     }
+    
     @objc func shareAction() {
-     
         let shareLink = "www.youtube.com/watch?v=\(self.videoId)"
         let activityViewController = UIActivityViewController(activityItems: [shareLink], applicationActivities: nil)
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-    
     private func loadYoutubeVideo() {
-    let videoCode = self.videoId
-    let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-    let youtubeRequest = URLRequest(url: myURL!)
-    videoWebView.load(youtubeRequest)
+        let videoCode = self.videoId
+        let myURL = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+        let youtubeRequest = URLRequest(url: myURL!)
+        videoWebView.load(youtubeRequest)
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityIndicator.stopAnimating()
-        
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {

@@ -22,6 +22,7 @@ class VideosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.videosTableView.rowHeight = UITableViewAutomaticDimension
         self.activityIndicator.startAnimating()
         self.activityIndicator.hidesWhenStopped = true
         videosTableView.backgroundView = emptyVideosView
