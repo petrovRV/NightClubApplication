@@ -17,8 +17,8 @@ class HomescreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    notifacation.addNotification()
+        navigationController?.delegate = self
+        notifacation.addNotification()
     }
     
     @IBAction func aboutUsButton(_ sender: Any) {
@@ -28,8 +28,10 @@ class HomescreenViewController: UIViewController {
         let navigationController = self.navigationController
         
         
-        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: viewController, action: #selector(viewController.closeView))
+        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Zamknąć", style: .plain, target: viewController, action: #selector(viewController.closeView))
+        viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: viewController, action: nil)
+        viewController.navigationController?.navigationBar.barStyle = .black
         
         let transition = CATransition()
         transition.duration = 0.5
@@ -77,5 +79,12 @@ extension HomescreenViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 2.0
+    }
+}
+
+extension HomescreenViewController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = item
     }
 }
