@@ -39,7 +39,6 @@
 		8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4469FA20C182150004FA10 /* AppDelegate.swift */; };
 		8D446A0020C182150004FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4469FE20C182150004FA10 /* Main.storyboard */; };
 		8D446A0520C182150004FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D446A0320C182150004FA10 /* LaunchScreen.storyboard */; };
-		8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A0C20C187CA0004FA10 /* MainViewController.swift */; };
 		8D446A1120C189C50004FA10 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D446A1020C189C50004FA10 /* ReservationViewController.swift */; };
 		8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */; };
 		8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */; };
@@ -50,7 +49,7 @@
 		8D6AC79A21001A4700310714 /* ApartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AC79921001A4700310714 /* ApartmentModel.swift */; };
 		8D6AC79C2100A0C300310714 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AC79B2100A0C300310714 /* GalleryModel.swift */; };
 		8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49E6210B64D600E3AB34 /* MenuModel.swift */; };
-		8D6B49E9210B67B100E3AB34 /* MenuHeaderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */; };
+		8D6B49E9210B67B100E3AB34 /* MenuTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49E8210B67B100E3AB34 /* MenuTableViewHeader.swift */; };
 		8D6B49EB210CFB9300E3AB34 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B49EA210CFB9300E3AB34 /* MenuTableViewCell.swift */; };
 		8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B21C20DDA416006A447F /* MainViewButton.swift */; };
 		8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */; };
@@ -116,7 +115,6 @@
 		8D4469FF20C182150004FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D446A0420C182150004FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D446A0620C182150004FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D446A0C20C187CA0004FA10 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D446A1020C189C50004FA10 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		8D44AE4720D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D44AE4A20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPhotosFlowLayout.swift; sourceTree = "<group>"; };
@@ -127,7 +125,7 @@
 		8D6AC79921001A4700310714 /* ApartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentModel.swift; sourceTree = "<group>"; };
 		8D6AC79B2100A0C300310714 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		8D6B49E6210B64D600E3AB34 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
-		8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderViewDelegate.swift; sourceTree = "<group>"; };
+		8D6B49E8210B67B100E3AB34 /* MenuTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewHeader.swift; sourceTree = "<group>"; };
 		8D6B49EA210CFB9300E3AB34 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		8D86B21C20DDA416006A447F /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
 		8D86B21E20DDA7EC006A447F /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
@@ -320,7 +318,6 @@
 				8D04B38E2114CA2900B283A6 /* AboutUs */,
 				8D438C6720F659AB005743A6 /* Videos */,
 				8D0FCB6F20EA6EB900ABC50B /* Gallery */,
-				8D446A0C20C187CA0004FA10 /* MainViewController.swift */,
 				8D04B39F2115F45C00B283A6 /* HomescreenViewController.swift */,
 				8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */,
 				8D446A1020C189C50004FA10 /* ReservationViewController.swift */,
@@ -364,7 +361,7 @@
 		8DBF9DF620DD972000A1DEB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D6B49E8210B67B100E3AB34 /* MenuHeaderViewDelegate.swift */,
+				8D6B49E8210B67B100E3AB34 /* MenuTableViewHeader.swift */,
 				8D86B21C20DDA416006A447F /* MainViewButton.swift */,
 				8D335FF120EFBD9600527E7B /* CustomSegmentedControl.swift */,
 				8D04B3A321162A2E00B283A6 /* LocalNotification.swift */,
@@ -530,12 +527,11 @@
 				8D44AE4B20D1C3ED008F3ACE /* ApartmentPhotosFlowLayout.swift in Sources */,
 				8D438C6F20F78C8F005743A6 /* ApartmentViewController.swift in Sources */,
 				8D4469FB20C182150004FA10 /* AppDelegate.swift in Sources */,
-				8D446A0D20C187CA0004FA10 /* MainViewController.swift in Sources */,
 				8D0FCB7E20ED218500ABC50B /* Videos.swift in Sources */,
 				8D86B21D20DDA416006A447F /* MainViewButton.swift in Sources */,
 				8D9CF27420FD7A920041FD6C /* ClubMapTableViewCell.swift in Sources */,
 				8D335FF220EFBD9600527E7B /* CustomSegmentedControl.swift in Sources */,
-				8D6B49E9210B67B100E3AB34 /* MenuHeaderViewDelegate.swift in Sources */,
+				8D6B49E9210B67B100E3AB34 /* MenuTableViewHeader.swift in Sources */,
 				8D04B3942115788000B283A6 /* AboutUsPageViewController.swift in Sources */,
 				8D438C6620F6595E005743A6 /* PlayVideoViewController.swift in Sources */,
 				8D63606E20EE53B500DD9D50 /* VideoTableViewCell.swift in Sources */,

@@ -12,9 +12,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Rubik-Bold.ttf">
-            <string>Rubik-Bold</string>
-        </array>
         <array key="Rubik-Medium.ttf">
             <string>Rubik-Medium</string>
         </array>
@@ -23,175 +20,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-LV-88T">
-                                <rect key="frame" x="0.0" y="152" width="375" height="436"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-7z-mrb" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="TEST HOMESCREEN">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-Yg-z1W" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="48.5" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="O Nas">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="bCi-Bk-HOW" kind="presentation" id="Wt3-6v-t6e"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-eu-UP5" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="97" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Mapa">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-9W-4j0" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="145.5" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Rezerwacja">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="EBb-zD-6g3" kind="show" id="TPn-tA-Arc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-NF-F1I" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="194" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Zdjęcia">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="kgU-gU-eOG" kind="show" id="Tzx-au-1ok"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wte-wm-j8L" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="242.5" width="375" height="48"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Menu">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Lt1-4u-6wj" kind="show" id="qcx-aC-J1z"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-IT-CWf" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="290.5" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Apartament">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Fts-la-EBd" kind="show" id="CWv-iQ-flK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-Mh-mJV" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="339" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Karty klubowe">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="lNL-l6-Pse" kind="show" id="eQh-ns-Grm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-bS-bRn" customClass="MainViewButton" customModule="Night_Club_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="387.5" width="375" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
-                                        <state key="normal" title="Wideo">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="TL2-8y-I2h" kind="show" id="MRc-ma-j77"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-zt-TX4">
-                                <rect key="frame" x="132.5" y="608" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="POC-7i-jdd"/>
-                                    <constraint firstAttribute="height" constant="50" id="dmu-pq-ydr"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="icons-facebook-100"/>
-                                <connections>
-                                    <action selector="openFacebookPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o3-NP-i2i"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xoxo" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-Y7-vCb">
-                                <rect key="frame" x="0.0" y="30" width="375" height="107"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="X6v-Y7-vCb" secondAttribute="height" multiplier="7:2" id="83n-c4-Evs"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-Nj-mQX">
-                                <rect key="frame" x="192.5" y="608" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="cpC-ZG-VK2"/>
-                                    <constraint firstAttribute="height" constant="50" id="ryi-Mm-ca2"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="icons-instagram-100"/>
-                                <connections>
-                                    <action selector="openInstagramPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJS-j4-zlI"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94117647058823528" green="1" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="5Mz-LV-88T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0H7-3O-cWo"/>
-                            <constraint firstItem="cuN-zt-TX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-30" id="3Gt-R0-oNg"/>
-                            <constraint firstItem="X6v-Y7-vCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Mh-7l-bis"/>
-                            <constraint firstItem="5Mz-LV-88T" firstAttribute="top" secondItem="X6v-Y7-vCb" secondAttribute="bottom" constant="15" id="Gyl-fb-hHn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Mz-LV-88T" secondAttribute="trailing" id="Kbo-y8-YNr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rXF-Nj-mQX" secondAttribute="bottom" constant="9" id="Lnb-rP-P3e"/>
-                            <constraint firstItem="X6v-Y7-vCb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MhH-wQ-nlP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cuN-zt-TX4" secondAttribute="bottom" constant="9" id="Wjl-x8-jEJ"/>
-                            <constraint firstItem="cuN-zt-TX4" firstAttribute="top" secondItem="5Mz-LV-88T" secondAttribute="bottom" constant="20" id="gbI-wg-wHb"/>
-                            <constraint firstItem="rXF-Nj-mQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30" id="kZk-3H-f9v"/>
-                            <constraint firstItem="X6v-Y7-vCb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="sv2-by-0zD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="WOn-xm-Jkz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="461.60000000000002" y="125.4872563718141"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5Te-l9-Z6V">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YwD-4e-R1j" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n71-Lm-j93">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ukm-O8-2vL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yfZ-Bz-ZmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-537" y="125"/>
-        </scene>
         <!--MapStoryboard-->
         <scene sceneID="hUa-Nx-9q5">
             <objects>
@@ -199,54 +27,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp1-Gw-7af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3810" y="142"/>
-        </scene>
-        <!--ApartmentStoryboard-->
-        <scene sceneID="c91-bI-dAt">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ApartmentStoryboard" id="Fts-la-EBd" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-KR-Gdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1048" y="193"/>
-        </scene>
-        <!--ClubCardsStoryboard -->
-        <scene sceneID="dR1-U9-WnT">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ClubCardsStoryboard " id="lNL-l6-Pse" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Qe-M2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1062" y="-26"/>
-        </scene>
-        <!--ReservationStoryboard-->
-        <scene sceneID="Iq5-f5-lV0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ReservationStoryboard" id="EBb-zD-6g3" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RqE-MD-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1042" y="20"/>
-        </scene>
-        <!--GalleryStoryboard-->
-        <scene sceneID="j5f-eN-QSB">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="kgU-gU-eOG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jqm-9l-1xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1030" y="287"/>
-        </scene>
-        <!--VideosStoryboard-->
-        <scene sceneID="9po-Gm-L1Z">
-            <objects>
-                <viewControllerPlaceholder storyboardName="VideosStoryboard" id="TL2-8y-I2h" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-70-WbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1056" y="232"/>
-        </scene>
-        <!--AboutUsStoryboard-->
-        <scene sceneID="tA2-Mg-MMc">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AboutUsStoryboard" id="bCi-Bk-HOW" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DE8-yx-m2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1047" y="59"/>
         </scene>
         <!--XOXO Party-->
         <scene sceneID="eCg-kb-AKh">
@@ -357,14 +137,6 @@
             </objects>
             <point key="canvasLocation" x="3148" y="142.57871064467767"/>
         </scene>
-        <!--MenuStoryboard-->
-        <scene sceneID="a9n-aX-fhD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MenuStoryboard" id="Lt1-4u-6wj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gD6-wA-MNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1040" y="157"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="A6W-6a-0xx">
             <objects>
@@ -394,9 +166,6 @@
     <resources>
         <image name="HomeIcon-gallery" width="100" height="100"/>
         <image name="background_blurred" width="1518" height="2700"/>
-        <image name="icons-facebook-100" width="50" height="50"/>
-        <image name="icons-instagram-100" width="50" height="50"/>
         <image name="map_" width="27" height="27"/>
-        <image name="xoxo" width="300" height="75"/>
     </resources>
 </document>
