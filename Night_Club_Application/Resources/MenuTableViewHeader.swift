@@ -56,6 +56,8 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
     }
     
     func setExtended(_ extended: Bool) {
+        
+//        extended ? imageView.image = #imageLiteral(resourceName: "icons8-subtract-60") : imageView.image = #imageLiteral(resourceName: "icons8-plus-math-60")
         if extended {
               self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
         } else {

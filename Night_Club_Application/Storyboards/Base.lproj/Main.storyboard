@@ -63,7 +63,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O nas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhJ-2V-dye">
-                                                    <rect key="frame" x="65" y="140" width="50" height="23"/>
+                                                    <rect key="frame" x="65.5" y="140" width="49.5" height="23"/>
                                                     <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

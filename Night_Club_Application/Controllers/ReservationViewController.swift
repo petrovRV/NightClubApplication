@@ -25,6 +25,10 @@ class ReservationViewController: UIViewController {
     @IBOutlet weak var topViewIcon: UILabel!
     @IBOutlet weak var topViewButtomConstraint: NSLayoutConstraint!
     @IBOutlet weak var contactsTitleConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var arrowImage: UIImageView!
+    
+    
 
     var state: State = .closed
     
@@ -88,7 +92,7 @@ class ReservationViewController: UIViewController {
             switch state {
             case .open:
                 self.topViewButtomConstraint.constant = self.viewOffset
-                self.contactsView.layer.cornerRadius = 50
+                self.contactsView.layer.cornerRadius = 40
             case .closed:
                 self.topViewButtomConstraint.constant = 0
                 self.contactsView.layer.cornerRadius = 0
@@ -99,11 +103,22 @@ class ReservationViewController: UIViewController {
         basicAnimator.addAnimations {
             switch state {
             case .open:
-                self.contactsTitleConstraint.constant = 90
+                self.contactsTitleConstraint.constant = 70
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 1, y: 1)
             case .closed:
                 self.contactsTitleConstraint.constant = 20
                 self.topViewIcon.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            }
+            self.view.layoutIfNeeded()
+        }
+        
+        basicAnimator.addAnimations {
+            switch state {
+            case .open:
+        
+                self.arrowImage.alpha = 0
+            case .closed:
+                self.arrowImage.alpha = 1
             }
             self.view.layoutIfNeeded()
         }
@@ -123,6 +138,12 @@ class ReservationViewController: UIViewController {
         blurAnimator.addCompletion { (animator) in
             self.animators.removeAll()
             self.state = self.state.reverse
+//            switch state {
+//            case .open:
+//                self.arrowImage.image = #imageLiteral(resourceName: "icon-arrow-open")
+//            case .closed:
+//              self.arrowImage.image = #imageLiteral(resourceName: "icon-arrow-close")
+//            }
         }
         
         animators.append(basicAnimator)

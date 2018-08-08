@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4c7-M9-wzQ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,23 +21,23 @@
             <objects>
                 <viewController storyboardIdentifier="ReservationViewController" title="Rezerwacja" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4c7-M9-wzQ" customClass="ReservationViewController" customModule="Night_Club_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1x-l4-Oh9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartament1" translatesAutoresizingMaskIntoConstraints="NO" id="p9a-5Z-gnW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="p9a-5Z-gnW" secondAttribute="height" multiplier="3:2" id="6z8-Lg-V1q"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aby dokonac rezerwacji skontaktuj się z nami telefonicznie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-kb-cfn">
-                                <rect key="frame" x="15" y="324" width="345" height="49"/>
+                                <rect key="frame" x="15" y="348" width="345" height="50"/>
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKF-uB-8Pn">
-                                <rect key="frame" x="170" y="401" width="190" height="73.5"/>
+                                <rect key="frame" x="170" y="426" width="190" height="74.666666666666686"/>
                                 <string key="text">Numer telefonu:
 +48 881 216 566
 </string>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-K4-Owz">
-                                <rect key="frame" x="15" y="381" width="140" height="90"/>
+                                <rect key="frame" x="15" y="406" width="140" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="3xx-Dm-9KU"/>
                                     <constraint firstAttribute="height" constant="90" id="frP-Vh-h3v"/>
@@ -67,29 +67,38 @@
                                 </connections>
                             </button>
                             <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="208-zP-FdO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dbK-ij-1iK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CM4-6q-pdq" userLabel="Contacts View">
-                                <rect key="frame" x="0.0" y="295" width="375" height="372"/>
+                                <rect key="frame" x="0.0" y="406" width="375" height="372"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smz-qf-b7J" userLabel="TopView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANE KONTAKTOWE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-Ju-HoQ">
-                                                <rect key="frame" x="52" y="21" width="236" height="30"/>
+                                                <rect key="frame" x="51.999999999999986" y="21" width="235.66666666666663" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" red="0.58801951139999997" green="0.58801951139999997" blue="0.58801951139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-arrow-close" translatesAutoresizingMaskIntoConstraints="NO" id="F42-0g-T9i">
+                                                <rect key="frame" x="326" y="20.333333333333314" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="eUF-LE-VfE"/>
+                                                    <constraint firstAttribute="width" constant="32" id="iNc-1E-hZm"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="F42-0g-T9i" secondAttribute="trailing" constant="17" id="Ed4-hC-7Sv"/>
                                             <constraint firstItem="Um4-Ju-HoQ" firstAttribute="leading" secondItem="Smz-qf-b7J" secondAttribute="leading" constant="52" id="UM8-6m-1x1"/>
+                                            <constraint firstItem="F42-0g-T9i" firstAttribute="centerY" secondItem="Smz-qf-b7J" secondAttribute="centerY" id="bDX-Mu-kA2"/>
                                             <constraint firstItem="Um4-Ju-HoQ" firstAttribute="centerY" secondItem="Smz-qf-b7J" secondAttribute="centerY" id="bsv-Mv-sX4"/>
                                             <constraint firstAttribute="height" constant="72" id="fZw-kQ-EeX"/>
                                         </constraints>
@@ -111,7 +120,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rezerwacje@xoxoparty.pl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKk-2r-C3J">
-                                                                <rect key="frame" x="88" y="57.5" width="251" height="20.5"/>
+                                                                <rect key="frame" x="88" y="57.666666666666636" width="251" height="20.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                                 <color key="textColor" red="0.48974857230000002" green="0.48974857230000002" blue="0.48974857230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -124,7 +133,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REZERWACJE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvi-dB-wEz">
-                                                                <rect key="frame" x="88" y="15" width="128.5" height="42.5"/>
+                                                                <rect key="frame" x="87.999999999999986" y="14.999999999999996" width="128.66666666666663" height="42.666666666666657"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                                 <color key="textColor" red="0.3828521574" green="0.3828521574" blue="0.3828521574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -148,15 +157,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Q9-u5-Ato">
                                                         <rect key="frame" x="0.0" y="94" width="359" height="94"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-marketing" translatesAutoresizingMaskIntoConstraints="NO" id="nLH-Xv-BOR">
-                                                                <rect key="frame" x="20" y="22" width="50" height="50"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="nLH-Xv-BOR" secondAttribute="height" multiplier="1:1" id="MHZ-wQ-DsH"/>
-                                                                    <constraint firstAttribute="height" constant="50" id="OSS-rk-qNX"/>
-                                                                </constraints>
-                                                            </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DZIAŁ MARKETINGU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alM-IT-Mb7">
-                                                                <rect key="frame" x="88" y="15" width="189.5" height="42.5"/>
+                                                                <rect key="frame" x="87.999999999999986" y="14.999999999999996" width="189.66666666666663" height="42.666666666666657"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                                 <color key="textColor" red="0.3828521574" green="0.3828521574" blue="0.3828521574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -169,7 +171,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YB-WS-hK2">
-                                                                <rect key="frame" x="88" y="57.5" width="251" height="20.5"/>
+                                                                <rect key="frame" x="88" y="57.666666666666636" width="251" height="20.333333333333336"/>
                                                                 <string key="text">marketing@xoxoparty.pl
 
 </string>
@@ -177,6 +179,13 @@
                                                                 <color key="textColor" red="0.48974857230000002" green="0.48974857230000002" blue="0.48974857230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-marketing" translatesAutoresizingMaskIntoConstraints="NO" id="nLH-Xv-BOR">
+                                                                <rect key="frame" x="20" y="22" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="nLH-Xv-BOR" secondAttribute="height" multiplier="1:1" id="MHZ-wQ-DsH"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="OSS-rk-qNX"/>
+                                                                </constraints>
+                                                            </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -280,9 +289,7 @@
                             <constraint firstItem="QZ2-K4-Owz" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="bIR-aq-rEg"/>
                             <constraint firstItem="OKF-uB-8Pn" firstAttribute="leading" secondItem="QZ2-K4-Owz" secondAttribute="trailing" constant="15" id="bK9-Dp-fy8"/>
                             <constraint firstItem="8wl-WS-I0S" firstAttribute="bottom" secondItem="Smz-qf-b7J" secondAttribute="bottom" constant="300" id="dEt-WO-EGL"/>
-                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="gNF-qg-d2j"/>
                             <constraint firstItem="qPI-kb-cfn" firstAttribute="leading" secondItem="8wl-WS-I0S" secondAttribute="leading" constant="15" id="gd2-eW-cfH"/>
-                            <constraint firstItem="QZ2-K4-Owz" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="8" id="i5G-Z7-0tj"/>
                             <constraint firstItem="8wl-WS-I0S" firstAttribute="trailing" secondItem="qPI-kb-cfn" secondAttribute="trailing" constant="15" id="ioK-dQ-S3i"/>
                             <constraint firstItem="OKF-uB-8Pn" firstAttribute="top" secondItem="qPI-kb-cfn" secondAttribute="bottom" constant="28" id="nvh-N9-HsG"/>
                             <constraint firstItem="p9a-5Z-gnW" firstAttribute="top" secondItem="8wl-WS-I0S" secondAttribute="top" id="sLd-eY-LaW"/>
@@ -293,6 +300,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="arrowImage" destination="F42-0g-T9i" id="85d-Lr-37w"/>
                         <outlet property="blurView" destination="208-zP-FdO" id="D47-hR-7op"/>
                         <outlet property="contactsTitleConstraint" destination="UM8-6m-1x1" id="foH-Bg-WGK"/>
                         <outlet property="contactsView" destination="CM4-6q-pdq" id="Z6U-mE-2ul"/>
@@ -302,11 +310,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DG-CG-ZXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="-258"/>
+            <point key="canvasLocation" x="444" y="-258.62068965517244"/>
         </scene>
     </scenes>
     <resources>
         <image name="apartament1" width="2048" height="1365"/>
+        <image name="icon-arrow-close" width="50" height="50"/>
         <image name="icon-marketing" width="50" height="50"/>
         <image name="icon-media" width="50" height="50"/>
         <image name="icon-reservation" width="50" height="50"/>
