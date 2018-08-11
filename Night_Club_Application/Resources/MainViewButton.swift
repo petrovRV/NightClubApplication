@@ -16,5 +16,4 @@ class MainViewButton: UIButton {
         layer.borderWidth = 1
         layer.borderColor = UIColor(red: 150, green: 150, blue: 150, alpha: 1).cgColor
     }
-
 }

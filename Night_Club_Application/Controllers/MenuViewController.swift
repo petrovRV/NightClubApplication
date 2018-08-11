@@ -10,17 +10,20 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    //MARK: Outlets
     @IBOutlet weak var menuTableView: UITableView!
     
+    //MARK: Properties
     var sections = MenuModel.fetchData()
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
 
-extension MenuViewController: UITableViewDataSource {
+    //MARK: UITableView data source
+    extension MenuViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -51,7 +54,8 @@ extension MenuViewController: UITableViewDataSource {
     }
 }
 
-extension MenuViewController: UITableViewDelegate {
+    //MARK: UITableView data delegate
+    extension MenuViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
@@ -68,7 +72,7 @@ extension MenuViewController: UITableViewDelegate {
     }
 }
 
-extension MenuViewController : MenuHeaderViewDelegate {
+    extension MenuViewController : MenuHeaderViewDelegate {
     
     func toggleSection(header: MenuTableViewHeader, section: Int) {
         sections[section].isExpanded = !sections[section].isExpanded

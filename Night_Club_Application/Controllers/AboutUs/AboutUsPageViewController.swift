@@ -14,10 +14,12 @@ protocol AboutUsPageViewControllerDelegate: class {
 
 class AboutUsPageViewController: UIPageViewController {
 
+    // MARK: Properties
     var data: AboutUsModel = AboutUsModel.fetchData()
     weak var aboutUsDelegate: AboutUsPageViewControllerDelegate?
     var currentIndex = 0
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
@@ -47,7 +49,6 @@ extension AboutUsPageViewController: UIPageViewControllerDataSource {
         return contentViewController(at: index)
     }
     
-    
     func contentViewController(at index: Int) -> AboutUsContentViewController? {
         
         if index < 0 || index >= data.images.count {
@@ -70,10 +71,7 @@ extension AboutUsPageViewController: UIPageViewControllerDelegate {
                 currentIndex = contentViewController.index
                 
                 aboutUsDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
-            }
-//         guard let index = (pageViewController.viewControllers?.first as? AboutUsContentViewController)?.index else { return }
-
-        
+        } 
     }
 }
 

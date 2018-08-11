@@ -16,7 +16,6 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
     var section: Int!
     var imageView = UIImageView()
     
-    
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapHeader)))
@@ -57,7 +56,6 @@ class MenuTableViewHeader: UITableViewHeaderFooterView {
     
     func setExtended(_ extended: Bool) {
         
-//        extended ? imageView.image = #imageLiteral(resourceName: "icons8-subtract-60") : imageView.image = #imageLiteral(resourceName: "icons8-plus-math-60")
         if extended {
               self.imageView.image = #imageLiteral(resourceName: "icons8-subtract-60")
         } else {

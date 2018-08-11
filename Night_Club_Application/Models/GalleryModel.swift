@@ -22,7 +22,6 @@ class GalleryModel {
         for i in  1...13 {
             galleryImages.append(UIImage(named: "apartament\(i)")!)
         }
-        
         let galleryData = GalleryModel(images: galleryImages)
         
         return galleryData

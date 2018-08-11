@@ -10,12 +10,15 @@ import UIKit
 
 class ApartmentViewController: UIViewController {
     
-    var apartmentData: ApartmentModel = ApartmentModel.fetchData()
-    
-    var pageControl: UIPageControl!
-    var apartmentCollectionView: UICollectionView!
+    //MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: Properties
+    var apartmentData: ApartmentModel = ApartmentModel.fetchData()
+    var pageControl: UIPageControl!
+    var apartmentCollectionView: UICollectionView!
+    
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +27,7 @@ class ApartmentViewController: UIViewController {
     }
 }
 
-extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
+    extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -55,7 +58,7 @@ extension ApartmentViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return apartmentData.apartmentImages.count
@@ -69,6 +72,7 @@ extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewD
         
         return cell
     }
+        
     func  scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
 
         let layout = self.apartmentCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout
@@ -79,6 +83,7 @@ extension ApartmentViewController: UICollectionViewDataSource, UICollectionViewD
         self.pageControl.currentPage = Int(roundedIndex)
         
     }
+        
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.frame.height
         let width = collectionView.frame.width

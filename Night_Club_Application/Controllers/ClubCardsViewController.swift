@@ -10,10 +10,11 @@ import UIKit
 
 class ClubCardsViewController: UIViewController {
 
+    //MARK: Outlets
     @IBOutlet weak var vipCardView: UIView!
     @IBOutlet weak var ladiesCardView: UIView!
     
-    
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +23,7 @@ class ClubCardsViewController: UIViewController {
 
     }
     
+    //MARK: Methods
     @IBAction func segmentControlValueChanged(_ sender: CustomSegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:

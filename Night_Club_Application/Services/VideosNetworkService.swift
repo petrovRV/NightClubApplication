@@ -14,10 +14,12 @@ class VideosNetworkService {
     
     typealias loadVideosDataCompletion = ([Items]) -> Void
     
+    //MARK: Properties
     var environment: Environment {
         return EnvironmentImp.Debug()
     }
 
+    //MARK: Methods
     func loadVideosData(completion: @escaping loadVideosDataCompletion ){
         
         let path = "/youtube/v3/search"

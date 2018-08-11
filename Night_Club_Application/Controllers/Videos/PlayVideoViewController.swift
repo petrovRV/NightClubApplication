@@ -11,15 +11,17 @@ import WebKit
 
 class PlayVideoViewController: UIViewController, WKNavigationDelegate {
 
-    
+    //MARK: Outlets
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var videoWebView: WKWebView!
     @IBOutlet weak var viewCount: UILabel!
     @IBOutlet weak var duration: UILabel!
     
+    //MARK: Properties
     let videosDetailService = VideoDetailNetworkService()
     var videoId: String = ""
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,7 @@ class PlayVideoViewController: UIViewController, WKNavigationDelegate {
         loadVideoDetail()
     }
     
+    //MARK: Methods
     func loadVideoDetail() {
         videosDetailService.loadVideoDetail(id: self.videoId) { [weak self]
             responce in

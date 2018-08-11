@@ -10,16 +10,20 @@ import UIKit
 
 class HomescreenViewController: UIViewController {
 
+    //MARK: Outlets
     @IBOutlet weak var homescreenColectionView: UICollectionView!
     
+    //MARK: Properties
     private var data: [HomescreenModel] = [HomescreenModel(name: "Rezerwacja", image: #imageLiteral(resourceName: "HomeIcon-reservation"), storyboardName: "ReservationStoryboard", viewControllerName: "ReservationViewController"), HomescreenModel(name: "Galeria", image: #imageLiteral(resourceName: "HomeIcon-gallery"), storyboardName: "GalleryStoryboard", viewControllerName: "GalleryViewController"), HomescreenModel(name: "Menu", image: #imageLiteral(resourceName: "HomeIcon-menu"), storyboardName: "MenuStoryboard", viewControllerName: "MenuViewController"), HomescreenModel(name: "Apartament", image: #imageLiteral(resourceName: "HomeIcon-apartment"), storyboardName: "ApartmentStoryboard", viewControllerName: "ApartmentViewController"), HomescreenModel(name: "Karty klubowe", image: #imageLiteral(resourceName: "HomeIcon-cards"), storyboardName: "ClubCardsStoryboard", viewControllerName: "ClubCardsViewController"), HomescreenModel(name: "Wideo", image: #imageLiteral(resourceName: "HomeIcon-videos"), storyboardName: "VideosStoryboard", viewControllerName: "VideosViewController")]
     private let notifacation = LocalNotification()
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.delegate = self
         notifacation.addNotification()
     }
+    
     
     @IBAction func aboutUsButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
@@ -39,7 +43,8 @@ class HomescreenViewController: UIViewController {
     }
 }
 
-extension HomescreenViewController: UICollectionViewDataSource {
+    //MARK: UICollectionView data source
+    extension HomescreenViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
@@ -52,8 +57,9 @@ extension HomescreenViewController: UICollectionViewDataSource {
         return cell
     }
 }
-
-extension HomescreenViewController: UICollectionViewDelegate {
+    //MARK: UICollectionView delegate
+    extension HomescreenViewController: UICollectionViewDelegate {
+        
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storybaordName = data[indexPath.row].storyboardName
         let viewControllerName = data[indexPath.row].viewControllerName
@@ -63,7 +69,9 @@ extension HomescreenViewController: UICollectionViewDelegate {
     }
 }
 
-extension HomescreenViewController: UICollectionViewDelegateFlowLayout {
+    //MARK: UICollectionView delegate FlowLayout
+    extension HomescreenViewController: UICollectionViewDelegateFlowLayout {
+        
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width / 2 - 2
         let height = (collectionView.frame.height - 6) / 3
@@ -78,7 +86,8 @@ extension HomescreenViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension HomescreenViewController: UINavigationControllerDelegate {
+    extension HomescreenViewController: UINavigationControllerDelegate {
+        
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
         viewController.navigationItem.backBarButtonItem = item

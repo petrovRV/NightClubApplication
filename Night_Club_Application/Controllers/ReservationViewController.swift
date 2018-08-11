@@ -10,33 +10,29 @@ import UIKit
 
 class ReservationViewController: UIViewController {
 
+    //MARK: Outlets
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var contactsView: UIView!
+    @IBOutlet weak var topViewIcon: UILabel!
+    @IBOutlet weak var topViewButtomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contactsTitleConstraint: NSLayoutConstraint!
+    @IBOutlet weak var arrowImage: UIImageView!
+    
+    //MARK: Properties
     enum State {
         case closed
         case open
         
         var reverse: State {
             return self == .open ? .closed : .open
-            
         }
     }
     
-    @IBOutlet weak var blurView: UIVisualEffectView!
-    @IBOutlet weak var contactsView: UIView!
-    @IBOutlet weak var topViewIcon: UILabel!
-    @IBOutlet weak var topViewButtomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var contactsTitleConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var arrowImage: UIImageView!
-    
-    
-
     var state: State = .closed
-    
-    
     var animators: [UIViewPropertyAnimator] = []
-    
     var viewOffset: CGFloat = 242
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,7 +48,7 @@ class ReservationViewController: UIViewController {
     self.contactsView.addGestureRecognizer(panRecognizer)
     }
     
-    
+    //MARK: Methods
     @objc func drag (_ gesture: UIPanGestureRecognizer) {
         
         switch gesture.state {
@@ -80,7 +76,6 @@ class ReservationViewController: UIViewController {
         let url: NSURL = URL(string: "TEL://+48881216566")! as NSURL
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
-    
     
     func animateView(to state: State, duration: TimeInterval) {
         
@@ -138,12 +133,6 @@ class ReservationViewController: UIViewController {
         blurAnimator.addCompletion { (animator) in
             self.animators.removeAll()
             self.state = self.state.reverse
-//            switch state {
-//            case .open:
-//                self.arrowImage.image = #imageLiteral(resourceName: "icon-arrow-open")
-//            case .closed:
-//              self.arrowImage.image = #imageLiteral(resourceName: "icon-arrow-close")
-//            }
         }
         
         animators.append(basicAnimator)

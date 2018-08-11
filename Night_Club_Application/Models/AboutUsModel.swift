@@ -41,7 +41,6 @@ class AboutUsModel {
             images.append(UIImage(named: "AboutUs-image\(i)")!)
         }
 
-        
         let aboutUsData = AboutUsModel(title: title, text: text, images: images)
         
         return aboutUsData

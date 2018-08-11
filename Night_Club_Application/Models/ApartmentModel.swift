@@ -14,12 +14,10 @@ class ApartmentModel {
     var apartmentDetailImages: [UIImage]
     var apartmentDetailText: [String]
     
-    
     init(apartmentImages: [UIImage], apartmentDetailImages: [UIImage], apartmentDetailText: [String]) {
         self.apartmentImages = apartmentImages
         self.apartmentDetailImages = apartmentDetailImages
         self.apartmentDetailText = apartmentDetailText
-        
     }
     
     class func fetchData() -> ApartmentModel {

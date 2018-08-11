@@ -11,16 +11,17 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
-   
+    //MARK: Outlets
     @IBOutlet weak var mapView: MKMapView!
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    //MARK: Properties
     let location = "Marii Konopnickiej 6, 00-491 Warszawa"
     let locationManager = CLLocationManager()
     var currentPlacemark: CLPlacemark?
     var currentTransportType = MKDirectionsTransportType.automobile
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,7 +63,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         })
         
         mapView.delegate = self
-
     }
     
     @IBAction func showDirection(sender: UIButton) {
@@ -80,14 +80,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         segmentedControl.isHidden = false
         
         let directionRequest = MKDirectionsRequest()
-        
         directionRequest.source = MKMapItem.forCurrentLocation()
         let destinationPlacemark = MKPlacemark(placemark: currentPlacemark)
         directionRequest.destination = MKMapItem(placemark: destinationPlacemark)
         directionRequest.transportType = currentTransportType
-        
         let directions = MKDirections(request: directionRequest)
-        
         directions.calculate { (routeResponse, routeError) -> Void in
             
             guard let routeResponse = routeResponse else {
@@ -103,7 +100,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             self.mapView.add(route.polyline, level: MKOverlayLevel.aboveRoads)
             let rect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
-            
         }
     }
     
@@ -117,7 +113,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         } else {
             UIApplication.shared.openURL(url)
         }
-        
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {

@@ -10,16 +10,17 @@ import UIKit
 
 class VideosViewController: UIViewController {
    
-    
+    //MARK: Outlets
     @IBOutlet weak var videosTableView: UITableView!
     @IBOutlet weak var emptyVideosView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    
+    //MARK: Properties
     let videosService = VideosNetworkService()
     var videosList = [Items]()
     let videoIndex = 0
     
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.videosTableView.rowHeight = UITableViewAutomaticDimension
@@ -49,6 +50,8 @@ class VideosViewController: UIViewController {
             }
         }
     }
+    
+    //MARK: Methods
     func reloadTableView() {
         activityIndicator.stopAnimating()
         if self.videosList.count > 0 {
@@ -57,13 +60,11 @@ class VideosViewController: UIViewController {
             videosTableView.backgroundView?.isHidden = true
         }
     }
-    
 }
 
-extension VideosViewController: UITableViewDataSource  {
+//MARK: UITableView data source
+    extension VideosViewController: UITableViewDataSource  {
     
-
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videosList.count
     }
@@ -71,7 +72,6 @@ extension VideosViewController: UITableViewDataSource  {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
-        
         cell.setPreviewAndName(with: videosList[indexPath.row])
        
         return cell

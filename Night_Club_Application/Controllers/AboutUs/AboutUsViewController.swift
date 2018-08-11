@@ -10,20 +10,20 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    //MARK: Outlets
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var bottomLine: UIView!
-    
-    
-    var aboutUsPageViewController: AboutUsPageViewController?
-    var data: AboutUsModel = AboutUsModel.fetchData()
 
-    
+    //MARK: Properties
+    var aboutUsPageViewController: AboutUsPageViewController?
+    private var data: AboutUsModel = AboutUsModel.fetchData()
+
+    //MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         pageControl.numberOfPages = data.title.count
-        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,6 +34,7 @@ class AboutUsViewController: UIViewController {
         }
     }
 
+    //MARK: Methods
     func updateUI() {
         guard let index = aboutUsPageViewController?.currentIndex else { return }
             changeLabels(index: index)
@@ -91,7 +92,6 @@ class AboutUsViewController: UIViewController {
     @IBAction func openFacebookButton(_ sender: Any) {
           openUrl(with: .facebook)
     }
-
 }
 
 extension AboutUsViewController: AboutUsPageViewControllerDelegate {

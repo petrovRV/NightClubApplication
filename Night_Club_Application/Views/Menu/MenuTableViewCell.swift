@@ -12,7 +12,6 @@ class MenuTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    
     @IBOutlet weak var buttlePrice: UILabel!
     @IBOutlet weak var itemDetail: UILabel!
     @IBOutlet weak var bottleStackView: UIStackView!

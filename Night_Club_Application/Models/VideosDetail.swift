@@ -17,6 +17,7 @@ struct ItemsDetail: Decodable {
     let contentDetails: ContentDetails
     let statistics: Statistics
 }
+
 struct ContentDetails: Decodable {
     let duration: String
 
