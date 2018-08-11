@@ -64,7 +64,6 @@
 		8D86B23820DDBEF4006A447F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23720DDBEF4006A447F /* GalleryViewController.swift */; };
 		8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */; };
 		8D86B23C20DDC7AE006A447F /* LargePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */; };
-		8D9CF27C20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */; };
 		8DE2DC4F20CC68DC000D72D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */; };
 		8DE2DC5120CC69D9000D72D8 /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */; };
 		8DE320122102460300D8FD51 /* VideoDetailNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE320112102460300D8FD51 /* VideoDetailNetworkService.swift */; };
@@ -134,7 +133,6 @@
 		8D86B23720DDBEF4006A447F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		8D86B23920DDC094006A447F /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
 		8D86B23B20DDC7AE006A447F /* LargePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePhotoViewController.swift; sourceTree = "<group>"; };
-		8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OldAboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		8DBF9DF820DD97B500A1DEB9 /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		8DE2DC4E20CC68DC000D72D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DE2DC5020CC69D9000D72D8 /* MapStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 				8D5E1F2F20D1D90100766996 /* ApartmentStoryboard.storyboard */,
 				8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */,
 				8D63606B20EE528400DD9D50 /* VideosStoryboard.storyboard */,
-				8D9CF27B20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard */,
 				8D335FEF20EFBCEF00527E7B /* ClubCardsStoryboard.storyboard */,
 				8D04B38C21149B1B00B283A6 /* MenuStoryboard.storyboard */,
 				8D446A0320C182150004FA10 /* LaunchScreen.storyboard */,
@@ -429,7 +426,6 @@
 				8D86B22920DDA7F2006A447F /* Rubik-Black.ttf in Resources */,
 				8D86B22E20DDA7F2006A447F /* OFL.txt in Resources */,
 				8D63606C20EE528400DD9D50 /* VideosStoryboard.storyboard in Resources */,
-				8D9CF27C20FD8EB50041FD6C /* OldAboutUsStoryboard.storyboard in Resources */,
 				8D86B22B20DDA7F2006A447F /* Rubik-LightItalic.ttf in Resources */,
 				8D04B38D21149B1B00B283A6 /* MenuStoryboard.storyboard in Resources */,
 				8D5E1F3120D1D90100766996 /* ApartmentStoryboard.storyboard in Resources */,

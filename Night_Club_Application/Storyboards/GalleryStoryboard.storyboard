@@ -90,17 +90,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-8n-Cix">
-                                <rect key="frame" x="0.0" y="153" width="375" height="281"/>
+                                <rect key="frame" x="0.0" y="168.5" width="375" height="250"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vt5-fn-WIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vt5-fn-WIO" firstAttribute="leading" secondItem="Ci5-8n-Cix" secondAttribute="leading" id="4qb-GC-gPl"/>
                                     <constraint firstAttribute="trailing" secondItem="vt5-fn-WIO" secondAttribute="trailing" id="8fK-mu-d9c"/>
                                     <constraint firstAttribute="bottom" secondItem="vt5-fn-WIO" secondAttribute="bottom" id="CEm-fJ-adG"/>
-                                    <constraint firstAttribute="width" secondItem="Ci5-8n-Cix" secondAttribute="height" multiplier="4:3" id="Hjx-Fa-lYT"/>
+                                    <constraint firstAttribute="width" secondItem="Ci5-8n-Cix" secondAttribute="height" multiplier="320:213" id="Hjx-Fa-lYT"/>
                                     <constraint firstItem="vt5-fn-WIO" firstAttribute="centerY" secondItem="Ci5-8n-Cix" secondAttribute="centerY" id="Iz9-mo-vnw"/>
                                     <constraint firstItem="vt5-fn-WIO" firstAttribute="top" secondItem="Ci5-8n-Cix" secondAttribute="top" id="ZJJ-cb-XRn"/>
                                     <constraint firstItem="vt5-fn-WIO" firstAttribute="centerX" secondItem="Ci5-8n-Cix" secondAttribute="centerX" id="t20-eT-2Ss"/>
@@ -110,7 +110,7 @@
                                 </connections>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
-                                <rect key="frame" x="50" y="442" width="275" height="20.5"/>
+                                <rect key="frame" x="50" y="426.5" width="275" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

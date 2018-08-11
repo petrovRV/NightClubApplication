@@ -71,6 +71,10 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORU-hw-zM3">
                                                             <rect key="frame" x="20" y="0.0" width="21" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="21" id="d4Z-Wi-vUt"/>
+                                                                <constraint firstAttribute="height" constant="20" id="zD2-jh-MbG"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -78,7 +82,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-St-G2H">
-                                                    <rect key="frame" x="253" y="10" width="41" height="20"/>
+                                                    <rect key="frame" x="244" y="10" width="41" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-vodka-50" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-Zk-qUa">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -109,7 +113,7 @@
                                                 <constraint firstItem="1iw-Fa-jNd" firstAttribute="top" secondItem="w2U-o2-HgN" secondAttribute="bottom" constant="5" id="7fH-b4-9Up"/>
                                                 <constraint firstAttribute="trailing" secondItem="1iw-Fa-jNd" secondAttribute="trailing" constant="10" id="ECl-gX-ZN4"/>
                                                 <constraint firstAttribute="bottom" secondItem="1iw-Fa-jNd" secondAttribute="bottom" constant="5" id="O7x-8A-VBd"/>
-                                                <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="trailing" constant="30" id="TnA-7c-HlK"/>
+                                                <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="leading" constant="80" id="TnA-7c-HlK"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="bzd-c2-QGc"/>
                                                 <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="10" id="dw9-bF-xCM"/>
                                                 <constraint firstItem="w2U-o2-HgN" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="hIj-VL-5C5"/>

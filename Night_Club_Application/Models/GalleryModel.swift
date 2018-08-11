@@ -19,8 +19,8 @@ class GalleryModel {
     class func fetchData() -> GalleryModel {
         
         var galleryImages = [UIImage]()
-        for i in  1...13 {
-            galleryImages.append(UIImage(named: "apartament\(i)")!)
+        for i in  1...29 {
+            galleryImages.append(UIImage(named: "gallery-\(i)")!)
         }
         let galleryData = GalleryModel(images: galleryImages)
         
