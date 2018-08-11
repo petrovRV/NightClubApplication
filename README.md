@@ -15,3 +15,4 @@ Mobile app for nightclub XOXO Party(Warsaw)
 
 # Screenshots:
 
+![alt text](https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201606271147)
