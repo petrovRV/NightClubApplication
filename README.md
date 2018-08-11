@@ -1,6 +1,5 @@
 # About
-Mobile app for nightclub XOXO Party(Warsaw)
-
+Mobile application for nightclub XOXO Party
 
 # Implenented:
 -MVC as architectural patter
@@ -13,6 +12,3 @@ Mobile app for nightclub XOXO Party(Warsaw)
 -Popup Menu with Interactive Animations
 -Custom Segmented Control 
 
-# Screenshots:
-
-![alt text](https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201606271147)
