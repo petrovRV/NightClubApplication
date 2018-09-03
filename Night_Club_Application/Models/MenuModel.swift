@@ -53,6 +53,12 @@ class MenuModel {
             MenuItem(name: "Bombay Sapphire", glassPrice: "22", bottlePrice: "385", detail: ""),
             MenuItem(name: "Hendrick's", glassPrice: "30", bottlePrice: "525", detail: "")
             ]),
+        MenuModel(sectionTitle: "RUM", menuItems: [
+            MenuItem(name: "Havana Club 3 yo", glassPrice: "16", bottlePrice: "280", detail: ""),
+            MenuItem(name: "Havana Club Especial", glassPrice: "18", bottlePrice: "315", detail: ""),
+            MenuItem(name: "Havana Club 4 yo", glassPrice: "18", bottlePrice: "315", detail: ""),
+            MenuItem(name: "Havana Selection", glassPrice: "40", bottlePrice: "735", detail: "")
+            ]),
         MenuModel(sectionTitle: "TEQUILA", menuItems: [
             MenuItem(name: "Olmeca Blanco", glassPrice: "16", bottlePrice: "280", detail: ""),
             MenuItem(name: "Olmeca Gold", glassPrice: "16", bottlePrice: "280", detail: ""),
@@ -61,7 +67,21 @@ class MenuModel {
             MenuItem(name: "Olmeca Altos Reposada", glassPrice: "25", bottlePrice: "435", detail: ""),
             MenuItem(name: "Patron Reposado", glassPrice: "50", bottlePrice: "875", detail: ""),
             ]),
-        MenuModel(sectionTitle: "Classic Cocktails", menuItems: [
+        MenuModel(sectionTitle: "LIQUEURS", menuItems: [
+            MenuItem(name: "Malibu", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Hahlua", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Archers", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Baileys", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Jagermaister", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Cointreau", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Sambuca", glassPrice: "16", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "De Kuyper", glassPrice: "16", bottlePrice: "  -", detail: "")
+            ]),
+        MenuModel(sectionTitle: "COGNAC", menuItems: [
+            MenuItem(name: "Martell VS", glassPrice: "30", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Martell XO", glassPrice: "90", bottlePrice: "  -", detail: "")
+            ]),
+        MenuModel(sectionTitle: "CLASSIC COCKTAILS", menuItems: [
             MenuItem(name: "Long Island Ice Tea", glassPrice: "34", bottlePrice: "", detail: "Absolute Blue, Havana Club 3yo, Seagrams, Olmeca Blanco triple sec S&S mix, cola"),
             MenuItem(name: "Cosmopolitan", glassPrice: "25", bottlePrice: "", detail: "Absolute Blue, Cintreau, cranberry juice, lime"),
             MenuItem(name: "White Russian", glassPrice: "34", bottlePrice: "", detail: "Absolut Blue, Kahlua, milk"),
@@ -69,11 +89,22 @@ class MenuModel {
             MenuItem(name: "Old Fashioned", glassPrice: "30", bottlePrice: "", detail: "Jim Beam, Angostura Bitters"),
            MenuItem(name: "Negroni", glassPrice: "23", bottlePrice: "", detail: "Gin, Campari, Martini Rosso")
             ]),
-        MenuModel(sectionTitle: "Shots", menuItems: [
+        MenuModel(sectionTitle: "APERITIF", menuItems: [
+            MenuItem(name: "Lillet Blanc", glassPrice: "14", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Lillet Rose", glassPrice: "14", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Ricard", glassPrice: "14", bottlePrice: "  -", detail: ""),
+            MenuItem(name: "Martini", glassPrice: "16", bottlePrice: "  -", detail: "")
+            ]),
+        MenuModel(sectionTitle: "SHOTS", menuItems: [
             MenuItem(name: "B-52", glassPrice: "23", bottlePrice: "", detail: "Baileys, Kahlua, Coinreau"),
             MenuItem(name: "Mad Dog", glassPrice: "15", bottlePrice: "", detail: "Absolut Blue, grenadine, tobasco"),
             MenuItem(name: "Flat Liner", glassPrice: "18", bottlePrice: "", detail: "Omelca Blanco, Sambuca"),
             MenuItem(name: "Fruit Shots", glassPrice: "28", bottlePrice: "", detail: "Absolut Blue 4cl, fruit preee, S&S mix")
+            ]),
+        MenuModel(sectionTitle: "COLLINS DRINKS", menuItems: [
+            MenuItem(name: "Collins Maracuja", glassPrice: "23", bottlePrice: "", detail: "gin, puree pasion fruits, S&S mix, sparkling water"),
+            MenuItem(name: "Collins Kiwi", glassPrice: "15", bottlePrice: "", detail: "Absolute Blue, kiwi, S&S mix, sparkling water"),
+            MenuItem(name: "Collins Paspberry", glassPrice: "18", bottlePrice: "", detail: "Absolute Blue, kiwi, S&S mix, sparkling water")
             ])
         ]
         return sectionData

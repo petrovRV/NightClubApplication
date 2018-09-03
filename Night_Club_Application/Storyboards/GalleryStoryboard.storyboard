@@ -112,7 +112,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-dd-Vym">
                                 <rect key="frame" x="50" y="426.5" width="275" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="LZP-V7-fjj">
@@ -123,13 +123,15 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGO-dL-Mcd">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button" image="navigation-previousPage"/>
                                                 <connections>
                                                     <action selector="backButton:" destination="L6R-6x-HTT" eventType="touchUpInside" id="S4e-jM-B3u"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="3eA-Ya-E2D"/>
                                             <constraint firstAttribute="bottom" secondItem="QGO-dL-Mcd" secondAttribute="bottom" id="3v1-8s-2yi"/>
@@ -150,7 +152,8 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="3Rj-gX-kyi" firstAttribute="top" secondItem="sOL-Zo-RYk" secondAttribute="top" id="BoO-fB-lsM"/>
                                             <constraint firstAttribute="trailing" secondItem="3Rj-gX-kyi" secondAttribute="trailing" id="DkK-d4-6Lp"/>
@@ -161,9 +164,10 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="1BG-dd-Vym" firstAttribute="centerX" secondItem="Y8e-lp-QqW" secondAttribute="centerX" id="4Mz-8y-Nqe"/>
                             <constraint firstItem="1BG-dd-Vym" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Y8e-lp-QqW" secondAttribute="leading" constant="50" id="581-OC-NBi"/>

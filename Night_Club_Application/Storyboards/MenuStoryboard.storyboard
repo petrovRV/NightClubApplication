@@ -28,7 +28,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nps-KH-iwX">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="tGN-D8-efs">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-uD-1cz">
-                                                    <rect key="frame" x="324" y="10" width="41" height="20"/>
+                                                    <rect key="frame" x="314" y="10" width="41" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-bar-100" translatesAutoresizingMaskIntoConstraints="NO" id="85B-qJ-OgT">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -82,7 +82,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-St-G2H">
-                                                    <rect key="frame" x="244" y="10" width="41" height="20"/>
+                                                    <rect key="frame" x="234" y="10" width="41" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-vodka-50" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-Zk-qUa">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -115,13 +115,14 @@
                                                 <constraint firstAttribute="bottom" secondItem="1iw-Fa-jNd" secondAttribute="bottom" constant="5" id="O7x-8A-VBd"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="leading" constant="80" id="TnA-7c-HlK"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="bzd-c2-QGc"/>
-                                                <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="10" id="dw9-bF-xCM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="20" id="dw9-bF-xCM"/>
                                                 <constraint firstItem="w2U-o2-HgN" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="hIj-VL-5C5"/>
                                                 <constraint firstItem="1iw-Fa-jNd" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="i11-d0-89Z"/>
                                                 <constraint firstItem="w2U-o2-HgN" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="jJM-1H-0HU"/>
                                                 <constraint firstItem="Qbk-St-G2H" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="uIQ-lS-xr3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <connections>
                                             <outlet property="bottleStackView" destination="Qbk-St-G2H" id="gzY-R1-wEw"/>
                                             <outlet property="buttlePrice" destination="4JD-Sr-b27" id="Cjb-u5-pBs"/>
@@ -137,7 +138,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nps-KH-iwX" firstAttribute="leading" secondItem="flh-lc-INR" secondAttribute="leading" id="OYf-Z5-WcV"/>
                             <constraint firstItem="flh-lc-INR" firstAttribute="bottom" secondItem="nps-KH-iwX" secondAttribute="bottom" id="n3x-3t-p1K"/>

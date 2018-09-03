@@ -19,7 +19,6 @@
 		8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A321162A2E00B283A6 /* LocalNotification.swift */; };
 		8D04B3A621162B5800B283A6 /* HomescreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04B3A521162B5800B283A6 /* HomescreenModel.swift */; };
 		8D0A747F210A7A4400EBAA04 /* String+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */; };
-		8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */; };
 		8D0A7483210B578000EBAA04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7482210B578000EBAA04 /* MenuViewController.swift */; };
 		8D0FCB7420EA6F3200ABC50B /* GalleryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */; };
 		8D0FCB7620EC2D5800ABC50B /* ClubCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */; };
@@ -86,7 +85,6 @@
 		8D04B3A321162A2E00B283A6 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		8D04B3A521162B5800B283A6 /* HomescreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModel.swift; sourceTree = "<group>"; };
 		8D0A747E210A7A4400EBAA04 /* String+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DurationFormatter.swift"; sourceTree = "<group>"; };
-		8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAboutUsModel.swift; sourceTree = "<group>"; };
 		8D0A7482210B578000EBAA04 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8D0FCB7320EA6F3200ABC50B /* GalleryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GalleryStoryboard.storyboard; sourceTree = "<group>"; };
 		8D0FCB7520EC2D5800ABC50B /* ClubCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCardsViewController.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				8DE32013210248A900D8FD51 /* VideosDetail.swift */,
 				8D6AC79B2100A0C300310714 /* GalleryModel.swift */,
 				8D6AC79921001A4700310714 /* ApartmentModel.swift */,
-				8D0A7480210A849E00EBAA04 /* OldAboutUsModel.swift */,
 				8D6B49E6210B64D600E3AB34 /* MenuModel.swift */,
 				8D04B39121156CD600B283A6 /* AboutUsModel.swift */,
 				8D04B3A521162B5800B283A6 /* HomescreenModel.swift */,
@@ -513,7 +510,6 @@
 				8D04B39221156CD600B283A6 /* AboutUsModel.swift in Sources */,
 				8D44AE4820D16130008F3ACE /* ApartmentGalleryCollectionViewCell.swift in Sources */,
 				8D438C6B20F789BD005743A6 /* ApartmentTableViewCell.swift in Sources */,
-				8D0A7481210A849E00EBAA04 /* OldAboutUsModel.swift in Sources */,
 				8D6B49E7210B64D600E3AB34 /* MenuModel.swift in Sources */,
 				8D86B23A20DDC094006A447F /* GalleryPhotoCell.swift in Sources */,
 				8D04B3A421162A2E00B283A6 /* LocalNotification.swift in Sources */,
