@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-uD-1cz">
-                                                    <rect key="frame" x="314" y="10" width="41" height="20"/>
+                                                    <rect key="frame" x="324" y="10" width="41" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-bar-100" translatesAutoresizingMaskIntoConstraints="NO" id="85B-qJ-OgT">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -82,7 +82,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-St-G2H">
-                                                    <rect key="frame" x="234" y="10" width="41" height="20"/>
+                                                    <rect key="frame" x="244" y="10" width="41" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-vodka-50" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-Zk-qUa">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -115,7 +115,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="1iw-Fa-jNd" secondAttribute="bottom" constant="5" id="O7x-8A-VBd"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="leading" secondItem="Qbk-St-G2H" secondAttribute="leading" constant="80" id="TnA-7c-HlK"/>
                                                 <constraint firstItem="fF4-uD-1cz" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="bzd-c2-QGc"/>
-                                                <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="20" id="dw9-bF-xCM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fF4-uD-1cz" secondAttribute="trailing" constant="10" id="dw9-bF-xCM"/>
                                                 <constraint firstItem="w2U-o2-HgN" firstAttribute="top" secondItem="bnR-SM-1Je" secondAttribute="top" constant="10" id="hIj-VL-5C5"/>
                                                 <constraint firstItem="1iw-Fa-jNd" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="i11-d0-89Z"/>
                                                 <constraint firstItem="w2U-o2-HgN" firstAttribute="leading" secondItem="bnR-SM-1Je" secondAttribute="leading" constant="10" id="jJM-1H-0HU"/>
