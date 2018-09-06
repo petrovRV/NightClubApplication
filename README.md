@@ -12,3 +12,4 @@ Mobile application for nightclub XOXO Party
 -Popup Menu with Interactive Animations
 -Custom Segmented Control 
 
+![preview](https://user-images.githubusercontent.com/18430493/45159808-135a1580-b1e8-11e8-9e8f-839636974b55.jpg)
