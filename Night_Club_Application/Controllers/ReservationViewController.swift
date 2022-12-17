@@ -72,7 +72,7 @@ class ReservationViewController: UIViewController {
         makeAPhoneCall()
     }
     
-    func makeAPhoneCall()  {
+    private func makeAPhoneCall()  {
         let url: NSURL = URL(string: "TEL://+48881216566")! as NSURL
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
